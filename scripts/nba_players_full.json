@@ -1,0 +1,3994 @@
+{
+  "generated_at": "2026-01-26T11:30:55.314981",
+  "season": "2025-26",
+  "total_players": 443,
+  "players": [
+    {
+      "name": "Shai Gilgeous-Alexander",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 45
+    },
+    {
+      "name": "Tyrese Maxey",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 42
+    },
+    {
+      "name": "Donovan Mitchell",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Louisville",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 43
+    },
+    {
+      "name": "Jaylen Brown",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "California",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 42
+    },
+    {
+      "name": "Luka Dončić",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Slovenia",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 36
+    },
+    {
+      "name": "Jalen Brunson",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "Villanova",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 40
+    },
+    {
+      "name": "Anthony Edwards",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "Georgia",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 37
+    },
+    {
+      "name": "Deni Avdija",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "Israel",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 42
+    },
+    {
+      "name": "Keyonte George",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "Baylor",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 45
+    },
+    {
+      "name": "James Harden",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "Arizona State",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 42
+    },
+    {
+      "name": "Kevin Durant",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Texas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 41
+    },
+    {
+      "name": "Jamal Murray",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 41
+    },
+    {
+      "name": "Pascal Siakam",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "New Mexico State",
+      "type": "College",
+      "college_conference": "Mountain West",
+      "games_played": 44
+    },
+    {
+      "name": "Devin Booker",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 41
+    },
+    {
+      "name": "Julius Randle",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 46
+    },
+    {
+      "name": "Stephen Curry",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Davidson",
+      "type": "College",
+      "college_conference": "Atlantic 10",
+      "games_played": 37
+    },
+    {
+      "name": "Jalen Johnson",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 43
+    },
+    {
+      "name": "Brandon Ingram",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 46
+    },
+    {
+      "name": "Trey Murphy III",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Virginia",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 44
+    },
+    {
+      "name": "Cade Cunningham",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "Oklahoma State",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 38
+    },
+    {
+      "name": "Nikola Jokić",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Serbia",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 32
+    },
+    {
+      "name": "Norman Powell",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 41
+    },
+    {
+      "name": "Lauri Markkanen",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 33
+    },
+    {
+      "name": "Shaedon Sharpe",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 42
+    },
+    {
+      "name": "Scottie Barnes",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Florida State",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 47
+    },
+    {
+      "name": "Nickeil Alexander-Walker",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Virginia Tech",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 45
+    },
+    {
+      "name": "Kawhi Leonard",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "San Diego State",
+      "type": "College",
+      "college_conference": "Mountain West",
+      "games_played": 32
+    },
+    {
+      "name": "Michael Porter Jr.",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "Missouri",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 36
+    },
+    {
+      "name": "DeMar DeRozan",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "Southern California",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 47
+    },
+    {
+      "name": "Karl-Anthony Towns",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 42
+    },
+    {
+      "name": "Kon Knueppel",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 45
+    },
+    {
+      "name": "Miles Bridges",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Michigan State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 45
+    },
+    {
+      "name": "Giannis Antetokounmpo",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Greece",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 30
+    },
+    {
+      "name": "Desmond Bane",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "TCU",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 44
+    },
+    {
+      "name": "Dillon Brooks",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "Oregon",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 40
+    },
+    {
+      "name": "CJ McCollum",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Lehigh",
+      "type": "College",
+      "college_conference": "Patriot",
+      "games_played": 35
+    },
+    {
+      "name": "Cooper Flagg",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 43
+    },
+    {
+      "name": "Amen Thompson",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Overtime Elite",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 43
+    },
+    {
+      "name": "Jaren Jackson Jr.",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "Michigan State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 41
+    },
+    {
+      "name": "Victor Wembanyama",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 32
+    },
+    {
+      "name": "Immanuel Quickley",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 45
+    },
+    {
+      "name": "Alperen Sengun",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Turkey",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 36
+    },
+    {
+      "name": "Jimmy Butler III",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Marquette",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 38
+    },
+    {
+      "name": "Derrick White",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "Colorado",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 43
+    },
+    {
+      "name": "De'Aaron Fox",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 37
+    },
+    {
+      "name": "Nikola Vučević",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "Southern California",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 44
+    },
+    {
+      "name": "Onyeka Okongwu",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Southern California",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 45
+    },
+    {
+      "name": "Payton Pritchard",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "Oregon",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 44
+    },
+    {
+      "name": "Evan Mobley",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Southern California",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 41
+    },
+    {
+      "name": "Chet Holmgren",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Gonzaga",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 41
+    },
+    {
+      "name": "Russell Westbrook",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 47
+    },
+    {
+      "name": "Paolo Banchero",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 34
+    },
+    {
+      "name": "Ryan Rollins",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Toledo",
+      "type": "College",
+      "college_conference": "MAC",
+      "games_played": 44
+    },
+    {
+      "name": "Zion Williamson",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 32
+    },
+    {
+      "name": "Mikal Bridges",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "Villanova",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 45
+    },
+    {
+      "name": "Bam Adebayo",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 39
+    },
+    {
+      "name": "LaMelo Ball",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Illawarra",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 36
+    },
+    {
+      "name": "Anthony Black",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "Arkansas",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 44
+    },
+    {
+      "name": "Andrew Wiggins",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "Kansas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 43
+    },
+    {
+      "name": "Naji Marshall",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Xavier",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 46
+    },
+    {
+      "name": "Matas Buzelis",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "NBA G League Ignite",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 45
+    },
+    {
+      "name": "Zach LaVine",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 34
+    },
+    {
+      "name": "Jalen Duren",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "Memphis",
+      "type": "College",
+      "college_conference": "American",
+      "games_played": 37
+    },
+    {
+      "name": "Jeremiah Fears",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Oklahoma",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 48
+    },
+    {
+      "name": "Naz Reid",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "Louisiana State",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 46
+    },
+    {
+      "name": "Saddiq Bey",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Villanova",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 41
+    },
+    {
+      "name": "Jaden McDaniels",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "Washington",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 44
+    },
+    {
+      "name": "Jaime Jaquez Jr.",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 42
+    },
+    {
+      "name": "Jabari Smith Jr.",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Auburn",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 42
+    },
+    {
+      "name": "Andrew Nembhard",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Gonzaga",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 36
+    },
+    {
+      "name": "Anfernee Simons",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "Edgewater HS (FL)",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 45
+    },
+    {
+      "name": "Joel Embiid",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "Kansas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 25
+    },
+    {
+      "name": "VJ Edgecombe",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "Baylor",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 40
+    },
+    {
+      "name": "Peyton Watson",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 43
+    },
+    {
+      "name": "Keldon Johnson",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 46
+    },
+    {
+      "name": "Tim Hardaway Jr.",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Michigan",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 45
+    },
+    {
+      "name": "Collin Gillespie",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "Villanova",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 46
+    },
+    {
+      "name": "Donte DiVincenzo",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "Villanova",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 46
+    },
+    {
+      "name": "Stephon Castle",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "Connecticut",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 37
+    },
+    {
+      "name": "Austin Reaves",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Oklahoma",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 23
+    },
+    {
+      "name": "Alex Sarr",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 35
+    },
+    {
+      "name": "Ajay Mitchell",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "California-Santa Barbara",
+      "type": "College",
+      "college_conference": "Big West",
+      "games_played": 43
+    },
+    {
+      "name": "Josh Giddey",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "Australia",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 32
+    },
+    {
+      "name": "LeBron James",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "St. Vincent-St. Mary HS (OH)",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 27
+    },
+    {
+      "name": "Toumani Camara",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "Dayton",
+      "type": "College",
+      "college_conference": "Atlantic 10",
+      "games_played": 46
+    },
+    {
+      "name": "Brandon Miller",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Alabama",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 29
+    },
+    {
+      "name": "Bobby Portis",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Arkansas",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 44
+    },
+    {
+      "name": "Franz Wagner",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "Michigan",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 26
+    },
+    {
+      "name": "Jerami Grant",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "Syracuse",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 30
+    },
+    {
+      "name": "Ivica Zubac",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "Croatia",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 39
+    },
+    {
+      "name": "Jaylon Tyson",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "California",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 42
+    },
+    {
+      "name": "Brandin Podziemski",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Santa Clara",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 47
+    },
+    {
+      "name": "Derik Queen",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Maryland",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 47
+    },
+    {
+      "name": "Santi Aldama",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "Spain",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 41
+    },
+    {
+      "name": "De'Andre Hunter",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Virginia",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 41
+    },
+    {
+      "name": "Noah Clowney",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "Alabama",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 43
+    },
+    {
+      "name": "Reed Sheppard",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 43
+    },
+    {
+      "name": "Cedric Coward",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "Washington State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 40
+    },
+    {
+      "name": "John Collins",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "Wake Forest",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 42
+    },
+    {
+      "name": "Ayo Dosunmu",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "Illinois",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 39
+    },
+    {
+      "name": "Max Christie",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Michigan State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 42
+    },
+    {
+      "name": "Quentin Grimes",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "Houston",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 42
+    },
+    {
+      "name": "OG Anunoby",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "Indiana",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 35
+    },
+    {
+      "name": "Collin Sexton",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Alabama",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 37
+    },
+    {
+      "name": "Kyshawn George",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Miami",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 35
+    },
+    {
+      "name": "Julian Champagnie",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "St. John's",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 46
+    },
+    {
+      "name": "Deandre Ayton",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 39
+    },
+    {
+      "name": "Nic Claxton",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "Georgia",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 42
+    },
+    {
+      "name": "Kyle Kuzma",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Utah",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 42
+    },
+    {
+      "name": "Dyson Daniels",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "NBA G League Ignite",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 45
+    },
+    {
+      "name": "Myles Turner",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Texas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 42
+    },
+    {
+      "name": "Wendell Carter Jr.",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 42
+    },
+    {
+      "name": "Sandro Mamukelashvili",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Seton Hall",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 46
+    },
+    {
+      "name": "Duncan Robinson",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "Michigan",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 42
+    },
+    {
+      "name": "Jaylen Wells",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "Washington State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 43
+    },
+    {
+      "name": "Brice Sensabaugh",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "Ohio State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 43
+    },
+    {
+      "name": "Klay Thompson",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Washington State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 43
+    },
+    {
+      "name": "Cam Spencer",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "Connecticut",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 42
+    },
+    {
+      "name": "Kel'el Ware",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "Indiana",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 43
+    },
+    {
+      "name": "Brandon Williams",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 40
+    },
+    {
+      "name": "Devin Vassell",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "Florida State",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 33
+    },
+    {
+      "name": "Mark Williams",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 41
+    },
+    {
+      "name": "Moses Moody",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Arkansas",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 45
+    },
+    {
+      "name": "Harrison Barnes",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "North Carolina",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 46
+    },
+    {
+      "name": "Malik Monk",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 39
+    },
+    {
+      "name": "Tre Johnson",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Texas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 37
+    },
+    {
+      "name": "Jock Landale",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "St. Mary's",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 41
+    },
+    {
+      "name": "Dennis Schröder",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "Germany",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 37
+    },
+    {
+      "name": "RJ Barrett",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 25
+    },
+    {
+      "name": "Rudy Gobert",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 44
+    },
+    {
+      "name": "Donovan Clingan",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "Connecticut",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 42
+    },
+    {
+      "name": "Grayson Allen",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 29
+    },
+    {
+      "name": "Royce O'Neale",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "Baylor",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 46
+    },
+    {
+      "name": "Tre Jones",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 38
+    },
+    {
+      "name": "Jarrett Allen",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Texas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 35
+    },
+    {
+      "name": "Darius Garland",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Vanderbilt",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 26
+    },
+    {
+      "name": "P.J. Washington",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 33
+    },
+    {
+      "name": "Coby White",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "North Carolina",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 24
+    },
+    {
+      "name": "Kevin Huerter",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "Maryland",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 40
+    },
+    {
+      "name": "Jarace Walker",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Houston",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 46
+    },
+    {
+      "name": "Miles McBride",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "West Virginia",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 34
+    },
+    {
+      "name": "Neemias Queta",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "Utah State",
+      "type": "College",
+      "college_conference": "Mountain West",
+      "games_played": 43
+    },
+    {
+      "name": "Bub Carrington",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Pittsburgh",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 44
+    },
+    {
+      "name": "Ausar Thompson",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "Overtime Elite",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 40
+    },
+    {
+      "name": "Caleb Love",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 38
+    },
+    {
+      "name": "Bennedict Mathurin",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 24
+    },
+    {
+      "name": "Ace Bailey",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "Rutgers",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 39
+    },
+    {
+      "name": "AJ Green",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Northern Iowa",
+      "type": "College",
+      "college_conference": "Missouri Valley",
+      "games_played": 40
+    },
+    {
+      "name": "Jake LaRavia",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Wake Forest",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 44
+    },
+    {
+      "name": "Jordan Clarkson",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "Missouri",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 44
+    },
+    {
+      "name": "Kyle Filipowski",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 45
+    },
+    {
+      "name": "Rui Hachimura",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Gonzaga",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 34
+    },
+    {
+      "name": "Anthony Davis",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 20
+    },
+    {
+      "name": "Aaron Gordon",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 23
+    },
+    {
+      "name": "Isaiah Stewart",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "Washington",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 40
+    },
+    {
+      "name": "Jordan Poole",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Michigan",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 28
+    },
+    {
+      "name": "Josh Hart",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "Villanova",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 34
+    },
+    {
+      "name": "Jalen Williams",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Santa Clara",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 24
+    },
+    {
+      "name": "Jusuf Nurkić",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "Bosnia and Herzegovina",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 36
+    },
+    {
+      "name": "Zaccharie Risacher",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 36
+    },
+    {
+      "name": "Sam Hauser",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "Virginia",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 44
+    },
+    {
+      "name": "Vít Krejčí",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Czech Republic",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 43
+    },
+    {
+      "name": "Egor Dëmin",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "Brigham Young",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 39
+    },
+    {
+      "name": "Ja Morant",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "Murray State",
+      "type": "College",
+      "college_conference": "Missouri Valley",
+      "games_played": 20
+    },
+    {
+      "name": "Jay Huff",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Virginia",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 46
+    },
+    {
+      "name": "Tobias Harris",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "Tennessee",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 29
+    },
+    {
+      "name": "Kevin Porter Jr.",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Southern California",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 23
+    },
+    {
+      "name": "Paul George",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "Fresno State",
+      "type": "College",
+      "college_conference": "Mountain West",
+      "games_played": 25
+    },
+    {
+      "name": "Pelle Larsson",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 39
+    },
+    {
+      "name": "Simone Fontecchio",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "Italy",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 44
+    },
+    {
+      "name": "Maxime Raynaud",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "Stanford",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 39
+    },
+    {
+      "name": "Jalen Smith",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "Maryland",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 38
+    },
+    {
+      "name": "Jordan Goodwin",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "St. Louis",
+      "type": "College",
+      "college_conference": "Atlantic 10",
+      "games_played": 43
+    },
+    {
+      "name": "Quinten Post",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Boston College",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 47
+    },
+    {
+      "name": "Dylan Harper",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "Rutgers",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 36
+    },
+    {
+      "name": "Isaiah Joe",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Arkansas",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 38
+    },
+    {
+      "name": "Davion Mitchell",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "Baylor",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 40
+    },
+    {
+      "name": "Marvin Bagley III",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 36
+    },
+    {
+      "name": "Tristan da Silva",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "Colorado",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 39
+    },
+    {
+      "name": "Jalen Suggs",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "Gonzaga",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 24
+    },
+    {
+      "name": "Marcus Smart",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Oklahoma State",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 35
+    },
+    {
+      "name": "Ronald Holland II",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "NBA G League Ignite",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 42
+    },
+    {
+      "name": "Kris Dunn",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "Providence",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 45
+    },
+    {
+      "name": "Jamal Shead",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Houston",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 48
+    },
+    {
+      "name": "Svi Mykhailiuk",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "Kansas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 39
+    },
+    {
+      "name": "Isaiah Collier",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "Southern California",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 38
+    },
+    {
+      "name": "Kentavious Caldwell-Pope",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "Georgia",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 42
+    },
+    {
+      "name": "Moussa Diabaté",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Michigan",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 42
+    },
+    {
+      "name": "Aaron Wiggins",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Maryland",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 32
+    },
+    {
+      "name": "Aaron Nesmith",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Vanderbilt",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 25
+    },
+    {
+      "name": "Draymond Green",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Michigan State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 39
+    },
+    {
+      "name": "Sam Merrill",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Utah State",
+      "type": "College",
+      "college_conference": "Mountain West",
+      "games_played": 24
+    },
+    {
+      "name": "Gary Trent Jr.",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 40
+    },
+    {
+      "name": "Bruce Brown",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Miami",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 46
+    },
+    {
+      "name": "Day'Ron Sharpe",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "North Carolina",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 42
+    },
+    {
+      "name": "Cason Wallace",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 45
+    },
+    {
+      "name": "Cameron Johnson",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "North Carolina",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 28
+    },
+    {
+      "name": "Cam Thomas",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "Louisiana State",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 20
+    },
+    {
+      "name": "Gradey Dick",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Kansas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 48
+    },
+    {
+      "name": "Luguentz Dort",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Arizona State",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 37
+    },
+    {
+      "name": "Kelly Oubre Jr.",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "Kansas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 22
+    },
+    {
+      "name": "Javonte Green",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "Radford",
+      "type": "College",
+      "college_conference": "Big South",
+      "games_played": 44
+    },
+    {
+      "name": "Luke Kennard",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 41
+    },
+    {
+      "name": "Buddy Hield",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Oklahoma",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 40
+    },
+    {
+      "name": "Isaac Okoro",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "Auburn",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 37
+    },
+    {
+      "name": "T.J. McConnell",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 33
+    },
+    {
+      "name": "Ziaire Williams",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "Stanford",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 33
+    },
+    {
+      "name": "Nikola Jović",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "Serbia",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 36
+    },
+    {
+      "name": "Justin Champagnie",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Pittsburgh",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 42
+    },
+    {
+      "name": "Luke Kornet",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "Vanderbilt",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 37
+    },
+    {
+      "name": "Precious Achiuwa",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "Memphis",
+      "type": "College",
+      "college_conference": "American",
+      "games_played": 40
+    },
+    {
+      "name": "Terance Mann",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "Florida State",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 39
+    },
+    {
+      "name": "Jonas Valančiūnas",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Lithuania",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 34
+    },
+    {
+      "name": "Ryan Kalkbrenner",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Creighton",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 34
+    },
+    {
+      "name": "Khris Middleton",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Texas A&M",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 30
+    },
+    {
+      "name": "Will Richard",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Florida",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 42
+    },
+    {
+      "name": "Kristaps Porziņģis",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Latvia",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 17
+    },
+    {
+      "name": "Walter Clayton Jr.",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "Florida",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 41
+    },
+    {
+      "name": "Collin Murray-Boyles",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "South Carolina",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 37
+    },
+    {
+      "name": "Daniss Jenkins",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "St. John's",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 36
+    },
+    {
+      "name": "Jose Alvarado",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Georgia Tech",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 36
+    },
+    {
+      "name": "Sion James",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 46
+    },
+    {
+      "name": "Dru Smith",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "Missouri",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 46
+    },
+    {
+      "name": "Luka Garza",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "Iowa",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 37
+    },
+    {
+      "name": "Jrue Holiday",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 18
+    },
+    {
+      "name": "Keegan Murray",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "Iowa",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 19
+    },
+    {
+      "name": "Dominick Barlow",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "Overtime Elite",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 34
+    },
+    {
+      "name": "Tari Eason",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Louisiana State",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 23
+    },
+    {
+      "name": "Isaiah Hartenstein",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Germany",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 24
+    },
+    {
+      "name": "Patrick Williams",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "Florida State",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 41
+    },
+    {
+      "name": "Tyrese Martin",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "Connecticut",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 35
+    },
+    {
+      "name": "D'Angelo Russell",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Ohio State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 26
+    },
+    {
+      "name": "Sidy Cissoko",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "NBA G League Ignite",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 41
+    },
+    {
+      "name": "Bilal Coulibaly",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 25
+    },
+    {
+      "name": "Oso Ighodaro",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "Marquette",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 46
+    },
+    {
+      "name": "Domantas Sabonis",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "Gonzaga",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 16
+    },
+    {
+      "name": "Kobe Sanders",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "Nevada",
+      "type": "College",
+      "college_conference": "Mountain West",
+      "games_played": 37
+    },
+    {
+      "name": "Spencer Jones",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Stanford",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 41
+    },
+    {
+      "name": "Ryan Dunn",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "Virginia",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 39
+    },
+    {
+      "name": "Andre Drummond",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "Connecticut",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 35
+    },
+    {
+      "name": "Caris LeVert",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "Michigan",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 31
+    },
+    {
+      "name": "Jaden Ivey",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "Purdue",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 29
+    },
+    {
+      "name": "Jonathan Kuminga",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "NBA G League Ignite",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 20
+    },
+    {
+      "name": "Tyler Herro",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 11
+    },
+    {
+      "name": "Josh Okogie",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Georgia Tech",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 43
+    },
+    {
+      "name": "Ryan Nembhard",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Gonzaga",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 33
+    },
+    {
+      "name": "Brook Lopez",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "Stanford",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 38
+    },
+    {
+      "name": "De'Anthony Melton",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Southern California",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 21
+    },
+    {
+      "name": "Bones Hyland",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "Virginia Commonwealth",
+      "type": "College",
+      "college_conference": "Atlantic 10",
+      "games_played": 37
+    },
+    {
+      "name": "Goga Bitadze",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "Georgia",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 40
+    },
+    {
+      "name": "Ja'Kobe Walter",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Baylor",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 38
+    },
+    {
+      "name": "Nique Clifford",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "Colorado State",
+      "type": "College",
+      "college_conference": "Mountain West",
+      "games_played": 43
+    },
+    {
+      "name": "Jordan Walsh",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "Arkansas",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 40
+    },
+    {
+      "name": "Trae Young",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Oklahoma",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 10
+    },
+    {
+      "name": "Danny Wolf",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "Michigan",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 30
+    },
+    {
+      "name": "Corey Kispert",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Gonzaga",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 26
+    },
+    {
+      "name": "Daniel Gafford",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Arkansas",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 30
+    },
+    {
+      "name": "Herbert Jones",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Alabama",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 25
+    },
+    {
+      "name": "Jaxson Hayes",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Texas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 36
+    },
+    {
+      "name": "Yves Missi",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Baylor",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 40
+    },
+    {
+      "name": "Ben Sheppard",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Belmont",
+      "type": "College",
+      "college_conference": "Missouri Valley",
+      "games_played": 35
+    },
+    {
+      "name": "Nae'Qwan Tomlin",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Memphis",
+      "type": "College",
+      "college_conference": "American",
+      "games_played": 36
+    },
+    {
+      "name": "Isaiah Jackson",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 33
+    },
+    {
+      "name": "Bryce McGowens",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Nebraska",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 29
+    },
+    {
+      "name": "Keon Ellis",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "Alabama",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 40
+    },
+    {
+      "name": "Tre Mann",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Florida",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 28
+    },
+    {
+      "name": "Vince Williams Jr.",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "Virginia Commonwealth",
+      "type": "College",
+      "college_conference": "Atlantic 10",
+      "games_played": 29
+    },
+    {
+      "name": "Dean Wade",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Kansas State",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 38
+    },
+    {
+      "name": "Jaden Hardy",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "NBA G League Ignite",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 31
+    },
+    {
+      "name": "Gary Payton II",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Oregon State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 44
+    },
+    {
+      "name": "Cole Anthony",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "North Carolina",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 31
+    },
+    {
+      "name": "Drake Powell",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "North Carolina",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 33
+    },
+    {
+      "name": "Jordan Miller",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "Miami",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 24
+    },
+    {
+      "name": "Mouhamed Gueye",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Washington State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 45
+    },
+    {
+      "name": "Kris Murray",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "Iowa",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 34
+    },
+    {
+      "name": "Tristan Vukcevic",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Italy",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 30
+    },
+    {
+      "name": "Jakob Poeltl",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Utah",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 21
+    },
+    {
+      "name": "Craig Porter Jr.",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Wichita State",
+      "type": "College",
+      "college_conference": "American",
+      "games_played": 42
+    },
+    {
+      "name": "Nicolas Batum",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 44
+    },
+    {
+      "name": "Jalen Pickett",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Penn State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 31
+    },
+    {
+      "name": "Alex Caruso",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Texas A&M",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 32
+    },
+    {
+      "name": "Cam Whitmore",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Villanova",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 21
+    },
+    {
+      "name": "Will Riley",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Illinois-Urbana-Champaign",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 36
+    },
+    {
+      "name": "Jared McCain",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 31
+    },
+    {
+      "name": "Micah Peavy",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Georgetown",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 40
+    },
+    {
+      "name": "Tyler Kolek",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "Marquette",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 39
+    },
+    {
+      "name": "Tidjane Salaün",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 29
+    },
+    {
+      "name": "Al Horford",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Florida",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 27
+    },
+    {
+      "name": "Mike Conley",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "Ohio State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 40
+    },
+    {
+      "name": "Steven Adams",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Pittsburgh",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 32
+    },
+    {
+      "name": "Landry Shamet",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "Wichita State",
+      "type": "College",
+      "college_conference": "American",
+      "games_played": 20
+    },
+    {
+      "name": "Robert Williams III",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "Texas A&M",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 31
+    },
+    {
+      "name": "Josh Minott",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "Memphis",
+      "type": "College",
+      "college_conference": "American",
+      "games_played": 29
+    },
+    {
+      "name": "Cody Williams",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "Colorado",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 33
+    },
+    {
+      "name": "Jase Richardson",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "Michigan State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 31
+    },
+    {
+      "name": "Ochai Agbaji",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Kansas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 39
+    },
+    {
+      "name": "Paul Reed",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "DePaul",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 32
+    },
+    {
+      "name": "Aaron Holiday",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 30
+    },
+    {
+      "name": "Jaylin Williams",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Arkansas",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 32
+    },
+    {
+      "name": "Kevin Love",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 25
+    },
+    {
+      "name": "Derrick Jones Jr.",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "UNLV",
+      "type": "College",
+      "college_conference": "Mountain West",
+      "games_played": 17
+    },
+    {
+      "name": "Jarred Vanderbilt",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 35
+    },
+    {
+      "name": "Kenrich Williams",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "TCU",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 27
+    },
+    {
+      "name": "Dalton Knecht",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Tennessee",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 36
+    },
+    {
+      "name": "Jaylen Clark",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 43
+    },
+    {
+      "name": "Karlo Matković",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Bosnia and Herzegovina",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 35
+    },
+    {
+      "name": "Asa Newell",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Georgia",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 33
+    },
+    {
+      "name": "GG Jackson",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "South Carolina",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 23
+    },
+    {
+      "name": "Tyrese Proctor",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 33
+    },
+    {
+      "name": "Hugo González",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "Spain",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 40
+    },
+    {
+      "name": "Pat Spencer",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Northwestern",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 31
+    },
+    {
+      "name": "Branden Carlson",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Utah",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 32
+    },
+    {
+      "name": "Quenton Jackson",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Texas A&M",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 22
+    },
+    {
+      "name": "Justin Edwards",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 33
+    },
+    {
+      "name": "Drew Eubanks",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "Oregon State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 30
+    },
+    {
+      "name": "Jabari Walker",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "Colorado",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 40
+    },
+    {
+      "name": "Jalen Wilson",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "Kansas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 30
+    },
+    {
+      "name": "Mitchell Robinson",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "Western Kentucky",
+      "type": "College",
+      "college_conference": "C-USA",
+      "games_played": 32
+    },
+    {
+      "name": "Taylor Hendricks",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "Central Florida",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 31
+    },
+    {
+      "name": "RayJ Dennis",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Baylor",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 13
+    },
+    {
+      "name": "Lonzo Ball",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 31
+    },
+    {
+      "name": "Zeke Nnaji",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 33
+    },
+    {
+      "name": "Keaton Wallace",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Texas-San Antonio",
+      "type": "College",
+      "college_conference": "American",
+      "games_played": 36
+    },
+    {
+      "name": "Tony Bradley",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "North Carolina",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 38
+    },
+    {
+      "name": "Jamaree Bouyea",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "San Francisco",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 20
+    },
+    {
+      "name": "Johnny Furphy",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Kansas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 28
+    },
+    {
+      "name": "Jordan Hawkins",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "Connecticut",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 35
+    },
+    {
+      "name": "Noah Penda",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 29
+    },
+    {
+      "name": "Zach Edey",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "Purdue",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 11
+    },
+    {
+      "name": "Thomas Bryant",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Indiana",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 32
+    },
+    {
+      "name": "Adem Bona",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 35
+    },
+    {
+      "name": "Nick Smith Jr.",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Arkansas",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 23
+    },
+    {
+      "name": "Trayce Jackson-Davis",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Indiana",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 33
+    },
+    {
+      "name": "Trendon Watford",
+      "team": "PHI",
+      "nba_conference": "Eastern",
+      "origin": "Louisiana State",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 23
+    },
+    {
+      "name": "Gui Santos",
+      "team": "GSW",
+      "nba_conference": "Western",
+      "origin": "Brazil",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 36
+    },
+    {
+      "name": "Clint Capela",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Switzerland",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 37
+    },
+    {
+      "name": "Jett Howard",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "Michigan",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 28
+    },
+    {
+      "name": "Nolan Traore",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 23
+    },
+    {
+      "name": "Christian Braun",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Kansas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 14
+    },
+    {
+      "name": "Tyus Jones",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 43
+    },
+    {
+      "name": "Bogdan Bogdanović",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "Serbia",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 16
+    },
+    {
+      "name": "Kyle Anderson",
+      "team": "UTA",
+      "nba_conference": "Western",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 17
+    },
+    {
+      "name": "Baylor Scheierman",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "Creighton",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 40
+    },
+    {
+      "name": "Rob Dillingham",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 33
+    },
+    {
+      "name": "Jamison Battle",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Ohio State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 34
+    },
+    {
+      "name": "Liam McNeeley",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Connecticut",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 27
+    },
+    {
+      "name": "Jeremy Sochan",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "Baylor",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 27
+    },
+    {
+      "name": "Gabe Vincent",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "California-Santa Barbara",
+      "type": "College",
+      "college_conference": "Big West",
+      "games_played": 24
+    },
+    {
+      "name": "Jevon Carter",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "West Virginia",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 21
+    },
+    {
+      "name": "Caleb Martin",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Nevada",
+      "type": "College",
+      "college_conference": "Mountain West",
+      "games_played": 39
+    },
+    {
+      "name": "Cam Christie",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "Minnesota",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 30
+    },
+    {
+      "name": "Guerschon Yabusele",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 38
+    },
+    {
+      "name": "Micah Potter",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Wisconsin",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 15
+    },
+    {
+      "name": "Julian Strawther",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Gonzaga",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 23
+    },
+    {
+      "name": "Dwight Powell",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Stanford",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 32
+    },
+    {
+      "name": "Jonathan Isaac",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "Florida State",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 36
+    },
+    {
+      "name": "Malaki Branham",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Ohio State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 25
+    },
+    {
+      "name": "Jeremiah Robinson-Earl",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Villanova",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 22
+    },
+    {
+      "name": "Moussa Cisse",
+      "team": "DAL",
+      "nba_conference": "Western",
+      "origin": "Memphis",
+      "type": "College",
+      "college_conference": "American",
+      "games_played": 26
+    },
+    {
+      "name": "Rayan Rupert",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 39
+    },
+    {
+      "name": "Terrence Shannon Jr.",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "Illinois",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 22
+    },
+    {
+      "name": "Josh Green",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 22
+    },
+    {
+      "name": "Kelly Olynyk",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "Gonzaga",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 28
+    },
+    {
+      "name": "Zach Collins",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "Gonzaga",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 10
+    },
+    {
+      "name": "Dylan Cardwell",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "Auburn",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 20
+    },
+    {
+      "name": "Olivier-Maxence Prosper",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "Marquette",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 20
+    },
+    {
+      "name": "Duop Reath",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "Louisiana State",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 32
+    },
+    {
+      "name": "Gary Harris",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Michigan State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 34
+    },
+    {
+      "name": "Kasparas Jakučionis",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "Illinois-Urbana-Champaign",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 21
+    },
+    {
+      "name": "Carter Bryant",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 36
+    },
+    {
+      "name": "Ousmane Dieng",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 23
+    },
+    {
+      "name": "Jericho Sims",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Texas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 31
+    },
+    {
+      "name": "Yanic Konan Niederhäuser",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "Penn State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 25
+    },
+    {
+      "name": "Nick Richards",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 28
+    },
+    {
+      "name": "Dalen Terry",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 28
+    },
+    {
+      "name": "Ethan Thompson",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Oregon State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 19
+    },
+    {
+      "name": "KJ Simpson",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Colorado",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 14
+    },
+    {
+      "name": "Julian Phillips",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "Tennessee",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 30
+    },
+    {
+      "name": "Kobe Brown",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "Missouri",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 29
+    },
+    {
+      "name": "Garrison Mathews",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Lipscomb",
+      "type": "College",
+      "college_conference": "ASUN",
+      "games_played": 15
+    },
+    {
+      "name": "John Konchar",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "Indiana-Purdue Fort Wayne",
+      "type": "College",
+      "college_conference": "Horizon",
+      "games_played": 27
+    },
+    {
+      "name": "Marcus Sasser",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "Houston",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 13
+    },
+    {
+      "name": "Ben Saraf",
+      "team": "BKN",
+      "nba_conference": "Eastern",
+      "origin": "Israel",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 13
+    },
+    {
+      "name": "Jae'Sean Tate",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Ohio State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 26
+    },
+    {
+      "name": "Mohamed Diawara",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 36
+    },
+    {
+      "name": "PJ Hall",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Clemson",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 15
+    },
+    {
+      "name": "Javon Small",
+      "team": "MEM",
+      "nba_conference": "Western",
+      "origin": "West Virginia",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 15
+    },
+    {
+      "name": "Larry Nance Jr.",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Wyoming",
+      "type": "College",
+      "college_conference": "Mountain West",
+      "games_played": 19
+    },
+    {
+      "name": "Jamir Watkins",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Florida State",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 19
+    },
+    {
+      "name": "Pat Connaughton",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Notre Dame",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 21
+    },
+    {
+      "name": "Rasheer Fleming",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "St. Joseph's (PA)",
+      "type": "College",
+      "college_conference": "Atlantic 10",
+      "games_played": 25
+    },
+    {
+      "name": "Myron Gardner",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "Arkansas-Little Rock",
+      "type": "College",
+      "college_conference": "Ohio Valley",
+      "games_played": 19
+    },
+    {
+      "name": "Yang Hansen",
+      "team": "POR",
+      "nba_conference": "Western",
+      "origin": "China",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 26
+    },
+    {
+      "name": "Joan Beringer",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 20
+    },
+    {
+      "name": "Keshad Johnson",
+      "team": "MIA",
+      "nba_conference": "Eastern",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 19
+    },
+    {
+      "name": "Isaiah Livers",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "Michigan",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 24
+    },
+    {
+      "name": "Chaz Lanier",
+      "team": "DET",
+      "nba_conference": "Eastern",
+      "origin": "Tennessee",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 17
+    },
+    {
+      "name": "Amir Coffey",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Minnesota",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 26
+    },
+    {
+      "name": "DaRon Holmes II",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Dayton",
+      "type": "College",
+      "college_conference": "Atlantic 10",
+      "games_played": 12
+    },
+    {
+      "name": "Lindy Waters III",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "Oklahoma State",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 26
+    },
+    {
+      "name": "Chris Youngblood",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Alabama",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 29
+    },
+    {
+      "name": "A.J. Lawson",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "South Carolina",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 11
+    },
+    {
+      "name": "Ariel Hukporti",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "Germany",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 30
+    },
+    {
+      "name": "Jamal Cain",
+      "team": "ORL",
+      "nba_conference": "Eastern",
+      "origin": "Oakland",
+      "type": "College",
+      "college_conference": "Horizon",
+      "games_played": 18
+    },
+    {
+      "name": "Chris Paul",
+      "team": "LAC",
+      "nba_conference": "Western",
+      "origin": "Wake Forest",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 16
+    },
+    {
+      "name": "Kevon Looney",
+      "team": "NOP",
+      "nba_conference": "Western",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 17
+    },
+    {
+      "name": "Leonard Miller",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "NBA G League Ignite",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 18
+    },
+    {
+      "name": "Dorian Finney-Smith",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Florida",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 13
+    },
+    {
+      "name": "Hunter Tyson",
+      "team": "DEN",
+      "nba_conference": "Western",
+      "origin": "Clemson",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 18
+    },
+    {
+      "name": "Jordan McLaughlin",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "Southern California",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 19
+    },
+    {
+      "name": "Maxi Kleber",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Germany",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 20
+    },
+    {
+      "name": "Pete Nance",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Northwestern",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 14
+    },
+    {
+      "name": "Devin Carter",
+      "team": "SAC",
+      "nba_conference": "Western",
+      "origin": "Providence",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 13
+    },
+    {
+      "name": "AJ Johnson",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Illawarra",
+      "type": "Other",
+      "college_conference": "Other",
+      "games_played": 23
+    },
+    {
+      "name": "JD Davison",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Alabama",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 20
+    },
+    {
+      "name": "Taelon Peter",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Liberty",
+      "type": "College",
+      "college_conference": "C-USA",
+      "games_played": 22
+    },
+    {
+      "name": "Drew Timme",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Gonzaga",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 11
+    },
+    {
+      "name": "Christian Koloko",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Arizona",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 15
+    },
+    {
+      "name": "Johnny Juzang",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "UCLA",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 17
+    },
+    {
+      "name": "Bronny James",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Southern California",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 24
+    },
+    {
+      "name": "Andre Jackson Jr.",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Connecticut",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 19
+    },
+    {
+      "name": "Nigel Hayes-Davis",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "Wisconsin",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 24
+    },
+    {
+      "name": "David Jones Garcia",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "Memphis",
+      "type": "College",
+      "college_conference": "American",
+      "games_played": 11
+    },
+    {
+      "name": "Jeff Green",
+      "team": "HOU",
+      "nba_conference": "Western",
+      "origin": "Georgetown",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 15
+    },
+    {
+      "name": "Anthony Gill",
+      "team": "WAS",
+      "nba_conference": "Eastern",
+      "origin": "Virginia",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 21
+    },
+    {
+      "name": "Xavier Tillman",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "Michigan State",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 13
+    },
+    {
+      "name": "Alijah Martin",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Florida",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 10
+    },
+    {
+      "name": "Jonathan Mogbo",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "San Francisco",
+      "type": "College",
+      "college_conference": "WCC",
+      "games_played": 20
+    },
+    {
+      "name": "Brooks Barnhizer",
+      "team": "OKC",
+      "nba_conference": "Western",
+      "origin": "Northwestern",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 24
+    },
+    {
+      "name": "Kevin McCullar Jr.",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "Kansas",
+      "type": "College",
+      "college_conference": "Big 12",
+      "games_played": 12
+    },
+    {
+      "name": "Luke Travers",
+      "team": "CLE",
+      "nba_conference": "Eastern",
+      "origin": "Australia",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 12
+    },
+    {
+      "name": "Mason Plumlee",
+      "team": "CHA",
+      "nba_conference": "Eastern",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 14
+    },
+    {
+      "name": "Khaman Maluach",
+      "team": "PHX",
+      "nba_conference": "Western",
+      "origin": "Duke",
+      "type": "College",
+      "college_conference": "ACC",
+      "games_played": 19
+    },
+    {
+      "name": "Caleb Houstan",
+      "team": "ATL",
+      "nba_conference": "Eastern",
+      "origin": "Michigan",
+      "type": "College",
+      "college_conference": "Big Ten",
+      "games_played": 10
+    },
+    {
+      "name": "Thanasis Antetokounmpo",
+      "team": "MIL",
+      "nba_conference": "Eastern",
+      "origin": "Greece",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 14
+    },
+    {
+      "name": "Kam Jones",
+      "team": "IND",
+      "nba_conference": "Eastern",
+      "origin": "Marquette",
+      "type": "College",
+      "college_conference": "Big East",
+      "games_played": 12
+    },
+    {
+      "name": "Adou Thiero",
+      "team": "LAL",
+      "nba_conference": "Western",
+      "origin": "Arkansas",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 15
+    },
+    {
+      "name": "Amari Williams",
+      "team": "BOS",
+      "nba_conference": "Eastern",
+      "origin": "Kentucky",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 10
+    },
+    {
+      "name": "Joe Ingles",
+      "team": "MIN",
+      "nba_conference": "Western",
+      "origin": "Australia",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 14
+    },
+    {
+      "name": "Bismack Biyombo",
+      "team": "SAS",
+      "nba_conference": "Western",
+      "origin": "DRC",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 11
+    },
+    {
+      "name": "Pacôme Dadiet",
+      "team": "NYK",
+      "nba_conference": "Eastern",
+      "origin": "France",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 18
+    },
+    {
+      "name": "Garrett Temple",
+      "team": "TOR",
+      "nba_conference": "Eastern",
+      "origin": "Louisiana State",
+      "type": "College",
+      "college_conference": "SEC",
+      "games_played": 12
+    },
+    {
+      "name": "Lachlan Olbrich",
+      "team": "CHI",
+      "nba_conference": "Eastern",
+      "origin": "Australia",
+      "type": "Country",
+      "college_conference": "Other",
+      "games_played": 10
+    }
+  ]
+}

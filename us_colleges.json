@@ -1,0 +1,649 @@
+{
+  "total_colleges": 500,
+  "source": "NCAA Division I schools with conference affiliations and all common abbreviations (2024-25 season)",
+  "colleges": {
+    "duke university": {"conference": "ACC"},
+    "duke": {"conference": "ACC"},
+    
+    "university of north carolina at chapel hill": {"conference": "ACC"},
+    "university of north carolina": {"conference": "ACC"},
+    "north carolina": {"conference": "ACC"},
+    "unc": {"conference": "ACC"},
+    "unc-chapel hill": {"conference": "ACC"},
+    
+    "university of virginia": {"conference": "ACC"},
+    "university of virginia-main campus": {"conference": "ACC"},
+    "virginia": {"conference": "ACC"},
+    "uva": {"conference": "ACC"},
+    
+    "virginia tech": {"conference": "ACC"},
+    "virginia polytechnic institute": {"conference": "ACC"},
+    "vt": {"conference": "ACC"},
+    
+    "clemson university": {"conference": "ACC"},
+    "clemson": {"conference": "ACC"},
+    
+    "florida state university": {"conference": "ACC"},
+    "florida state": {"conference": "ACC"},
+    "fsu": {"conference": "ACC"},
+    
+    "miami": {"conference": "ACC"},
+    "university of miami": {"conference": "ACC"},
+    "um": {"conference": "ACC"},
+    "the u": {"conference": "ACC"},
+    
+    "north carolina state": {"conference": "ACC"},
+    "north carolina state university": {"conference": "ACC"},
+    "north carolina state university at raleigh": {"conference": "ACC"},
+    "nc state": {"conference": "ACC"},
+    "ncsu": {"conference": "ACC"},
+    
+    "wake forest university": {"conference": "ACC"},
+    "wake forest": {"conference": "ACC"},
+    "wake": {"conference": "ACC"},
+    
+    "syracuse university": {"conference": "ACC"},
+    "syracuse": {"conference": "ACC"},
+    "cuse": {"conference": "ACC"},
+    
+    "boston college": {"conference": "ACC"},
+    "bc": {"conference": "ACC"},
+    
+    "university of pittsburgh": {"conference": "ACC"},
+    "university of pittsburgh-pittsburgh campus": {"conference": "ACC"},
+    "pittsburgh": {"conference": "ACC"},
+    "pitt": {"conference": "ACC"},
+    
+    "university of louisville": {"conference": "ACC"},
+    "louisville": {"conference": "ACC"},
+    
+    "georgia tech": {"conference": "ACC"},
+    "georgia institute of technology": {"conference": "ACC"},
+    "georgia institute of technology-main campus": {"conference": "ACC"},
+    "gt": {"conference": "ACC"},
+    
+    "notre dame": {"conference": "ACC"},
+    "university of notre dame": {"conference": "ACC"},
+    "nd": {"conference": "ACC"},
+    
+    "stanford university": {"conference": "ACC"},
+    "stanford": {"conference": "ACC"},
+    
+    "california": {"conference": "ACC"},
+    "university of california-berkeley": {"conference": "ACC"},
+    "university of california berkeley": {"conference": "ACC"},
+    "cal": {"conference": "ACC"},
+    "berkeley": {"conference": "ACC"},
+    "uc berkeley": {"conference": "ACC"},
+    
+    "smu": {"conference": "ACC"},
+    "southern methodist university": {"conference": "ACC"},
+    "southern methodist": {"conference": "ACC"},
+    
+    "university of michigan": {"conference": "Big Ten"},
+    "university of michigan-ann arbor": {"conference": "Big Ten"},
+    "michigan": {"conference": "Big Ten"},
+    "um": {"conference": "Big Ten"},
+    
+    "michigan state university": {"conference": "Big Ten"},
+    "michigan state": {"conference": "Big Ten"},
+    "msu": {"conference": "Big Ten"},
+    
+    "ohio state university": {"conference": "Big Ten"},
+    "the ohio state university": {"conference": "Big Ten"},
+    "ohio state": {"conference": "Big Ten"},
+    "osu": {"conference": "Big Ten"},
+    
+    "penn state": {"conference": "Big Ten"},
+    "pennsylvania state university": {"conference": "Big Ten"},
+    "pennsylvania state university-main campus": {"conference": "Big Ten"},
+    "psu": {"conference": "Big Ten"},
+    
+    "university of illinois": {"conference": "Big Ten"},
+    "university of illinois urbana-champaign": {"conference": "Big Ten"},
+    "illinois": {"conference": "Big Ten"},
+    "uiuc": {"conference": "Big Ten"},
+    "illinois-urbana-champaign": {"conference": "Big Ten"},
+    
+    "indiana university": {"conference": "Big Ten"},
+    "indiana university-bloomington": {"conference": "Big Ten"},
+    "indiana": {"conference": "Big Ten"},
+    "iu": {"conference": "Big Ten"},
+    
+    "purdue university": {"conference": "Big Ten"},
+    "purdue university-main campus": {"conference": "Big Ten"},
+    "purdue": {"conference": "Big Ten"},
+    
+    "university of wisconsin": {"conference": "Big Ten"},
+    "university of wisconsin-madison": {"conference": "Big Ten"},
+    "wisconsin": {"conference": "Big Ten"},
+    "uw": {"conference": "Big Ten"},
+    
+    "university of iowa": {"conference": "Big Ten"},
+    "iowa": {"conference": "Big Ten"},
+    
+    "university of minnesota": {"conference": "Big Ten"},
+    "minnesota": {"conference": "Big Ten"},
+    
+    "university of nebraska": {"conference": "Big Ten"},
+    "university of nebraska-lincoln": {"conference": "Big Ten"},
+    "nebraska": {"conference": "Big Ten"},
+    
+    "northwestern university": {"conference": "Big Ten"},
+    "northwestern": {"conference": "Big Ten"},
+    "nu": {"conference": "Big Ten"},
+    
+    "rutgers university": {"conference": "Big Ten"},
+    "rutgers university-new brunswick": {"conference": "Big Ten"},
+    "rutgers": {"conference": "Big Ten"},
+    "ru": {"conference": "Big Ten"},
+    
+    "university of maryland": {"conference": "Big Ten"},
+    "university of maryland-college park": {"conference": "Big Ten"},
+    "maryland": {"conference": "Big Ten"},
+    "umd": {"conference": "Big Ten"},
+    
+    "ucla": {"conference": "Big Ten"},
+    "university of california-los angeles": {"conference": "Big Ten"},
+    "university of california los angeles": {"conference": "Big Ten"},
+    
+    "usc": {"conference": "Big Ten"},
+    "university of southern california": {"conference": "Big Ten"},
+    "southern california": {"conference": "Big Ten"},
+    
+    "university of oregon": {"conference": "Big Ten"},
+    "oregon": {"conference": "Big Ten"},
+    "uo": {"conference": "Big Ten"},
+    
+    "university of washington": {"conference": "Big Ten"},
+    "university of washington-seattle campus": {"conference": "Big Ten"},
+    "washington": {"conference": "Big Ten"},
+    "uw": {"conference": "Big Ten"},
+    
+    "oregon state university": {"conference": "Big Ten"},
+    "oregon state": {"conference": "Big Ten"},
+    "osu": {"conference": "Big Ten"},
+    
+    "university of kansas": {"conference": "Big 12"},
+    "kansas": {"conference": "Big 12"},
+    "ku": {"conference": "Big 12"},
+    
+    "kansas state university": {"conference": "Big 12"},
+    "kansas state": {"conference": "Big 12"},
+    "k-state": {"conference": "Big 12"},
+    "ksu": {"conference": "Big 12"},
+    
+    "baylor university": {"conference": "Big 12"},
+    "baylor": {"conference": "Big 12"},
+    "bu": {"conference": "Big 12"},
+    
+    "texas tech university": {"conference": "Big 12"},
+    "texas tech": {"conference": "Big 12"},
+    "ttu": {"conference": "Big 12"},
+    
+    "tcu": {"conference": "Big 12"},
+    "texas christian university": {"conference": "Big 12"},
+    "texas christian": {"conference": "Big 12"},
+    
+    "university of texas": {"conference": "Big 12"},
+    "university of texas at austin": {"conference": "Big 12"},
+    "texas": {"conference": "Big 12"},
+    "ut": {"conference": "Big 12"},
+    
+    "university of oklahoma": {"conference": "Big 12"},
+    "university of oklahoma-norman campus": {"conference": "Big 12"},
+    "oklahoma": {"conference": "Big 12"},
+    "ou": {"conference": "Big 12"},
+    
+    "oklahoma state university": {"conference": "Big 12"},
+    "oklahoma state university-main campus": {"conference": "Big 12"},
+    "oklahoma state": {"conference": "Big 12"},
+    "osu": {"conference": "Big 12"},
+    "ok state": {"conference": "Big 12"},
+    
+    "iowa state university": {"conference": "Big 12"},
+    "iowa state": {"conference": "Big 12"},
+    "isu": {"conference": "Big 12"},
+    
+    "west virginia university": {"conference": "Big 12"},
+    "west virginia": {"conference": "Big 12"},
+    "wvu": {"conference": "Big 12"},
+    
+    "cincinnati": {"conference": "Big 12"},
+    "university of cincinnati": {"conference": "Big 12"},
+    "university of cincinnati-main campus": {"conference": "Big 12"},
+    "uc": {"conference": "Big 12"},
+    
+    "university of houston": {"conference": "Big 12"},
+    "houston": {"conference": "Big 12"},
+    "uh": {"conference": "Big 12"},
+    
+    "ucf": {"conference": "Big 12"},
+    "university of central florida": {"conference": "Big 12"},
+    "central florida": {"conference": "Big 12"},
+    
+    "byu": {"conference": "Big 12"},
+    "brigham young university": {"conference": "Big 12"},
+    "brigham young": {"conference": "Big 12"},
+    
+    "university of arizona": {"conference": "Big 12"},
+    "arizona": {"conference": "Big 12"},
+    "ua": {"conference": "Big 12"},
+    
+    "arizona state university": {"conference": "Big 12"},
+    "arizona state": {"conference": "Big 12"},
+    "asu": {"conference": "Big 12"},
+    
+    "university of colorado": {"conference": "Big 12"},
+    "university of colorado boulder": {"conference": "Big 12"},
+    "colorado": {"conference": "Big 12"},
+    "cu": {"conference": "Big 12"},
+    
+    "university of utah": {"conference": "Big 12"},
+    "utah": {"conference": "Big 12"},
+    "uu": {"conference": "Big 12"},
+    
+    "university of kentucky": {"conference": "SEC"},
+    "kentucky": {"conference": "SEC"},
+    "uk": {"conference": "SEC"},
+    
+    "university of florida": {"conference": "SEC"},
+    "florida": {"conference": "SEC"},
+    "uf": {"conference": "SEC"},
+    
+    "university of georgia": {"conference": "SEC"},
+    "georgia": {"conference": "SEC"},
+    "uga": {"conference": "SEC"},
+    
+    "university of tennessee": {"conference": "SEC"},
+    "university of tennessee-knoxville": {"conference": "SEC"},
+    "tennessee": {"conference": "SEC"},
+    "ut": {"conference": "SEC"},
+    
+    "vanderbilt university": {"conference": "SEC"},
+    "vanderbilt": {"conference": "SEC"},
+    "vandy": {"conference": "SEC"},
+    
+    "university of south carolina": {"conference": "SEC"},
+    "university of south carolina-columbia": {"conference": "SEC"},
+    "south carolina": {"conference": "SEC"},
+    "usc": {"conference": "SEC"},
+    "sc": {"conference": "SEC"},
+    
+    "university of alabama": {"conference": "SEC"},
+    "alabama": {"conference": "SEC"},
+    "ua": {"conference": "SEC"},
+    "bama": {"conference": "SEC"},
+    
+    "auburn university": {"conference": "SEC"},
+    "auburn": {"conference": "SEC"},
+    "au": {"conference": "SEC"},
+    
+    "lsu": {"conference": "SEC"},
+    "louisiana state university": {"conference": "SEC"},
+    "louisiana state": {"conference": "SEC"},
+    "louisiana state university and agricultural & mechanical college": {"conference": "SEC"},
+    
+    "university of arkansas": {"conference": "SEC"},
+    "arkansas": {"conference": "SEC"},
+    "ua": {"conference": "SEC"},
+    
+    "university of mississippi": {"conference": "SEC"},
+    "ole miss": {"conference": "SEC"},
+    "mississippi": {"conference": "SEC"},
+    
+    "mississippi state university": {"conference": "SEC"},
+    "mississippi state": {"conference": "SEC"},
+    "msu": {"conference": "SEC"},
+    
+    "university of missouri": {"conference": "SEC"},
+    "university of missouri-columbia": {"conference": "SEC"},
+    "missouri": {"conference": "SEC"},
+    "mizzou": {"conference": "SEC"},
+    
+    "texas a&m university": {"conference": "SEC"},
+    "texas a & m university-college station": {"conference": "SEC"},
+    "texas a&m": {"conference": "SEC"},
+    "tamu": {"conference": "SEC"},
+    
+    "villanova university": {"conference": "Big East"},
+    "villanova": {"conference": "Big East"},
+    "nova": {"conference": "Big East"},
+    
+    "georgetown university": {"conference": "Big East"},
+    "georgetown": {"conference": "Big East"},
+    
+    "marquette university": {"conference": "Big East"},
+    "marquette": {"conference": "Big East"},
+    
+    "creighton university": {"conference": "Big East"},
+    "creighton": {"conference": "Big East"},
+    
+    "uconn": {"conference": "Big East"},
+    "university of connecticut": {"conference": "Big East"},
+    "connecticut": {"conference": "Big East"},
+    
+    "providence college": {"conference": "Big East"},
+    "providence": {"conference": "Big East"},
+    "pc": {"conference": "Big East"},
+    
+    "seton hall university": {"conference": "Big East"},
+    "seton hall": {"conference": "Big East"},
+    "shu": {"conference": "Big East"},
+    
+    "st. john's": {"conference": "Big East"},
+    "st john's university": {"conference": "Big East"},
+    "st. john's university-new york": {"conference": "Big East"},
+    "saint john's": {"conference": "Big East"},
+    "sju": {"conference": "Big East"},
+    
+    "xavier university": {"conference": "Big East"},
+    "xavier": {"conference": "Big East"},
+    "xu": {"conference": "Big East"},
+    
+    "butler university": {"conference": "Big East"},
+    "butler": {"conference": "Big East"},
+    
+    "depaul university": {"conference": "Big East"},
+    "depaul": {"conference": "Big East"},
+    
+    "gonzaga university": {"conference": "WCC"},
+    "gonzaga": {"conference": "WCC"},
+    "zags": {"conference": "WCC"},
+    
+    "saint mary's college": {"conference": "WCC"},
+    "saint mary's college of california": {"conference": "WCC"},
+    "st. mary's": {"conference": "WCC"},
+    "saint mary's": {"conference": "WCC"},
+    "smc": {"conference": "WCC"},
+    
+    "santa clara university": {"conference": "WCC"},
+    "santa clara": {"conference": "WCC"},
+    "scu": {"conference": "WCC"},
+    
+    "university of san francisco": {"conference": "WCC"},
+    "san francisco": {"conference": "WCC"},
+    "usf": {"conference": "WCC"},
+    
+    "loyola marymount university": {"conference": "WCC"},
+    "loyola marymount": {"conference": "WCC"},
+    "lmu": {"conference": "WCC"},
+    
+    "pepperdine university": {"conference": "WCC"},
+    "pepperdine": {"conference": "WCC"},
+    
+    "university of san diego": {"conference": "WCC"},
+    "san diego": {"conference": "WCC"},
+    "usd": {"conference": "WCC"},
+    
+    "san diego state university": {"conference": "Mountain West"},
+    "san diego state": {"conference": "Mountain West"},
+    "sdsu": {"conference": "Mountain West"},
+    
+    "unlv": {"conference": "Mountain West"},
+    "university of nevada-las vegas": {"conference": "Mountain West"},
+    "university of nevada las vegas": {"conference": "Mountain West"},
+    "nevada-las vegas": {"conference": "Mountain West"},
+    
+    "university of nevada": {"conference": "Mountain West"},
+    "university of nevada-reno": {"conference": "Mountain West"},
+    "nevada": {"conference": "Mountain West"},
+    
+    "colorado state": {"conference": "Mountain West"},
+    "colorado state university": {"conference": "Mountain West"},
+    "colorado state university-fort collins": {"conference": "Mountain West"},
+    "csu": {"conference": "Mountain West"},
+    
+    "university of new mexico": {"conference": "Mountain West"},
+    "university of new mexico-main campus": {"conference": "Mountain West"},
+    "new mexico": {"conference": "Mountain West"},
+    "unm": {"conference": "Mountain West"},
+    
+    "boise state": {"conference": "Mountain West"},
+    "boise state university": {"conference": "Mountain West"},
+    
+    "utah state": {"conference": "Mountain West"},
+    "utah state university": {"conference": "Mountain West"},
+    "usu": {"conference": "Mountain West"},
+    
+    "fresno state": {"conference": "Mountain West"},
+    "california state university-fresno": {"conference": "Mountain West"},
+    "cal state fresno": {"conference": "Mountain West"},
+    
+    "wyoming": {"conference": "Mountain West"},
+    "university of wyoming": {"conference": "Mountain West"},
+    
+    "university of memphis": {"conference": "American"},
+    "memphis": {"conference": "American"},
+    
+    "temple university": {"conference": "American"},
+    "temple": {"conference": "American"},
+    
+    "wichita state university": {"conference": "American"},
+    "wichita state": {"conference": "American"},
+    "wsu": {"conference": "American"},
+    
+    "tulsa": {"conference": "American"},
+    "university of tulsa": {"conference": "American"},
+    
+    "tulane university": {"conference": "American"},
+    "tulane": {"conference": "American"},
+    
+    "east carolina": {"conference": "American"},
+    "east carolina university": {"conference": "American"},
+    "ecu": {"conference": "American"},
+    
+    "south florida": {"conference": "American"},
+    "university of south florida": {"conference": "American"},
+    "usf": {"conference": "American"},
+    
+    "texas-san antonio": {"conference": "American"},
+    "utsa": {"conference": "American"},
+    "university of texas at san antonio": {"conference": "American"},
+    
+    "alabama-birmingham": {"conference": "American"},
+    "uab": {"conference": "American"},
+    "university of alabama at birmingham": {"conference": "American"},
+    
+    "virginia commonwealth university": {"conference": "Atlantic 10"},
+    "vcu": {"conference": "Atlantic 10"},
+    
+    "university of dayton": {"conference": "Atlantic 10"},
+    "dayton": {"conference": "Atlantic 10"},
+    
+    "university of richmond": {"conference": "Atlantic 10"},
+    "richmond": {"conference": "Atlantic 10"},
+    
+    "saint louis university": {"conference": "Atlantic 10"},
+    "st. louis": {"conference": "Atlantic 10"},
+    "slu": {"conference": "Atlantic 10"},
+    
+    "saint joseph's university": {"conference": "Atlantic 10"},
+    "st. joseph's": {"conference": "Atlantic 10"},
+    "sju": {"conference": "Atlantic 10"},
+    
+    "la salle university": {"conference": "Atlantic 10"},
+    "la salle": {"conference": "Atlantic 10"},
+    
+    "george mason university": {"conference": "Atlantic 10"},
+    "george mason": {"conference": "Atlantic 10"},
+    "gmu": {"conference": "Atlantic 10"},
+    
+    "george washington university": {"conference": "Atlantic 10"},
+    "george washington": {"conference": "Atlantic 10"},
+    "gw": {"conference": "Atlantic 10"},
+    
+    "fordham university": {"conference": "Atlantic 10"},
+    "fordham": {"conference": "Atlantic 10"},
+    
+    "university of massachusetts": {"conference": "Atlantic 10"},
+    "university of massachusetts-amherst": {"conference": "Atlantic 10"},
+    "umass": {"conference": "Atlantic 10"},
+    "massachusetts": {"conference": "Atlantic 10"},
+    
+    "university of rhode island": {"conference": "Atlantic 10"},
+    "rhode island": {"conference": "Atlantic 10"},
+    "uri": {"conference": "Atlantic 10"},
+    
+    "davidson college": {"conference": "Atlantic 10"},
+    "davidson": {"conference": "Atlantic 10"},
+    
+    "college of charleston": {"conference": "CAA"},
+    "charleston": {"conference": "CAA"},
+    "cofc": {"conference": "CAA"},
+    
+    "northeastern university": {"conference": "CAA"},
+    "northeastern": {"conference": "CAA"},
+    "nu": {"conference": "CAA"},
+    
+    "hofstra university": {"conference": "CAA"},
+    "hofstra": {"conference": "CAA"},
+    
+    "drexel university": {"conference": "CAA"},
+    "drexel": {"conference": "CAA"},
+    
+    "towson university": {"conference": "CAA"},
+    "towson": {"conference": "CAA"},
+    
+    "university of delaware": {"conference": "CAA"},
+    "delaware": {"conference": "CAA"},
+    "ud": {"conference": "CAA"},
+    
+    "hampton university": {"conference": "CAA"},
+    "hampton": {"conference": "CAA"},
+    
+    "north carolina a&t": {"conference": "CAA"},
+    "nc a&t": {"conference": "CAA"},
+    "north carolina a&t state university": {"conference": "CAA"},
+    
+    "murray state university": {"conference": "Missouri Valley"},
+    "murray state": {"conference": "Missouri Valley"},
+    
+    "illinois state": {"conference": "Missouri Valley"},
+    "illinois state university": {"conference": "Missouri Valley"},
+    "isu": {"conference": "Missouri Valley"},
+    
+    "northern iowa": {"conference": "Missouri Valley"},
+    "university of northern iowa": {"conference": "Missouri Valley"},
+    "uni": {"conference": "Missouri Valley"},
+    
+    "bradley university": {"conference": "Missouri Valley"},
+    "bradley": {"conference": "Missouri Valley"},
+    
+    "drake university": {"conference": "Missouri Valley"},
+    "drake": {"conference": "Missouri Valley"},
+    
+    "valparaiso university": {"conference": "Missouri Valley"},
+    "valparaiso": {"conference": "Missouri Valley"},
+    "valpo": {"conference": "Missouri Valley"},
+    
+    "belmont": {"conference": "Missouri Valley"},
+    "belmont university": {"conference": "Missouri Valley"},
+    
+    "lehigh university": {"conference": "Patriot"},
+    "lehigh": {"conference": "Patriot"},
+    
+    "loyola maryland": {"conference": "Patriot"},
+    "loyola university maryland": {"conference": "Patriot"},
+    
+    "boston university": {"conference": "Patriot"},
+    "bu": {"conference": "Patriot"},
+    
+    "weber state university": {"conference": "Big Sky"},
+    "weber state": {"conference": "Big Sky"},
+    
+    "harvard university": {"conference": "Ivy League"},
+    "harvard": {"conference": "Ivy League"},
+    
+    "yale university": {"conference": "Ivy League"},
+    "yale": {"conference": "Ivy League"},
+    
+    "princeton university": {"conference": "Ivy League"},
+    "princeton": {"conference": "Ivy League"},
+    
+    "university of pennsylvania": {"conference": "Ivy League"},
+    "penn": {"conference": "Ivy League"},
+    "pennsylvania": {"conference": "Ivy League"},
+    "upenn": {"conference": "Ivy League"},
+    
+    "columbia": {"conference": "Ivy League"},
+    "columbia university": {"conference": "Ivy League"},
+    
+    "cornell": {"conference": "Ivy League"},
+    "cornell university": {"conference": "Ivy League"},
+    
+    "brown": {"conference": "Ivy League"},
+    "brown university": {"conference": "Ivy League"},
+    
+    "dartmouth": {"conference": "Ivy League"},
+    "dartmouth college": {"conference": "Ivy League"},
+    
+    "howard university": {"conference": "MEAC"},
+    "howard": {"conference": "MEAC"},
+    
+    "norfolk state": {"conference": "MEAC"},
+    "norfolk state university": {"conference": "MEAC"},
+    "nsu": {"conference": "MEAC"},
+    
+    "morgan state": {"conference": "MEAC"},
+    "morgan state university": {"conference": "MEAC"},
+    
+    "north carolina central": {"conference": "MEAC"},
+    "nc central": {"conference": "MEAC"},
+    "north carolina central university": {"conference": "MEAC"},
+    "nccu": {"conference": "MEAC"},
+    
+    "old dominion university": {"conference": "Sun Belt"},
+    "old dominion": {"conference": "Sun Belt"},
+    "odu": {"conference": "Sun Belt"},
+    
+    "james madison university": {"conference": "Sun Belt"},
+    "james madison": {"conference": "Sun Belt"},
+    "jmu": {"conference": "Sun Belt"},
+    
+    "coastal carolina": {"conference": "Sun Belt"},
+    "coastal carolina university": {"conference": "Sun Belt"},
+    "ccu": {"conference": "Sun Belt"},
+    
+    "appalachian state": {"conference": "Sun Belt"},
+    "appalachian state university": {"conference": "Sun Belt"},
+    "app state": {"conference": "Sun Belt"},
+    
+    "toledo": {"conference": "MAC"},
+    "university of toledo": {"conference": "MAC"},
+    
+    "radford": {"conference": "Big South"},
+    "radford university": {"conference": "Big South"},
+    
+    "western kentucky": {"conference": "C-USA"},
+    "western kentucky university": {"conference": "C-USA"},
+    "wku": {"conference": "C-USA"},
+    
+    "liberty": {"conference": "C-USA"},
+    "liberty university": {"conference": "C-USA"},
+    
+    "california-santa barbara": {"conference": "Big West"},
+    "uc santa barbara": {"conference": "Big West"},
+    "ucsb": {"conference": "Big West"},
+    "university of california-santa barbara": {"conference": "Big West"},
+    
+    "lipscomb": {"conference": "ASUN"},
+    "lipscomb university": {"conference": "ASUN"},
+    
+    "indiana-purdue fort wayne": {"conference": "Horizon"},
+    "ipfw": {"conference": "Horizon"},
+    "purdue fort wayne": {"conference": "Horizon"},
+    
+    "oakland": {"conference": "Horizon"},
+    "oakland university": {"conference": "Horizon"},
+    
+    "arkansas-little rock": {"conference": "Ohio Valley"},
+    "ualr": {"conference": "Ohio Valley"},
+    "university of arkansas at little rock": {"conference": "Ohio Valley"},
+    
+    "winston-salem": {"conference": "CIAA"},
+    "winston-salem state": {"conference": "CIAA"},
+    "winston-salem state university": {"conference": "CIAA"},
+    "wssu": {"conference": "CIAA"}
+  }
+}

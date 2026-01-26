@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Player Origin Quiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .score-board {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .conference-stats {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .conference-stats strong {
+            color: #333;
+        }
+
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .question-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .player-name {
+            font-size: 26px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .question-text {
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .feedback {
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+            display: none;
+        }
+
+        .feedback.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 2px solid #c3e6cb;
+        }
+
+        .feedback.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px solid #f5c6cb;
+        }
+
+        .answer-reveal {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .start-screen {
+            text-align: center;
+        }
+
+        .start-screen p {
+            margin-bottom: 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .start-screen h3 {
+            font-size: 20px;
+        }
+
+        .mode-button {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .player-name {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏀 NBA Origin Quiz</h1>
+        <p class="subtitle">Test your knowledge of NBA players' backgrounds!</p>
+
+        <!-- Start Screen -->
+        <div id="startScreen" class="start-screen">
+            <p>Can you guess which college or country each NBA player came from?</p>
+            
+            <div style="margin-top: 30px;">
+                <h3 style="margin-bottom: 15px; color: #333;">Choose Your Mode:</h3>
+                
+                <button class="btn-primary mode-button" onclick="startGame('quick10')" style="margin-bottom: 10px;">
+                    🎯 Quick Quiz (10 questions)
+                </button>
+                
+                <button class="btn-primary mode-button" onclick="startGame('standard25')" style="margin-bottom: 10px;">
+                    📝 Standard (25 questions)
+                </button>
+                
+                <button class="btn-primary mode-button" onclick="startGame('challenge50')" style="margin-bottom: 10px;">
+                    💪 Challenge (50 questions)
+                </button>
+                
+                <button class="btn-primary mode-button" onclick="startGame('perfect')" style="margin-bottom: 10px;">
+                    🔥 Perfect Run
+                </button>
+                
+                <button class="btn-primary mode-button" onclick="startGame('unlimited')">
+                    ♾️ Unlimited (practice mode)
+                </button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="hidden">
+            <div class="score-board">
+                <div class="score">
+                    Score: <span id="score">0</span> / <span id="total">0</span>
+                    <span id="percentage"></span>
+                </div>
+            </div>
+
+            <!-- Conference Statistics -->
+            <div class="conference-stats" id="conferenceStats" style="display: none;">
+                <div style="margin-bottom: 15px;">
+                    <strong>NBA Conferences:</strong>
+                    <div style="display: flex; gap: 10px; margin-top: 5px;">
+                        <div style="flex: 1; background: #e8f4f8; padding: 8px; border-radius: 5px; font-size: 13px;">
+                            <div style="font-weight: bold;">Eastern</div>
+                            <div id="nbaEastern">-</div>
+                        </div>
+                        <div style="flex: 1; background: #fff4e6; padding: 8px; border-radius: 5px; font-size: 13px;">
+                            <div style="font-weight: bold;">Western</div>
+                            <div id="nbaWestern">-</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <strong>College Conferences:</strong>
+                    <div id="collegeConferences" style="margin-top: 5px; font-size: 13px; max-height: 150px; overflow-y: auto;"></div>
+                </div>
+            </div>
+
+            <div id="feedback" class="feedback"></div>
+
+            <div class="question-card">
+                <div class="player-name" id="playerName">-</div>
+                <div class="player-team" id="playerTeam" style="font-size: 14px; color: #888; margin-top: 5px; text-align: center;"></div>
+                <div class="question-text">Where did this player come from?</div>
+            </div>
+
+            <div id="answerSection">
+                <input type="text" id="answerInput" placeholder="Enter college or country..." autocomplete="off">
+                <button class="btn-primary" onclick="submitAnswer()">Submit Answer</button>
+            </div>
+
+            <div id="nextSection" class="hidden">
+                <button class="btn-primary" onclick="continueToNext()">Next Question</button>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <button class="btn-secondary" onclick="restartGame()">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let sessionId = null;
+        let gameMode = null;
+        let questionLimit = null;
+
+        async function startGame(mode) {
+            gameMode = mode;
+            
+            // Set question limits based on mode
+            switch(mode) {
+                case 'quick10':
+                    questionLimit = 10;
+                    break;
+                case 'standard25':
+                    questionLimit = 25;
+                    break;
+                case 'challenge50':
+                    questionLimit = 50;
+                    break;
+                case 'perfect':
+                    questionLimit = null; // No limit, but ends on first miss
+                    break;
+                case 'unlimited':
+                    questionLimit = null; // No limit at all
+                    break;
+            }
+            
+            try {
+                const response = await fetch('/api/new-game', {
+                    method: 'POST'
+                });
+                const data = await response.json();
+                
+                if (data.error) {
+                    alert('Error starting game: ' + data.error);
+                    return;
+                }
+                
+                sessionId = data.session_id;
+
+                document.getElementById('startScreen').classList.add('hidden');
+                document.getElementById('gameScreen').classList.remove('hidden');
+
+                nextQuestion();
+            } catch (error) {
+                console.error('Error starting game:', error);
+                alert('Failed to start game. Please refresh and try again.');
+            }
+        }
+
+        async function nextQuestion() {
+            document.getElementById('feedback').style.display = 'none';
+            document.getElementById('answerSection').classList.remove('hidden');
+            document.getElementById('nextSection').classList.add('hidden');
+            document.getElementById('answerInput').value = '';
+            
+            // Set loading state
+            document.getElementById('playerName').textContent = 'Loading...';
+            document.getElementById('playerTeam').textContent = '';
+
+            try {
+                const response = await fetch('/api/next-question', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ session_id: sessionId })
+                });
+
+                const data = await response.json();
+                
+                if (data.error) {
+                    alert('Error: ' + data.error);
+                    return;
+                }
+                
+                document.getElementById('playerName').textContent = data.player_name;
+                document.getElementById('playerTeam').textContent = data.team || '';
+                
+                // Focus input after player name is loaded
+                setTimeout(() => {
+                    document.getElementById('answerInput').focus();
+                }, 100);
+            } catch (error) {
+                console.error('Error loading question:', error);
+                document.getElementById('playerName').textContent = 'Error loading player';
+                alert('Failed to load question. Please try again.');
+            }
+        }
+
+        function continueToNext() {
+            nextQuestion();
+        }
+
+        async function submitAnswer() {
+            const answer = document.getElementById('answerInput').value.trim();
+            
+            if (!answer) {
+                alert('Please enter an answer!');
+                return;
+            }
+
+            const response = await fetch('/api/submit-answer', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    session_id: sessionId,
+                    answer: answer
+                })
+            });
+
+            const data = await response.json();
+
+            // Update score
+            document.getElementById('score').textContent = data.score;
+            document.getElementById('total').textContent = data.total;
+            document.getElementById('percentage').textContent = 
+                data.total > 0 ? `(${Math.round(data.score / data.total * 100)}%)` : '';
+
+            // Update conference statistics
+            if (data.conference_stats) {
+                document.getElementById('conferenceStats').style.display = 'block';
+                updateConferenceStats(data.conference_stats);
+            }
+
+            // Show feedback
+            const feedbackEl = document.getElementById('feedback');
+            feedbackEl.style.display = 'block';
+            
+            if (data.correct) {
+                feedbackEl.className = 'feedback correct';
+                feedbackEl.innerHTML = `✅ Correct! ${data.answer}`;
+                
+                // Check if game should end
+                let gameEnded = false;
+                
+                // Limited question modes: end when limit reached
+                if (questionLimit && data.total >= questionLimit) {
+                    gameEnded = true;
+                    setTimeout(() => {
+                        showGameOver(data.score, data.total);
+                    }, 2000);
+                    return;
+                }
+
+                // Auto-advance to next question after 2 seconds on CORRECT answer
+                setTimeout(() => {
+                    nextQuestion();
+                }, 2000);
+                
+            } else {
+                // WRONG ANSWER - Show answer and require manual next
+                feedbackEl.className = 'feedback incorrect';
+                let confInfo = '';
+                if (data.college_conference && data.college_conference !== 'Other') {
+                    confInfo = ` (${data.college_conference})`;
+                }
+                feedbackEl.innerHTML = `❌ Incorrect<div class="answer-reveal">The correct answer is: <strong>${data.answer}</strong> (${data.origin_type})${confInfo}</div>`;
+                
+                // Hide answer input, show next button
+                document.getElementById('answerSection').classList.add('hidden');
+                document.getElementById('nextSection').classList.remove('hidden');
+                
+                // Check if Perfect Run should end
+                if (gameMode === 'perfect') {
+                    // Show game over immediately for perfect run
+                    setTimeout(() => {
+                        showGameOver(data.score, data.total);
+                    }, 100);
+                    return;
+                }
+                
+                // Check if limited question mode should end
+                if (questionLimit && data.total >= questionLimit) {
+                    setTimeout(() => {
+                        showGameOver(data.score, data.total);
+                    }, 100);
+                    return;
+                }
+            }
+        }
+
+        function showGameOver(score, total) {
+            const percentage = Math.round(score / total * 100);
+            let modeDisplay = '';
+            
+            switch(gameMode) {
+                case 'quick10': modeDisplay = 'Quick Quiz (10)'; break;
+                case 'standard25': modeDisplay = 'Standard (25)'; break;
+                case 'challenge50': modeDisplay = 'Challenge (50)'; break;
+                case 'perfect': modeDisplay = 'Perfect Run'; break;
+                case 'unlimited': modeDisplay = 'Unlimited'; break;
+            }
+            
+            let message = `Game Over!\n\n${modeDisplay}\nFinal Score: ${score}/${total} (${percentage}%)`;
+            
+            if (gameMode === 'perfect') {
+                message = `Perfect Run Ended!\n\nYou got ${score} correct before missing one.\n\nFinal Score: ${score}/${total} (${percentage}%)`;
+            }
+            
+            // Prompt for leaderboard entry (except unlimited mode)
+            if (gameMode !== 'unlimited') {
+                message += '\n\nWould you like to save your score to the leaderboard?';
+                
+                if (confirm(message)) {
+                    const displayName = prompt('Enter your display name:', 'Anonymous');
+                    if (displayName && displayName.trim()) {
+                        saveToLeaderboard(displayName.trim(), score, total);
+                    } else {
+                        showLeaderboard();
+                    }
+                } else {
+                    showLeaderboard();
+                }
+            } else {
+                alert(message + '\n\nClick OK to return to menu.');
+                restartGame();
+            }
+        }
+
+        async function saveToLeaderboard(displayName, score, total) {
+            try {
+                const response = await fetch('/api/leaderboard/save', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        display_name: displayName,
+                        game_mode: gameMode,
+                        score: score,
+                        total: total
+                    })
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    alert('Score saved to leaderboard!');
+                }
+                
+                showLeaderboard();
+            } catch (error) {
+                console.error('Error saving to leaderboard:', error);
+                alert('Failed to save score, but you can still view the leaderboard.');
+                showLeaderboard();
+            }
+        }
+
+        async function showLeaderboard() {
+            try {
+                const response = await fetch(`/api/leaderboard/${gameMode}`);
+                const data = await response.json();
+                
+                if (data.leaderboard && data.leaderboard.length > 0) {
+                    let leaderboardText = `🏆 LEADERBOARD - ${getModeName(gameMode)} 🏆\n\n`;
+                    
+                    data.leaderboard.forEach(entry => {
+                        leaderboardText += `${entry.rank}. ${entry.display_name}: ${entry.score}/${entry.total} (${entry.percentage}%)\n`;
+                    });
+                    
+                    leaderboardText += '\n\nClick OK to return to menu.';
+                    alert(leaderboardText);
+                } else {
+                    alert('No scores on the leaderboard yet. Be the first!\n\nClick OK to return to menu.');
+                }
+                
+                restartGame();
+            } catch (error) {
+                console.error('Error fetching leaderboard:', error);
+                alert('Could not load leaderboard.\n\nClick OK to return to menu.');
+                restartGame();
+            }
+        }
+
+        function getModeName(mode) {
+            switch(mode) {
+                case 'quick10': return 'Quick Quiz (10)';
+                case 'standard25': return 'Standard (25)';
+                case 'challenge50': return 'Challenge (50)';
+                case 'perfect': return 'Perfect Run';
+                case 'unlimited': return 'Unlimited';
+                default: return mode;
+            }
+        }
+
+        function updateConferenceStats(stats) {
+            // Update NBA conferences
+            const nbaEastern = stats.nba.Eastern;
+            const nbaWestern = stats.nba.Western;
+            
+            document.getElementById('nbaEastern').textContent = 
+                `${nbaEastern.correct}/${nbaEastern.total} (${nbaEastern.total > 0 ? Math.round(nbaEastern.correct/nbaEastern.total*100) : 0}%)`;
+            
+            document.getElementById('nbaWestern').textContent = 
+                `${nbaWestern.correct}/${nbaWestern.total} (${nbaWestern.total > 0 ? Math.round(nbaWestern.correct/nbaWestern.total*100) : 0}%)`;
+            
+            // Update college conferences
+            const collegeConfDiv = document.getElementById('collegeConferences');
+            const sortedConferences = Object.entries(stats.college).sort((a, b) => b[1].total - a[1].total);
+            
+            if (sortedConferences.length === 0) {
+                collegeConfDiv.innerHTML = '<div style="color: #999; font-style: italic;">No college players yet</div>';
+            } else {
+                collegeConfDiv.innerHTML = sortedConferences.map(([conf, data]) => {
+                    const percentage = data.total > 0 ? Math.round(data.correct/data.total*100) : 0;
+                    return `<div style="padding: 5px; background: white; margin-bottom: 3px; border-radius: 3px;">
+                        <strong>${conf}:</strong> ${data.correct}/${data.total} (${percentage}%)
+                    </div>`;
+                }).join('');
+            }
+        }
+
+        function restartGame() {
+            document.getElementById('gameScreen').classList.add('hidden');
+            document.getElementById('startScreen').classList.remove('hidden');
+            document.getElementById('score').textContent = '0';
+            document.getElementById('total').textContent = '0';
+            document.getElementById('percentage').textContent = '';
+        }
+
+        // Allow Enter key to submit
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('answerInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    submitAnswer();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
