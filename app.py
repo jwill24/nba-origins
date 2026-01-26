@@ -316,12 +316,24 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
             if len(user_normalized) >= 5 or len(user_normalized.split()) >= 3:
                 return True
         
-        # Original logic: only do substring matching if one is clearly an abbreviation
+        # Only allow very short abbreviations (<=3 chars) for substring matching
+        # This handles: "UK", "USC", "Cal" but NOT "Ohio", "Iowa", "Duke"
         shorter = user_lower if len(user_lower) < len(correct_lower) else correct_lower
         longer = correct_lower if len(user_lower) < len(correct_lower) else user_lower
         
-        if len(shorter) <= 4 and shorter in longer:
-            return True
+        if len(shorter) <= 3 and shorter in longer:
+            # Check if it's a meaningful match:
+            # 1. If it's at the start of the string (e.g., "cal" in "california")
+            # 2. If it's a whole word (e.g., "usa" in "born in usa")
+            # 3. NOT if it's in the middle of a word (e.g., "cal" in "southern california")
+            
+            # Check if it's at the start
+            if longer.startswith(shorter):
+                return True
+            
+            # Check if it's a whole word (surrounded by spaces)
+            if ' ' + shorter + ' ' in ' ' + longer + ' ':
+                return True
         
         return False
     except Exception as e:
