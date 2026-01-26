@@ -213,7 +213,7 @@
 
         <!-- Start Screen - Mode Selection -->
         <div id="startScreen" class="start-screen">
-            <p>Can you guess which college or country each NBA player came from?</p>
+            <p>Can you guess which college, country, high school, or G League team each NBA player came from?</p>
             
             <div style="margin-top: 30px;">
                 <h3 style="margin-bottom: 15px; color: #333;">Choose Your Mode:</h3>
@@ -376,6 +376,11 @@
                     Score: <span id="score">0</span> / <span id="total">0</span>
                     <span id="percentage"></span>
                 </div>
+                <div style="display: flex; gap: 5px; align-items: center; margin-top: 10px;">
+                    <button id="slowDownBtn" class="btn-secondary" onclick="adjustSpeed('slower')" style="padding: 5px 10px; font-size: 12px;">🐢 Slower</button>
+                    <span id="speedDisplay" style="font-size: 12px; color: #666; min-width: 40px; text-align: center;">2.0s</span>
+                    <button id="speedUpBtn" class="btn-secondary" onclick="adjustSpeed('faster')" style="padding: 5px 10px; font-size: 12px;">🐇 Faster</button>
+                </div>
             </div>
 
             <!-- Conference Statistics -->
@@ -408,7 +413,7 @@
             </div>
 
             <div id="answerSection">
-                <input type="text" id="answerInput" placeholder="Enter college or country..." autocomplete="off">
+                <input type="text" id="answerInput" placeholder="Enter college, country, high school, etc..." autocomplete="off">
                 <button class="btn-primary" onclick="submitAnswer()">Submit Answer</button>
             </div>
 
@@ -428,6 +433,42 @@
         let questionLimit = null;
         let selectedDifficulty = 'hard';  // Default to hard
         let practiceDisplayName = null;  // For tracking practice mode stats
+        let autoAdvanceDelay = 2000;  // Default 2 seconds in milliseconds
+
+        function adjustSpeed(direction) {
+            const speeds = [500, 1000, 2000, 3000, 5000];  // 0.5s, 1s, 2s, 3s, 5s
+            const currentIndex = speeds.indexOf(autoAdvanceDelay);
+            
+            if (direction === 'faster' && currentIndex > 0) {
+                autoAdvanceDelay = speeds[currentIndex - 1];
+            } else if (direction === 'slower' && currentIndex < speeds.length - 1) {
+                autoAdvanceDelay = speeds[currentIndex + 1];
+            }
+            
+            // Update display
+            document.getElementById('speedDisplay').textContent = `${(autoAdvanceDelay / 1000).toFixed(1)}s`;
+            
+            // Update button states
+            document.getElementById('speedUpBtn').disabled = (autoAdvanceDelay === 500);
+            document.getElementById('slowDownBtn').disabled = (autoAdvanceDelay === 5000);
+            
+            // Update button styles for disabled state
+            if (autoAdvanceDelay === 500) {
+                document.getElementById('speedUpBtn').style.opacity = '0.5';
+                document.getElementById('speedUpBtn').style.cursor = 'not-allowed';
+            } else {
+                document.getElementById('speedUpBtn').style.opacity = '1';
+                document.getElementById('speedUpBtn').style.cursor = 'pointer';
+            }
+            
+            if (autoAdvanceDelay === 5000) {
+                document.getElementById('slowDownBtn').style.opacity = '0.5';
+                document.getElementById('slowDownBtn').style.cursor = 'not-allowed';
+            } else {
+                document.getElementById('slowDownBtn').style.opacity = '1';
+                document.getElementById('slowDownBtn').style.cursor = 'pointer';
+            }
+        }
 
         function selectMode(mode) {
             gameMode = mode;
@@ -746,14 +787,14 @@
                     gameEnded = true;
                     setTimeout(() => {
                         showGameOver(data.score, data.total);
-                    }, 2000);
+                    }, autoAdvanceDelay);
                     return;
                 }
 
-                // Auto-advance to next question after 2 seconds on CORRECT answer
+                // Auto-advance to next question using adjustable delay on CORRECT answer
                 setTimeout(() => {
                     nextQuestion();
-                }, 2000);
+                }, autoAdvanceDelay);
                 
             } else {
                 // WRONG ANSWER - Show answer and require manual next
@@ -762,7 +803,7 @@
                 if (data.college_conference && data.college_conference !== 'Other') {
                     confInfo = ` (${data.college_conference})`;
                 }
-                feedbackEl.innerHTML = `❌ Incorrect<div class="answer-reveal">The correct answer is: <strong>${data.answer}</strong> (${data.origin_type})${confInfo}</div>`;
+                feedbackEl.innerHTML = `❌ Incorrect<div class="answer-reveal">You answered: <strong>${answer}</strong><br>The correct answer is: <strong>${data.answer}</strong> (${data.origin_type})${confInfo}</div>`;
                 
                 // Hide answer input, show next button
                 document.getElementById('answerSection').classList.add('hidden');
