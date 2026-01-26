@@ -151,7 +151,8 @@ SCHOOL_ABBREVIATIONS = {
     'sju': 'st johns',
     'bc': 'boston college',
     'nd': 'notre dame',
-    'gt': 'georgia tech'
+    'gt': 'georgia tech',
+    'wf': 'wake forest'
 }
 
 def check_answer(user_answer, correct_answer, player_type, player_data=None):
@@ -218,7 +219,12 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
         # Fuzzy match for typos (85% similarity threshold)
         # "gonaga" vs "gonzaga" = 85.7% match ✓
         # "st vincent st marys" vs "st vincent st mary" = 95% match ✓
-        similarity = similarity_ratio(user_lower, correct_lower)
+        # Strip parenthetical content first for fair comparison
+        import re
+        user_for_fuzzy = re.sub(r'\([^)]*\)', '', user_lower).strip()
+        correct_for_fuzzy = re.sub(r'\([^)]*\)', '', correct_lower).strip()
+        
+        similarity = similarity_ratio(user_for_fuzzy, correct_for_fuzzy)
         if similarity >= 0.85:
             return True
         
@@ -291,11 +297,17 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
         # "United States" should match "USA", "US", etc.
         # "St Vincent St Marys" should match "St. Vincent-St. Mary HS (OH)"
         
-        # Normalize for comparison: remove punctuation and extra spaces
+        # Normalize for comparison: remove punctuation, extra spaces, and parenthetical content
         import re
-        user_normalized = re.sub(r'[.\-\']', '', user_lower).strip()
+        
+        # Remove parenthetical content first (like "(OH)", "(CA)", etc.)
+        user_clean = re.sub(r'\([^)]*\)', '', user_lower).strip()
+        correct_clean = re.sub(r'\([^)]*\)', '', correct_lower).strip()
+        
+        # Then remove punctuation and extra spaces
+        user_normalized = re.sub(r'[.\-\']', '', user_clean).strip()
         user_normalized = re.sub(r'\s+', ' ', user_normalized)
-        correct_normalized = re.sub(r'[.\-\']', '', correct_lower).strip()
+        correct_normalized = re.sub(r'[.\-\']', '', correct_clean).strip()
         correct_normalized = re.sub(r'\s+', ' ', correct_normalized)
         
         # Check if one is contained in the other after normalization
