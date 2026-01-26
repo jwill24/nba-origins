@@ -311,6 +311,64 @@
             </div>
         </div>
 
+        <!-- Stats Screen -->
+        <div id="statsScreen" class="start-screen hidden">
+            <button class="btn-secondary" onclick="backToModeSelect()" style="margin-bottom: 20px;">← Back</button>
+            
+            <h2 style="margin-bottom: 20px;">📊 My Stats</h2>
+            
+            <div style="margin-bottom: 20px;">
+                <input type="text" id="statsDisplayName" placeholder="Enter your display name" style="width: 100%; max-width: 300px; padding: 10px; border: 2px solid #ddd; border-radius: 8px; font-size: 16px;">
+                <button class="btn-primary" onclick="loadUserStats()" style="margin-top: 10px;">View My Stats</button>
+            </div>
+            
+            <div id="statsDisplay" style="display: none;">
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 15px;">Overall Performance</h3>
+                    <div id="overallStats" style="font-size: 18px;"></div>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 15px;">NBA Teams</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div>
+                            <h4 style="color: #22c55e; margin-bottom: 10px;">✅ Best Teams</h4>
+                            <div id="bestTeams" style="font-size: 14px;"></div>
+                        </div>
+                        <div>
+                            <h4 style="color: #ef4444; margin-bottom: 10px;">❌ Weakest Teams</h4>
+                            <div id="worstTeams" style="font-size: 14px;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 15px;">College Conferences</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div>
+                            <h4 style="color: #22c55e; margin-bottom: 10px;">✅ Best Conferences</h4>
+                            <div id="bestConferences" style="font-size: 14px;"></div>
+                        </div>
+                        <div>
+                            <h4 style="color: #ef4444; margin-bottom: 10px;">❌ Weakest Conferences</h4>
+                            <div id="worstConferences" style="font-size: 14px;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 15px;">Players to Study</h3>
+                    <div id="missedPlayers" style="font-size: 14px;"></div>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                    <h3 style="margin-bottom: 15px;">Recent Performance</h3>
+                    <div id="recentTrend" style="height: 60px; display: flex; align-items: flex-end; gap: 2px;"></div>
+                    <div id="recentStats" style="margin-top: 10px; font-size: 14px;"></div>
+                </div>
+            </div>
+        </div>
+
         <!-- Game Screen -->
         <div id="gameScreen" class="hidden">
             <div class="score-board">
@@ -369,6 +427,7 @@
         let gameMode = null;
         let questionLimit = null;
         let selectedDifficulty = 'hard';  // Default to hard
+        let practiceDisplayName = null;  // For tracking practice mode stats
 
         function selectMode(mode) {
             gameMode = mode;
@@ -389,6 +448,11 @@
                     break;
                 case 'unlimited':
                     questionLimit = null; // No limit at all
+                    // Prompt for display name for stats tracking
+                    practiceDisplayName = prompt('Enter your display name to track your stats (or click Cancel to skip):');
+                    if (!practiceDisplayName) {
+                        practiceDisplayName = 'Anonymous';
+                    }
                     break;
             }
             
@@ -408,8 +472,89 @@
         }
 
         function viewMyStats() {
-            alert('Stats dashboard coming soon! For now, just play Unlimited mode to track your progress.');
-            // TODO: Implement stats dashboard
+            document.getElementById('startScreen').classList.add('hidden');
+            document.getElementById('statsScreen').classList.remove('hidden');
+        }
+
+        async function loadUserStats() {
+            const displayName = document.getElementById('statsDisplayName').value.trim();
+            
+            if (!displayName) {
+                alert('Please enter your display name');
+                return;
+            }
+            
+            try {
+                const response = await fetch(`/api/user-stats/${encodeURIComponent(displayName)}`);
+                const data = await response.json();
+                
+                if (data.error) {
+                    alert(`Error: ${data.error}`);
+                    return;
+                }
+                
+                // Show stats display
+                document.getElementById('statsDisplay').style.display = 'block';
+                
+                // Overall stats
+                const overall = data.overall;
+                document.getElementById('overallStats').innerHTML = `
+                    <div style="font-size: 24px; font-weight: bold; color: #667eea;">
+                        ${overall.correct} / ${overall.total} (${overall.percentage}%)
+                    </div>
+                    <div style="color: #666; margin-top: 5px;">Total Questions Answered</div>
+                `;
+                
+                // Best/Worst teams
+                const teams = data.teams || [];
+                const bestTeams = teams.slice(0, 5);
+                const worstTeams = teams.slice(-5).reverse();
+                
+                document.getElementById('bestTeams').innerHTML = bestTeams.length > 0 
+                    ? bestTeams.map(t => `${t.team}: ${t.correct}/${t.total} (${t.percentage}%)`).join('<br>')
+                    : 'Not enough data yet';
+                    
+                document.getElementById('worstTeams').innerHTML = worstTeams.length > 0
+                    ? worstTeams.map(t => `${t.team}: ${t.correct}/${t.total} (${t.percentage}%)`).join('<br>')
+                    : 'Not enough data yet';
+                
+                // Best/Worst conferences
+                const conferences = data.conferences || [];
+                const bestConfs = conferences.slice(0, 5);
+                const worstConfs = conferences.slice(-5).reverse();
+                
+                document.getElementById('bestConferences').innerHTML = bestConfs.length > 0
+                    ? bestConfs.map(c => `${c.conference}: ${c.correct}/${c.total} (${c.percentage}%)`).join('<br>')
+                    : 'Not enough data yet';
+                    
+                document.getElementById('worstConferences').innerHTML = worstConfs.length > 0
+                    ? worstConfs.map(c => `${c.conference}: ${c.correct}/${c.total} (${c.percentage}%)`).join('<br>')
+                    : 'Not enough data yet';
+                
+                // Most missed players
+                const missed = data.missed_players || [];
+                document.getElementById('missedPlayers').innerHTML = missed.length > 0
+                    ? missed.map(p => `❌ ${p.player}: ${p.correct}/${p.attempts} correct`).join('<br>')
+                    : '✅ No repeatedly missed players!';
+                
+                // Recent trend (simple bar chart)
+                const history = data.recent_history || [];
+                const trendHTML = history.map(h => {
+                    const color = h.correct ? '#22c55e' : '#ef4444';
+                    return `<div style="width: 8px; height: ${h.correct ? '40px' : '20px'}; background: ${color}; border-radius: 2px;"></div>`;
+                }).join('');
+                document.getElementById('recentTrend').innerHTML = trendHTML || 'No recent data';
+                
+                // Recent stats summary
+                const recentCorrect = history.filter(h => h.correct).length;
+                const recentTotal = history.length;
+                const recentPct = recentTotal > 0 ? Math.round(recentCorrect / recentTotal * 100) : 0;
+                document.getElementById('recentStats').innerHTML = `Last ${recentTotal} questions: ${recentCorrect}/${recentTotal} (${recentPct}%)`;
+                
+            } catch (error) {
+                console.error('Error loading stats:', error);
+                alert('Failed to load stats. Please try again.');
+            }
         }
 
         async function showLeaderboardForMode(mode, difficulty) {
@@ -549,6 +694,28 @@
                 alert(`Error: ${data.error}`);
                 restartGame();
                 return;
+            }
+            
+            // Save stats for unlimited mode
+            if (gameMode === 'unlimited' && practiceDisplayName && practiceDisplayName !== 'Anonymous') {
+                try {
+                    await fetch('/api/user-stats/save', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            display_name: practiceDisplayName,
+                            player_name: data.player_name || 'Unknown',
+                            player_team: data.player_team,
+                            nba_conference: data.nba_conference,
+                            college_conference: data.college_conference,
+                            correct: data.correct ? 1 : 0
+                        })
+                    });
+                } catch (error) {
+                    console.error('Failed to save stats:', error);
+                }
             }
 
             // Update score

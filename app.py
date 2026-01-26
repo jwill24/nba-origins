@@ -117,7 +117,6 @@ SCHOOL_ABBREVIATIONS = {
     'ku': 'kansas',
     'uk': 'kentucky',
     'unlv': 'nevada las vegas',
-    'unlv': 'nevada-las vegas',
     'usc': 'southern california',  # Could also be South Carolina, but context will determine
     'fsu': 'florida state',
     'osu': 'ohio state',
@@ -129,6 +128,11 @@ SCHOOL_ABBREVIATIONS = {
     'ucf': 'central florida',
     'vcu': 'virginia commonwealth',
     'ucla': 'california los angeles',
+    'ucsb': 'california santa barbara',
+    'ucsd': 'california san diego',
+    'uci': 'california irvine',
+    'ucd': 'california davis',
+    'ucr': 'california riverside',
     'unc': 'north carolina',
     'uva': 'virginia',
     'psu': 'penn state',
@@ -141,7 +145,13 @@ SCHOOL_ABBREVIATIONS = {
     'ua': 'arizona',
     'uf': 'florida',
     'ut': 'texas',
-    'ou': 'oklahoma'
+    'ou': 'oklahoma',
+    'gw': 'george washington',
+    'gmu': 'george mason',
+    'sju': 'st johns',
+    'bc': 'boston college',
+    'nd': 'notre dame',
+    'gt': 'georgia tech'
 }
 
 def check_answer(user_answer, correct_answer, player_type, player_data=None):
@@ -408,6 +418,8 @@ def submit_answer():
         'origin_type': current_player.get('type', 'Other'),
         'college_conference': college_conf,
         'nba_conference': nba_conf,
+        'player_name': current_player.get('name'),
+        'player_team': current_player.get('team'),
         'score': session['score'],
         'total': session['total'],
         'conference_stats': session['conference_stats']
