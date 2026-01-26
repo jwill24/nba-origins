@@ -214,15 +214,18 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
                 user_keywords = user_words - stop_words
                 correct_keywords = correct_words - stop_words
                 
-                # Check if they share significant keywords (same school)
-                # Examples: "kentucky" in both, "duke" in both, "california" in both
-                shared_keywords = user_keywords & correct_keywords
-                
-                # If they share at least one significant keyword, they're the same school
-                # This handles: "Kentucky" == "University of Kentucky" == "UK"
-                # But NOT: "Duke" == "Virginia" (no shared keywords)
-                if shared_keywords:
-                    return True
+                # CRITICAL: Prevent subset matches like "Iowa" matching "Iowa State"
+                # Both must have the SAME keywords, not just overlapping ones
+                # Exception: if one is clearly an abbreviation (<=4 chars)
+                if len(user_lower) > 4 and len(correct_lower) > 4:
+                    # Both are full words - they must have identical keywords
+                    if user_keywords == correct_keywords:
+                        return True
+                else:
+                    # At least one is an abbreviation - check for overlap
+                    shared_keywords = user_keywords & correct_keywords
+                    if shared_keywords:
+                        return True
                 
                 # Special case: abbreviations
                 # UK -> Kentucky, UCLA -> California Los Angeles, etc.
@@ -234,9 +237,15 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
         
         # For non-colleges (countries, etc.), do fuzzy matching
         # "United States" should match "USA", "US", etc.
-        if user_lower in correct_lower or correct_lower in user_lower:
-            if len(user_lower) >= 3:  # Avoid matching single letters
-                return True
+        # But be careful: "Iowa" should NOT match "Iowa State"
+        
+        # Only do substring matching if one is clearly an abbreviation or short form
+        # Require that the shorter term is <= 4 characters (like "USA", "UK", etc.)
+        shorter = user_lower if len(user_lower) < len(correct_lower) else correct_lower
+        longer = correct_lower if len(user_lower) < len(correct_lower) else user_lower
+        
+        if len(shorter) <= 4 and shorter in longer:
+            return True
         
         return False
     except Exception as e:
