@@ -245,12 +245,24 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
                 if len(correct_lower) <= 4 and correct_lower in user_lower:
                     return True
         
-        # For non-colleges (countries, etc.), do fuzzy matching
+        # For non-colleges (countries, high schools, etc.), do fuzzy matching
         # "United States" should match "USA", "US", etc.
-        # But be careful: "Iowa" should NOT match "Iowa State"
+        # "St Vincent St Marys" should match "St. Vincent-St. Mary HS (OH)"
         
-        # Only do substring matching if one is clearly an abbreviation or short form
-        # Require that the shorter term is <= 4 characters (like "USA", "UK", etc.)
+        # Normalize for comparison: remove punctuation and extra spaces
+        import re
+        user_normalized = re.sub(r'[.\-\']', '', user_lower).strip()
+        user_normalized = re.sub(r'\s+', ' ', user_normalized)
+        correct_normalized = re.sub(r'[.\-\']', '', correct_lower).strip()
+        correct_normalized = re.sub(r'\s+', ' ', correct_normalized)
+        
+        # Check if one is contained in the other after normalization
+        if user_normalized in correct_normalized or correct_normalized in user_normalized:
+            # Make sure it's a substantial match (at least 5 characters or 3 words)
+            if len(user_normalized) >= 5 or len(user_normalized.split()) >= 3:
+                return True
+        
+        # Original logic: only do substring matching if one is clearly an abbreviation
         shorter = user_lower if len(user_lower) < len(correct_lower) else correct_lower
         longer = correct_lower if len(user_lower) < len(correct_lower) else user_lower
         
