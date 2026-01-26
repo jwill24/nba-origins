@@ -14,6 +14,41 @@ from datetime import datetime
 US_COLLEGES = {}
 NBA_CONFERENCES = {}
 
+# All-Stars from last 3 years (2023, 2024, 2025) for Easy mode
+ALL_STARS_RECENT = {
+    # 2023 All-Stars
+    'LeBron James', 'Stephen Curry', 'Luka Doncic', 'Luka Dončić', 'Zion Williamson', 'Nikola Jokic', 'Nikola Jokić',
+    'Kyrie Irving', 'Lauri Markkanen', 'Damian Lillard', 'Paul George', 'Shai Gilgeous-Alexander',
+    'Kevin Durant', 'Jayson Tatum', 'Donovan Mitchell', 'Joel Embiid', 'Giannis Antetokounmpo',
+    'Jaylen Brown', 'Jrue Holiday', 'Bam Adebayo', 'Julius Randle', 'DeMar DeRozan',
+    'Tyrese Haliburton', 'Jaren Jackson Jr.', 'De\'Aaron Fox', 'Domantas Sabonis',
+    # 2024 All-Stars
+    'Anthony Edwards', 'Kawhi Leonard', 'Anthony Davis', 'Devin Booker', 'Nikola Vucevic', 'Nikola Vučević',
+    'Trae Young', 'Paolo Banchero', 'Scottie Barnes', 'Tyrese Maxey', 'Jalen Brunson',
+    'Karl-Anthony Towns', 'Jimmy Butler', 'Alperen Sengun', 'Alperen Şengün',
+    # 2025 All-Stars (projected/current stars)
+    'Victor Wembanyama', 'Chet Holmgren', 'Jalen Williams', 'Franz Wagner', 'Evan Mobley',
+    'LaMelo Ball', 'Ja Morant', 'Desmond Bane', 'Brandon Ingram', 'Zach LaVine',
+    'Rudy Gobert', 'Darius Garland', 'Jarrett Allen', 'Pascal Siakam',
+    # Additional clear All-Stars
+    'Chris Paul', 'Bradley Beal', 'Khris Middleton', 'Draymond Green', 'Klay Thompson',
+    'James Harden', 'Russell Westbrook', 'Kristaps Porzingis', 'Kristaps Porziņģis'
+}
+
+def determine_difficulty_tier(player_name, mpg):
+    """
+    Determine difficulty tier based on All-Star status and MPG
+    Easy: All-Stars from last 3 years
+    Medium: 20+ MPG
+    Hard: All others (10+ games already filtered)
+    """
+    if player_name in ALL_STARS_RECENT:
+        return 'easy'
+    elif mpg >= 20:
+        return 'medium'
+    else:
+        return 'hard'
+
 def load_us_colleges_from_file(filename='us_colleges.json'):
     """
     Load US colleges from pre-built JSON file with conference data
@@ -329,19 +364,24 @@ def fetch_current_nba_players(min_games=10):
         player_id_idx = headers_list.index('PLAYER_ID')
         team_idx = headers_list.index('TEAM')
         gp_idx = headers_list.index('GP')  # Games Played
+        min_idx = headers_list.index('MIN')  # Total Minutes
         
         print(f"✓ Found {len(stats_data['resultSet']['rowSet'])} total players")
         
-        # Filter players with minimum games
+        # Filter players with minimum games and calculate MPG
         eligible_players = []
         for row in stats_data['resultSet']['rowSet']:
             games_played = row[gp_idx]
+            total_minutes = row[min_idx] if row[min_idx] else 0
+            mpg = total_minutes / games_played if games_played > 0 else 0
+            
             if games_played >= min_games:
                 eligible_players.append({
                     'name': row[player_idx],
                     'player_id': row[player_id_idx],
                     'team': row[team_idx],
-                    'games_played': games_played
+                    'games_played': games_played,
+                    'mpg': round(mpg, 1)
                 })
         
         print(f"✓ Found {len(eligible_players)} players with {min_games}+ games\n")
@@ -365,6 +405,9 @@ def fetch_current_nba_players(min_games=10):
                 # Get NBA conference
                 nba_conference = NBA_CONFERENCES.get(player['team'], 'Unknown')
                 
+                # Determine difficulty tier
+                difficulty = determine_difficulty_tier(player['name'], player['mpg'])
+                
                 players_data.append({
                     'name': player['name'],
                     'team': player['team'],
@@ -372,7 +415,10 @@ def fetch_current_nba_players(min_games=10):
                     'origin': player_info['origin'],
                     'type': player_info['type'],
                     'college_conference': player_info.get('college_conference'),
-                    'games_played': player['games_played']
+                    'alternate_answer': player_info.get('alternate_answer'),
+                    'games_played': player['games_played'],
+                    'mpg': player['mpg'],
+                    'difficulty': difficulty
                 })
                 seen_players.add(player['name'])  # Mark as seen
                 
@@ -380,6 +426,7 @@ def fetch_current_nba_players(min_games=10):
                 conf_info = f" | NBA: {nba_conference}"
                 if player_info.get('college_conference'):
                     conf_info += f" | College: {player_info['college_conference']}"
+                conf_info += f" | {player['mpg']} MPG | {difficulty.upper()}"
                 print(f"✓ {player_info['origin']} ({player_info['type']}){conf_info}")
             else:
                 print("✗ No background info")
@@ -566,7 +613,10 @@ def create_app_compatible_json(players, filename='nba_players.json'):
             'nba_conference': p['nba_conference'],
             'origin': p['origin'],
             'type': p['type'],
-            'college_conference': p.get('college_conference')
+            'college_conference': p.get('college_conference'),
+            'alternate_answer': p.get('alternate_answer'),
+            'mpg': p.get('mpg', 0),
+            'difficulty': p.get('difficulty', 'hard')
         }
         for p in players
     ]

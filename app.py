@@ -14,6 +14,8 @@ def init_db():
     """Initialize the SQLite database"""
     conn = sqlite3.connect(DATABASE_PATH)
     cursor = conn.cursor()
+    
+    # Leaderboard table
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS leaderboard (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -25,6 +27,27 @@ def init_db():
             timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
         )
     ''')
+    
+    # User stats table for tracking practice mode performance
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS user_stats (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            display_name TEXT NOT NULL,
+            player_name TEXT NOT NULL,
+            player_team TEXT,
+            nba_conference TEXT,
+            college_conference TEXT,
+            correct INTEGER NOT NULL,
+            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+    ''')
+    
+    # Create index for faster queries
+    cursor.execute('''
+        CREATE INDEX IF NOT EXISTS idx_user_stats_name 
+        ON user_stats(display_name)
+    ''')
+    
     conn.commit()
     conn.close()
 
@@ -117,14 +140,40 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
     if player_type == 'College':
         # Check if user's answer is in the dictionary
         if user_lower in COLLEGES_DICT and correct_lower in COLLEGES_DICT:
-            # Both are valid college names - check if they map to same conference
-            # (same conference means same school in our dictionary)
+            # Get conference for both
             user_conf = COLLEGES_DICT[user_lower]['conference']
             correct_conf = COLLEGES_DICT[correct_lower]['conference']
             
-            # They match if they're the same conference AND similar names
-            # This handles: "Kentucky" == "UK" == "University of Kentucky"
-            if user_conf == correct_conf:
+            # They must be in the same conference
+            if user_conf != correct_conf:
+                return False
+            
+            # Now check if they're variations of the SAME school
+            # Build a list of common keywords that indicate the same school
+            user_words = set(user_lower.replace('-', ' ').split())
+            correct_words = set(correct_lower.replace('-', ' ').split())
+            
+            # Remove common words that don't identify the school
+            stop_words = {'university', 'of', 'the', 'at', 'state', 'college', 'and', 'a', 'an'}
+            user_keywords = user_words - stop_words
+            correct_keywords = correct_words - stop_words
+            
+            # Check if they share significant keywords (same school)
+            # Examples: "kentucky" in both, "duke" in both, "california" in both
+            shared_keywords = user_keywords & correct_keywords
+            
+            # If they share at least one significant keyword, they're the same school
+            # This handles: "Kentucky" == "University of Kentucky" == "UK"
+            # But NOT: "Duke" == "Virginia" (no shared keywords)
+            if shared_keywords:
+                return True
+            
+            # Special case: abbreviations
+            # UK -> Kentucky, UCLA -> California Los Angeles, etc.
+            # Check if one is an abbreviation that appears in our dict for the other school
+            if len(user_lower) <= 4 and user_lower in correct_lower:
+                return True
+            if len(correct_lower) <= 4 and correct_lower in user_lower:
                 return True
     
     # For non-colleges (countries, etc.), do fuzzy matching
@@ -142,17 +191,52 @@ def index():
 
 @app.route('/api/new-game', methods=['POST'])
 def new_game():
-    session_id = str(random.randint(100000, 999999))
-    game_sessions[session_id] = {
-        'score': 0,
-        'total': 0,
-        'used_players': [],
-        'conference_stats': {
-            'nba': {'Eastern': {'correct': 0, 'total': 0}, 'Western': {'correct': 0, 'total': 0}},
-            'college': {}  # Will be populated dynamically as conferences appear
+    try:
+        data = request.json or {}
+        difficulty = data.get('difficulty', 'hard')
+        
+        # Check if players have difficulty field
+        has_difficulty = any('difficulty' in p for p in NBA_PLAYERS[:5])
+        
+        if not has_difficulty:
+            # Fallback: treat all players as hard difficulty
+            print("⚠️ Warning: Player data doesn't have difficulty field. Regenerate with fetch_nba_players.py")
+            filtered_players = NBA_PLAYERS
+        else:
+            # Filter players by difficulty
+            if difficulty == 'easy':
+                filtered_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'easy']
+            elif difficulty == 'medium':
+                filtered_players = [p for p in NBA_PLAYERS if p.get('difficulty') in ['easy', 'medium']]
+            else:  # hard
+                filtered_players = NBA_PLAYERS
+        
+        if not filtered_players:
+            return jsonify({'error': f'No players available for {difficulty} difficulty. Please regenerate player data.'}), 400
+        
+        session_id = str(random.randint(100000, 999999))
+        game_sessions[session_id] = {
+            'score': 0,
+            'total': 0,
+            'used_players': [],
+            'difficulty': difficulty,
+            'available_players': filtered_players,
+            'conference_stats': {
+                'nba': {'Eastern': {'correct': 0, 'total': 0}, 'Western': {'correct': 0, 'total': 0}},
+                'college': {}
+            }
         }
-    }
-    return jsonify({'session_id': session_id})
+        
+        return jsonify({
+            'session_id': session_id, 
+            'player_count': len(filtered_players),
+            'has_difficulty_data': has_difficulty
+        })
+    except Exception as e:
+        print(f"Error in new_game: {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/api/next-question', methods=['POST'])
 def next_question():
@@ -163,18 +247,19 @@ def next_question():
         return jsonify({'error': 'Invalid session'}), 400
     
     session = game_sessions[session_id]
+    available_players = session.get('available_players', NBA_PLAYERS)
     
-    # Get unused players
-    available_players = [p for p in NBA_PLAYERS 
-                        if p['name'] not in session['used_players']]
+    # Get unused players from the filtered pool
+    unused_players = [p for p in available_players 
+                     if p['name'] not in session['used_players']]
     
-    if not available_players:
+    if not unused_players:
         # Reset if all players used
         session['used_players'] = []
-        available_players = NBA_PLAYERS
+        unused_players = available_players
     
     # Select random player
-    player = random.choice(available_players)
+    player = random.choice(unused_players)
     session['used_players'].append(player['name'])
     session['current_player'] = player
     
@@ -267,11 +352,15 @@ def save_to_leaderboard():
     data = request.json
     display_name = data.get('display_name', 'Anonymous')
     game_mode = data.get('game_mode')
+    difficulty = data.get('difficulty', 'hard')
     score = data.get('score')
     total = data.get('total')
     
     if not all([game_mode, score is not None, total is not None]):
         return jsonify({'error': 'Missing required fields'}), 400
+    
+    # Combine mode and difficulty for leaderboard key (e.g., "quick10-easy")
+    leaderboard_key = f"{game_mode}-{difficulty}"
     
     percentage = (score / total * 100) if total > 0 else 0
     
@@ -281,7 +370,7 @@ def save_to_leaderboard():
         cursor.execute('''
             INSERT INTO leaderboard (display_name, game_mode, score, total, percentage)
             VALUES (?, ?, ?, ?, ?)
-        ''', (display_name, game_mode, score, total, percentage))
+        ''', (display_name, leaderboard_key, score, total, percentage))
         conn.commit()
         conn.close()
         
@@ -324,6 +413,140 @@ def get_leaderboard(game_mode):
     except Exception as e:
         print(f"Error fetching leaderboard: {e}")
         return jsonify({'error': 'Failed to fetch leaderboard'}), 500
+
+@app.route('/api/user-stats/save', methods=['POST'])
+def save_user_stat():
+    """Save a single answer for practice mode stats tracking"""
+    data = request.json
+    display_name = data.get('display_name')
+    player_name = data.get('player_name')
+    player_team = data.get('player_team')
+    nba_conference = data.get('nba_conference')
+    college_conference = data.get('college_conference')
+    correct = data.get('correct', 0)
+    
+    if not all([display_name, player_name]):
+        return jsonify({'error': 'Missing required fields'}), 400
+    
+    try:
+        conn = sqlite3.connect(DATABASE_PATH)
+        cursor = conn.cursor()
+        cursor.execute('''
+            INSERT INTO user_stats (display_name, player_name, player_team, nba_conference, college_conference, correct)
+            VALUES (?, ?, ?, ?, ?, ?)
+        ''', (display_name, player_name, player_team, nba_conference, college_conference, correct))
+        conn.commit()
+        conn.close()
+        
+        return jsonify({'success': True})
+    except Exception as e:
+        print(f"Error saving user stat: {e}")
+        return jsonify({'error': 'Failed to save stat'}), 500
+
+@app.route('/api/user-stats/<display_name>', methods=['GET'])
+def get_user_stats(display_name):
+    """Get comprehensive stats for a user"""
+    try:
+        conn = sqlite3.connect(DATABASE_PATH)
+        cursor = conn.cursor()
+        
+        # Overall stats
+        cursor.execute('''
+            SELECT COUNT(*), SUM(correct)
+            FROM user_stats
+            WHERE display_name = ?
+        ''', (display_name,))
+        total_questions, total_correct = cursor.fetchone()
+        
+        # Stats by NBA team
+        cursor.execute('''
+            SELECT player_team, COUNT(*) as total, SUM(correct) as correct
+            FROM user_stats
+            WHERE display_name = ? AND player_team IS NOT NULL
+            GROUP BY player_team
+            HAVING total >= 3
+            ORDER BY CAST(correct AS FLOAT) / total DESC
+        ''', (display_name,))
+        team_stats = cursor.fetchall()
+        
+        # Stats by college conference
+        cursor.execute('''
+            SELECT college_conference, COUNT(*) as total, SUM(correct) as correct
+            FROM user_stats
+            WHERE display_name = ? AND college_conference IS NOT NULL
+            GROUP BY college_conference
+            HAVING total >= 3
+            ORDER BY CAST(correct AS FLOAT) / total DESC
+        ''', (display_name,))
+        conference_stats = cursor.fetchall()
+        
+        # Most missed players
+        cursor.execute('''
+            SELECT player_name, COUNT(*) as attempts, SUM(correct) as correct
+            FROM user_stats
+            WHERE display_name = ?
+            GROUP BY player_name
+            HAVING attempts >= 2 AND correct < attempts
+            ORDER BY CAST(correct AS FLOAT) / attempts ASC, attempts DESC
+            LIMIT 10
+        ''', (display_name,))
+        missed_players = cursor.fetchall()
+        
+        # Accuracy over time (last 50 questions)
+        cursor.execute('''
+            SELECT correct, timestamp
+            FROM user_stats
+            WHERE display_name = ?
+            ORDER BY timestamp DESC
+            LIMIT 50
+        ''', (display_name,))
+        recent_history = cursor.fetchall()
+        
+        conn.close()
+        
+        return jsonify({
+            'overall': {
+                'total': total_questions or 0,
+                'correct': total_correct or 0,
+                'percentage': round((total_correct / total_questions * 100) if total_questions else 0, 1)
+            },
+            'teams': [
+                {
+                    'team': row[0],
+                    'total': row[1],
+                    'correct': row[2],
+                    'percentage': round(row[2] / row[1] * 100, 1)
+                }
+                for row in team_stats
+            ],
+            'conferences': [
+                {
+                    'conference': row[0],
+                    'total': row[1],
+                    'correct': row[2],
+                    'percentage': round(row[2] / row[1] * 100, 1)
+                }
+                for row in conference_stats
+            ],
+            'missed_players': [
+                {
+                    'player': row[0],
+                    'attempts': row[1],
+                    'correct': row[2]
+                }
+                for row in missed_players
+            ],
+            'recent_history': [
+                {
+                    'correct': bool(row[0]),
+                    'timestamp': row[1]
+                }
+                for row in reversed(recent_history)
+            ]
+        })
+    except Exception as e:
+        print(f"Error fetching user stats: {e}")
+        return jsonify({'error': 'Failed to fetch stats'}), 500
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)

@@ -211,32 +211,103 @@
         <h1>🏀 NBA Origin Quiz</h1>
         <p class="subtitle">Test your knowledge of NBA players' backgrounds!</p>
 
-        <!-- Start Screen -->
+        <!-- Start Screen - Mode Selection -->
         <div id="startScreen" class="start-screen">
             <p>Can you guess which college or country each NBA player came from?</p>
             
             <div style="margin-top: 30px;">
                 <h3 style="margin-bottom: 15px; color: #333;">Choose Your Mode:</h3>
                 
-                <button class="btn-primary mode-button" onclick="startGame('quick10')" style="margin-bottom: 10px;">
+                <button class="btn-primary mode-button" onclick="selectMode('quick10')" style="margin-bottom: 10px;">
                     🎯 Quick Quiz (10 questions)
                 </button>
                 
-                <button class="btn-primary mode-button" onclick="startGame('standard25')" style="margin-bottom: 10px;">
+                <button class="btn-primary mode-button" onclick="selectMode('standard25')" style="margin-bottom: 10px;">
                     📝 Standard (25 questions)
                 </button>
                 
-                <button class="btn-primary mode-button" onclick="startGame('challenge50')" style="margin-bottom: 10px;">
+                <button class="btn-primary mode-button" onclick="selectMode('challenge50')" style="margin-bottom: 10px;">
                     💪 Challenge (50 questions)
                 </button>
                 
-                <button class="btn-primary mode-button" onclick="startGame('perfect')" style="margin-bottom: 10px;">
+                <button class="btn-primary mode-button" onclick="selectMode('perfect')" style="margin-bottom: 10px;">
                     🔥 Perfect Run
                 </button>
                 
-                <button class="btn-primary mode-button" onclick="startGame('unlimited')">
+                <button class="btn-primary mode-button" onclick="selectMode('unlimited')" style="margin-bottom: 20px;">
                     ♾️ Unlimited (practice mode)
                 </button>
+
+                <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+                
+                <button class="btn-secondary mode-button" onclick="viewMyStats()" style="margin-bottom: 10px;">
+                    📊 My Stats (Practice Mode)
+                </button>
+                
+                <button class="btn-secondary mode-button" onclick="viewLeaderboards()">
+                    🏆 View Leaderboards
+                </button>
+            </div>
+        </div>
+
+        <!-- Difficulty Selection Screen -->
+        <div id="difficultyScreen" class="start-screen hidden">
+            <button class="btn-secondary" onclick="backToModeSelect()" style="margin-bottom: 20px;">← Back</button>
+            
+            <h3 style="margin-bottom: 15px; color: #333;">Choose Difficulty:</h3>
+            
+            <button class="btn-primary mode-button" onclick="startGame('easy')" style="margin-bottom: 10px; background: #4ade80;">
+                🟢 Easy - All-Stars (Last 3 Years)
+            </button>
+            
+            <button class="btn-primary mode-button" onclick="startGame('medium')" style="margin-bottom: 10px; background: #fbbf24;">
+                🟡 Medium - 20+ Min Per Game
+            </button>
+            
+            <button class="btn-primary mode-button" onclick="startGame('hard')" style="margin-bottom: 10px; background: #f87171;">
+                🔴 Hard - All Current Players
+            </button>
+        </div>
+
+        <!-- Leaderboard Screen -->
+        <div id="leaderboardScreen" class="start-screen hidden">
+            <button class="btn-secondary" onclick="backToModeSelect()" style="margin-bottom: 20px;">← Back</button>
+            
+            <h2 style="margin-bottom: 20px;">🏆 Leaderboards</h2>
+            
+            <div style="margin-bottom: 15px;">
+                <h3 style="margin-bottom: 10px; color: #333;">🎯 Quick Quiz (10)</h3>
+                <div style="display: flex; gap: 10px; margin-bottom: 15px; justify-content: center;">
+                    <button class="btn-primary" onclick="showLeaderboardForMode('quick10', 'easy')" style="background: #4ade80; padding: 8px 16px;">Easy</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('quick10', 'medium')" style="background: #fbbf24; padding: 8px 16px;">Medium</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('quick10', 'hard')" style="background: #f87171; padding: 8px 16px;">Hard</button>
+                </div>
+
+                <h3 style="margin-bottom: 10px; color: #333;">📝 Standard (25)</h3>
+                <div style="display: flex; gap: 10px; margin-bottom: 15px; justify-content: center;">
+                    <button class="btn-primary" onclick="showLeaderboardForMode('standard25', 'easy')" style="background: #4ade80; padding: 8px 16px;">Easy</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('standard25', 'medium')" style="background: #fbbf24; padding: 8px 16px;">Medium</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('standard25', 'hard')" style="background: #f87171; padding: 8px 16px;">Hard</button>
+                </div>
+
+                <h3 style="margin-bottom: 10px; color: #333;">💪 Challenge (50)</h3>
+                <div style="display: flex; gap: 10px; margin-bottom: 15px; justify-content: center;">
+                    <button class="btn-primary" onclick="showLeaderboardForMode('challenge50', 'easy')" style="background: #4ade80; padding: 8px 16px;">Easy</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('challenge50', 'medium')" style="background: #fbbf24; padding: 8px 16px;">Medium</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('challenge50', 'hard')" style="background: #f87171; padding: 8px 16px;">Hard</button>
+                </div>
+
+                <h3 style="margin-bottom: 10px; color: #333;">🔥 Perfect Run</h3>
+                <div style="display: flex; gap: 10px; margin-bottom: 15px; justify-content: center;">
+                    <button class="btn-primary" onclick="showLeaderboardForMode('perfect', 'easy')" style="background: #4ade80; padding: 8px 16px;">Easy</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('perfect', 'medium')" style="background: #fbbf24; padding: 8px 16px;">Medium</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('perfect', 'hard')" style="background: #f87171; padding: 8px 16px;">Hard</button>
+                </div>
+            </div>
+
+            <div id="leaderboardDisplay" style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-top: 20px; display: none;">
+                <h3 id="leaderboardTitle" style="margin-bottom: 15px;"></h3>
+                <div id="leaderboardContent" style="font-family: monospace; white-space: pre-wrap;"></div>
             </div>
         </div>
 
@@ -297,8 +368,9 @@
         let sessionId = null;
         let gameMode = null;
         let questionLimit = null;
+        let selectedDifficulty = 'hard';  // Default to hard
 
-        async function startGame(mode) {
+        function selectMode(mode) {
             gameMode = mode;
             
             // Set question limits based on mode
@@ -320,9 +392,73 @@
                     break;
             }
             
+            document.getElementById('startScreen').classList.add('hidden');
+            document.getElementById('difficultyScreen').classList.remove('hidden');
+        }
+
+        function backToModeSelect() {
+            document.getElementById('difficultyScreen').classList.add('hidden');
+            document.getElementById('leaderboardScreen').classList.add('hidden');
+            document.getElementById('startScreen').classList.remove('hidden');
+        }
+
+        function viewLeaderboards() {
+            document.getElementById('startScreen').classList.add('hidden');
+            document.getElementById('leaderboardScreen').classList.remove('hidden');
+        }
+
+        function viewMyStats() {
+            alert('Stats dashboard coming soon! For now, just play Unlimited mode to track your progress.');
+            // TODO: Implement stats dashboard
+        }
+
+        async function showLeaderboardForMode(mode, difficulty) {
+            const leaderboardKey = `${mode}-${difficulty}`;
+            
+            try {
+                const response = await fetch(`/api/leaderboard/${leaderboardKey}`);
+                const data = await response.json();
+                
+                const titleEl = document.getElementById('leaderboardTitle');
+                const contentEl = document.getElementById('leaderboardContent');
+                const displayEl = document.getElementById('leaderboardDisplay');
+                
+                const difficultyEmoji = difficulty === 'easy' ? '🟢' : difficulty === 'medium' ? '🟡' : '🔴';
+                const difficultyName = difficulty.charAt(0).toUpperCase() + difficulty.slice(1);
+                titleEl.textContent = `${getModeName(mode)} - ${difficultyEmoji} ${difficultyName}`;
+                
+                if (data.leaderboard && data.leaderboard.length > 0) {
+                    let leaderboardHTML = '';
+                    
+                    data.leaderboard.forEach(entry => {
+                        const medal = entry.rank === 1 ? '🥇' : entry.rank === 2 ? '🥈' : entry.rank === 3 ? '🥉' : '  ';
+                        leaderboardHTML += `${medal} ${entry.rank}. ${entry.display_name.padEnd(20)} ${entry.score}/${entry.total} (${entry.percentage}%)\n`;
+                    });
+                    
+                    contentEl.textContent = leaderboardHTML;
+                } else {
+                    contentEl.textContent = 'No scores yet. Be the first!';
+                }
+                
+                displayEl.style.display = 'block';
+            } catch (error) {
+                console.error('Error fetching leaderboard:', error);
+                alert('Could not load leaderboard.');
+            }
+        }
+
+        async function startGame(difficulty) {
+            selectedDifficulty = difficulty;
+            
             try {
                 const response = await fetch('/api/new-game', {
-                    method: 'POST'
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        difficulty: selectedDifficulty
+                    })
                 });
                 const data = await response.json();
                 
@@ -333,7 +469,7 @@
                 
                 sessionId = data.session_id;
 
-                document.getElementById('startScreen').classList.add('hidden');
+                document.getElementById('difficultyScreen').classList.add('hidden');
                 document.getElementById('gameScreen').classList.remove('hidden');
 
                 nextQuestion();
@@ -407,10 +543,17 @@
             });
 
             const data = await response.json();
+            
+            // Check for error response
+            if (data.error) {
+                alert(`Error: ${data.error}`);
+                restartGame();
+                return;
+            }
 
             // Update score
-            document.getElementById('score').textContent = data.score;
-            document.getElementById('total').textContent = data.total;
+            document.getElementById('score').textContent = data.score || 0;
+            document.getElementById('total').textContent = data.total || 0;
             document.getElementById('percentage').textContent = 
                 data.total > 0 ? `(${Math.round(data.score / data.total * 100)}%)` : '';
 
@@ -525,6 +668,7 @@
                     body: JSON.stringify({
                         display_name: displayName,
                         game_mode: gameMode,
+                        difficulty: selectedDifficulty,
                         score: score,
                         total: total
                     })
@@ -536,21 +680,25 @@
                     alert('Score saved to leaderboard!');
                 }
                 
-                showLeaderboard();
+                showLeaderboardAfterGame();
             } catch (error) {
                 console.error('Error saving to leaderboard:', error);
                 alert('Failed to save score, but you can still view the leaderboard.');
-                showLeaderboard();
+                showLeaderboardAfterGame();
             }
         }
 
-        async function showLeaderboard() {
+        async function showLeaderboardAfterGame() {
+            const leaderboardKey = `${gameMode}-${selectedDifficulty}`;
+            
             try {
-                const response = await fetch(`/api/leaderboard/${gameMode}`);
+                const response = await fetch(`/api/leaderboard/${leaderboardKey}`);
                 const data = await response.json();
                 
                 if (data.leaderboard && data.leaderboard.length > 0) {
-                    let leaderboardText = `🏆 LEADERBOARD - ${getModeName(gameMode)} 🏆\n\n`;
+                    const difficultyEmoji = selectedDifficulty === 'easy' ? '🟢' : selectedDifficulty === 'medium' ? '🟡' : '🔴';
+                    const difficultyName = selectedDifficulty.charAt(0).toUpperCase() + selectedDifficulty.slice(1);
+                    let leaderboardText = `🏆 LEADERBOARD - ${getModeName(gameMode)} - ${difficultyEmoji} ${difficultyName} 🏆\n\n`;
                     
                     data.leaderboard.forEach(entry => {
                         leaderboardText += `${entry.rank}. ${entry.display_name}: ${entry.score}/${entry.total} (${entry.percentage}%)\n`;
@@ -609,11 +757,7 @@
         }
 
         function restartGame() {
-            document.getElementById('gameScreen').classList.add('hidden');
-            document.getElementById('startScreen').classList.remove('hidden');
-            document.getElementById('score').textContent = '0';
-            document.getElementById('total').textContent = '0';
-            document.getElementById('percentage').textContent = '';
+            location.reload();
         }
 
         // Allow Enter key to submit

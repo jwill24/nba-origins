@@ -5,7 +5,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 33.4,
+    "difficulty": "easy"
   },
   {
     "name": "Tyrese Maxey",
@@ -13,7 +16,10 @@
     "nba_conference": "Eastern",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 39.5,
+    "difficulty": "easy"
   },
   {
     "name": "Donovan Mitchell",
@@ -21,7 +27,10 @@
     "nba_conference": "Eastern",
     "origin": "Louisville",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 34.2,
+    "difficulty": "easy"
   },
   {
     "name": "Jaylen Brown",
@@ -29,7 +38,10 @@
     "nba_conference": "Eastern",
     "origin": "California",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 34.5,
+    "difficulty": "easy"
   },
   {
     "name": "Luka Dončić",
@@ -37,7 +49,10 @@
     "nba_conference": "Western",
     "origin": "Slovenia",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 36.4,
+    "difficulty": "easy"
   },
   {
     "name": "Jalen Brunson",
@@ -45,7 +60,10 @@
     "nba_conference": "Eastern",
     "origin": "Villanova",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 34.5,
+    "difficulty": "easy"
   },
   {
     "name": "Anthony Edwards",
@@ -53,7 +71,10 @@
     "nba_conference": "Western",
     "origin": "Georgia",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 35.1,
+    "difficulty": "easy"
   },
   {
     "name": "Deni Avdija",
@@ -61,7 +82,10 @@
     "nba_conference": "Western",
     "origin": "Israel",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 34.9,
+    "difficulty": "medium"
   },
   {
     "name": "Keyonte George",
@@ -69,7 +93,10 @@
     "nba_conference": "Western",
     "origin": "Baylor",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 34.4,
+    "difficulty": "medium"
   },
   {
     "name": "James Harden",
@@ -77,7 +104,10 @@
     "nba_conference": "Western",
     "origin": "Arizona State",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 35.6,
+    "difficulty": "easy"
   },
   {
     "name": "Kevin Durant",
@@ -85,7 +115,10 @@
     "nba_conference": "Western",
     "origin": "Texas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 36.9,
+    "difficulty": "easy"
   },
   {
     "name": "Jamal Murray",
@@ -93,7 +126,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 35.4,
+    "difficulty": "medium"
   },
   {
     "name": "Pascal Siakam",
@@ -101,7 +137,10 @@
     "nba_conference": "Eastern",
     "origin": "New Mexico State",
     "type": "College",
-    "college_conference": "Mountain West"
+    "college_conference": "Mountain West",
+    "alternate_answer": null,
+    "mpg": 33.9,
+    "difficulty": "easy"
   },
   {
     "name": "Devin Booker",
@@ -109,7 +148,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 34.0,
+    "difficulty": "easy"
   },
   {
     "name": "Julius Randle",
@@ -117,7 +159,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 33.7,
+    "difficulty": "easy"
   },
   {
     "name": "Stephen Curry",
@@ -125,7 +170,10 @@
     "nba_conference": "Western",
     "origin": "Davidson",
     "type": "College",
-    "college_conference": "Atlantic 10"
+    "college_conference": "Atlantic 10",
+    "alternate_answer": null,
+    "mpg": 31.6,
+    "difficulty": "easy"
   },
   {
     "name": "Jalen Johnson",
@@ -133,7 +181,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 35.6,
+    "difficulty": "medium"
   },
   {
     "name": "Brandon Ingram",
@@ -141,7 +192,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 34.1,
+    "difficulty": "easy"
   },
   {
     "name": "Trey Murphy III",
@@ -149,7 +203,10 @@
     "nba_conference": "Western",
     "origin": "Virginia",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 35.8,
+    "difficulty": "medium"
   },
   {
     "name": "Cade Cunningham",
@@ -157,7 +214,10 @@
     "nba_conference": "Eastern",
     "origin": "Oklahoma State",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 35.4,
+    "difficulty": "medium"
   },
   {
     "name": "Nikola Jokić",
@@ -165,7 +225,10 @@
     "nba_conference": "Western",
     "origin": "Serbia",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 34.6,
+    "difficulty": "easy"
   },
   {
     "name": "Norman Powell",
@@ -173,7 +236,10 @@
     "nba_conference": "Eastern",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 30.7,
+    "difficulty": "medium"
   },
   {
     "name": "Lauri Markkanen",
@@ -181,7 +247,10 @@
     "nba_conference": "Western",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 36.0,
+    "difficulty": "easy"
   },
   {
     "name": "Shaedon Sharpe",
@@ -189,7 +258,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 30.1,
+    "difficulty": "medium"
   },
   {
     "name": "Scottie Barnes",
@@ -197,7 +269,10 @@
     "nba_conference": "Eastern",
     "origin": "Florida State",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 34.5,
+    "difficulty": "easy"
   },
   {
     "name": "Nickeil Alexander-Walker",
@@ -205,7 +280,10 @@
     "nba_conference": "Eastern",
     "origin": "Virginia Tech",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 32.9,
+    "difficulty": "medium"
   },
   {
     "name": "Kawhi Leonard",
@@ -213,7 +291,10 @@
     "nba_conference": "Western",
     "origin": "San Diego State",
     "type": "College",
-    "college_conference": "Mountain West"
+    "college_conference": "Mountain West",
+    "alternate_answer": null,
+    "mpg": 33.2,
+    "difficulty": "easy"
   },
   {
     "name": "Michael Porter Jr.",
@@ -221,7 +302,10 @@
     "nba_conference": "Eastern",
     "origin": "Missouri",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 32.9,
+    "difficulty": "medium"
   },
   {
     "name": "DeMar DeRozan",
@@ -229,7 +313,10 @@
     "nba_conference": "Western",
     "origin": "Southern California",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 33.2,
+    "difficulty": "easy"
   },
   {
     "name": "Karl-Anthony Towns",
@@ -237,7 +324,10 @@
     "nba_conference": "Eastern",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 31.6,
+    "difficulty": "easy"
   },
   {
     "name": "Kon Knueppel",
@@ -245,7 +335,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 32.2,
+    "difficulty": "medium"
   },
   {
     "name": "Miles Bridges",
@@ -253,7 +346,10 @@
     "nba_conference": "Eastern",
     "origin": "Michigan State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 32.7,
+    "difficulty": "medium"
   },
   {
     "name": "Giannis Antetokounmpo",
@@ -261,7 +357,10 @@
     "nba_conference": "Eastern",
     "origin": "Greece",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 29.2,
+    "difficulty": "easy"
   },
   {
     "name": "Desmond Bane",
@@ -269,7 +368,10 @@
     "nba_conference": "Eastern",
     "origin": "TCU",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 34.0,
+    "difficulty": "easy"
   },
   {
     "name": "Dillon Brooks",
@@ -277,7 +379,10 @@
     "nba_conference": "Western",
     "origin": "Oregon",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 31.0,
+    "difficulty": "medium"
   },
   {
     "name": "CJ McCollum",
@@ -285,7 +390,10 @@
     "nba_conference": "Eastern",
     "origin": "Lehigh",
     "type": "College",
-    "college_conference": "Patriot"
+    "college_conference": "Patriot",
+    "alternate_answer": null,
+    "mpg": 30.9,
+    "difficulty": "medium"
   },
   {
     "name": "Cooper Flagg",
@@ -293,7 +401,10 @@
     "nba_conference": "Western",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 33.8,
+    "difficulty": "medium"
   },
   {
     "name": "Amen Thompson",
@@ -301,7 +412,10 @@
     "nba_conference": "Western",
     "origin": "Overtime Elite",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 37.3,
+    "difficulty": "medium"
   },
   {
     "name": "Jaren Jackson Jr.",
@@ -309,7 +423,10 @@
     "nba_conference": "Western",
     "origin": "Michigan State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 30.5,
+    "difficulty": "easy"
   },
   {
     "name": "Victor Wembanyama",
@@ -317,7 +434,10 @@
     "nba_conference": "Western",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 28.9,
+    "difficulty": "easy"
   },
   {
     "name": "Immanuel Quickley",
@@ -325,7 +445,10 @@
     "nba_conference": "Eastern",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 32.6,
+    "difficulty": "medium"
   },
   {
     "name": "Alperen Sengun",
@@ -333,7 +456,10 @@
     "nba_conference": "Western",
     "origin": "Turkey",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 34.2,
+    "difficulty": "easy"
   },
   {
     "name": "Jimmy Butler III",
@@ -341,7 +467,10 @@
     "nba_conference": "Western",
     "origin": "Marquette",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 31.1,
+    "difficulty": "medium"
   },
   {
     "name": "Derrick White",
@@ -349,7 +478,10 @@
     "nba_conference": "Eastern",
     "origin": "Colorado",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 34.2,
+    "difficulty": "medium"
   },
   {
     "name": "De'Aaron Fox",
@@ -357,7 +489,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 32.6,
+    "difficulty": "easy"
   },
   {
     "name": "Nikola Vučević",
@@ -365,7 +500,10 @@
     "nba_conference": "Eastern",
     "origin": "Southern California",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 30.8,
+    "difficulty": "easy"
   },
   {
     "name": "Onyeka Okongwu",
@@ -373,7 +511,10 @@
     "nba_conference": "Eastern",
     "origin": "Southern California",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 32.1,
+    "difficulty": "medium"
   },
   {
     "name": "Payton Pritchard",
@@ -381,7 +522,10 @@
     "nba_conference": "Eastern",
     "origin": "Oregon",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 32.8,
+    "difficulty": "medium"
   },
   {
     "name": "Evan Mobley",
@@ -389,7 +533,10 @@
     "nba_conference": "Eastern",
     "origin": "Southern California",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 33.3,
+    "difficulty": "easy"
   },
   {
     "name": "Chet Holmgren",
@@ -397,7 +544,10 @@
     "nba_conference": "Western",
     "origin": "Gonzaga",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 29.2,
+    "difficulty": "easy"
   },
   {
     "name": "Russell Westbrook",
@@ -405,7 +555,10 @@
     "nba_conference": "Western",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 29.6,
+    "difficulty": "easy"
   },
   {
     "name": "Paolo Banchero",
@@ -413,7 +566,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 33.9,
+    "difficulty": "easy"
   },
   {
     "name": "Ryan Rollins",
@@ -421,7 +577,10 @@
     "nba_conference": "Eastern",
     "origin": "Toledo",
     "type": "College",
-    "college_conference": "MAC"
+    "college_conference": "MAC",
+    "alternate_answer": null,
+    "mpg": 31.6,
+    "difficulty": "medium"
   },
   {
     "name": "Zion Williamson",
@@ -429,7 +588,10 @@
     "nba_conference": "Western",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 29.1,
+    "difficulty": "easy"
   },
   {
     "name": "Mikal Bridges",
@@ -437,7 +599,10 @@
     "nba_conference": "Eastern",
     "origin": "Villanova",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 34.6,
+    "difficulty": "medium"
   },
   {
     "name": "Bam Adebayo",
@@ -445,7 +610,10 @@
     "nba_conference": "Eastern",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 31.0,
+    "difficulty": "easy"
   },
   {
     "name": "LaMelo Ball",
@@ -453,7 +621,10 @@
     "nba_conference": "Eastern",
     "origin": "Illawarra",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 27.4,
+    "difficulty": "easy"
   },
   {
     "name": "Anthony Black",
@@ -461,7 +632,10 @@
     "nba_conference": "Eastern",
     "origin": "Arkansas",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 30.7,
+    "difficulty": "medium"
   },
   {
     "name": "Andrew Wiggins",
@@ -469,7 +643,10 @@
     "nba_conference": "Eastern",
     "origin": "Kansas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 31.3,
+    "difficulty": "medium"
   },
   {
     "name": "Naji Marshall",
@@ -477,7 +654,10 @@
     "nba_conference": "Western",
     "origin": "Xavier",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 29.2,
+    "difficulty": "medium"
   },
   {
     "name": "Matas Buzelis",
@@ -485,7 +665,10 @@
     "nba_conference": "Eastern",
     "origin": "NBA G League Ignite",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 28.0,
+    "difficulty": "medium"
   },
   {
     "name": "Zach LaVine",
@@ -493,7 +676,10 @@
     "nba_conference": "Western",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 32.2,
+    "difficulty": "easy"
   },
   {
     "name": "Jalen Duren",
@@ -501,7 +687,10 @@
     "nba_conference": "Eastern",
     "origin": "Memphis",
     "type": "College",
-    "college_conference": "American"
+    "college_conference": "American",
+    "alternate_answer": null,
+    "mpg": 28.2,
+    "difficulty": "medium"
   },
   {
     "name": "Jeremiah Fears",
@@ -509,7 +698,10 @@
     "nba_conference": "Western",
     "origin": "Oklahoma",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 26.1,
+    "difficulty": "medium"
   },
   {
     "name": "Naz Reid",
@@ -517,7 +709,10 @@
     "nba_conference": "Western",
     "origin": "Louisiana State",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 26.2,
+    "difficulty": "medium"
   },
   {
     "name": "Saddiq Bey",
@@ -525,7 +720,10 @@
     "nba_conference": "Western",
     "origin": "Villanova",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 30.0,
+    "difficulty": "medium"
   },
   {
     "name": "Jaden McDaniels",
@@ -533,7 +731,10 @@
     "nba_conference": "Western",
     "origin": "Washington",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 32.1,
+    "difficulty": "medium"
   },
   {
     "name": "Jaime Jaquez Jr.",
@@ -541,7 +742,10 @@
     "nba_conference": "Eastern",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 28.9,
+    "difficulty": "medium"
   },
   {
     "name": "Jabari Smith Jr.",
@@ -549,7 +753,10 @@
     "nba_conference": "Western",
     "origin": "Auburn",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 35.0,
+    "difficulty": "medium"
   },
   {
     "name": "Andrew Nembhard",
@@ -557,7 +764,10 @@
     "nba_conference": "Eastern",
     "origin": "Gonzaga",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 32.0,
+    "difficulty": "medium"
   },
   {
     "name": "Anfernee Simons",
@@ -565,7 +775,10 @@
     "nba_conference": "Eastern",
     "origin": "Edgewater HS (FL)",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 24.6,
+    "difficulty": "medium"
   },
   {
     "name": "Joel Embiid",
@@ -573,7 +786,10 @@
     "nba_conference": "Eastern",
     "origin": "Kansas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 30.6,
+    "difficulty": "easy"
   },
   {
     "name": "VJ Edgecombe",
@@ -581,7 +797,10 @@
     "nba_conference": "Eastern",
     "origin": "Baylor",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 36.0,
+    "difficulty": "medium"
   },
   {
     "name": "Peyton Watson",
@@ -589,7 +808,10 @@
     "nba_conference": "Western",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 29.9,
+    "difficulty": "medium"
   },
   {
     "name": "Keldon Johnson",
@@ -597,7 +819,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 24.1,
+    "difficulty": "medium"
   },
   {
     "name": "Tim Hardaway Jr.",
@@ -605,7 +830,10 @@
     "nba_conference": "Western",
     "origin": "Michigan",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 27.2,
+    "difficulty": "medium"
   },
   {
     "name": "Collin Gillespie",
@@ -613,7 +841,10 @@
     "nba_conference": "Western",
     "origin": "Villanova",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 28.3,
+    "difficulty": "medium"
   },
   {
     "name": "Donte DiVincenzo",
@@ -621,7 +852,10 @@
     "nba_conference": "Western",
     "origin": "Villanova",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 31.9,
+    "difficulty": "medium"
   },
   {
     "name": "Stephon Castle",
@@ -629,7 +863,10 @@
     "nba_conference": "Western",
     "origin": "Connecticut",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 31.0,
+    "difficulty": "medium"
   },
   {
     "name": "Austin Reaves",
@@ -637,7 +874,10 @@
     "nba_conference": "Western",
     "origin": "Oklahoma",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 35.3,
+    "difficulty": "medium"
   },
   {
     "name": "Alex Sarr",
@@ -645,7 +885,10 @@
     "nba_conference": "Eastern",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 28.3,
+    "difficulty": "medium"
   },
   {
     "name": "Ajay Mitchell",
@@ -653,7 +896,10 @@
     "nba_conference": "Western",
     "origin": "California-Santa Barbara",
     "type": "College",
-    "college_conference": "Big West"
+    "college_conference": "Big West",
+    "alternate_answer": null,
+    "mpg": 26.3,
+    "difficulty": "medium"
   },
   {
     "name": "Josh Giddey",
@@ -661,7 +907,10 @@
     "nba_conference": "Eastern",
     "origin": "Australia",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 32.3,
+    "difficulty": "medium"
   },
   {
     "name": "LeBron James",
@@ -669,7 +918,10 @@
     "nba_conference": "Western",
     "origin": "St. Vincent-St. Mary HS (OH)",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 33.4,
+    "difficulty": "easy"
   },
   {
     "name": "Toumani Camara",
@@ -677,7 +929,10 @@
     "nba_conference": "Western",
     "origin": "Dayton",
     "type": "College",
-    "college_conference": "Atlantic 10"
+    "college_conference": "Atlantic 10",
+    "alternate_answer": null,
+    "mpg": 33.9,
+    "difficulty": "medium"
   },
   {
     "name": "Brandon Miller",
@@ -685,7 +940,10 @@
     "nba_conference": "Eastern",
     "origin": "Alabama",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 30.1,
+    "difficulty": "medium"
   },
   {
     "name": "Bobby Portis",
@@ -693,7 +951,10 @@
     "nba_conference": "Eastern",
     "origin": "Arkansas",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 23.7,
+    "difficulty": "medium"
   },
   {
     "name": "Franz Wagner",
@@ -701,7 +962,10 @@
     "nba_conference": "Eastern",
     "origin": "Michigan",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 32.8,
+    "difficulty": "easy"
   },
   {
     "name": "Jerami Grant",
@@ -709,7 +973,10 @@
     "nba_conference": "Western",
     "origin": "Syracuse",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 29.4,
+    "difficulty": "medium"
   },
   {
     "name": "Ivica Zubac",
@@ -717,7 +984,10 @@
     "nba_conference": "Western",
     "origin": "Croatia",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 31.0,
+    "difficulty": "medium"
   },
   {
     "name": "Jaylon Tyson",
@@ -725,7 +995,10 @@
     "nba_conference": "Eastern",
     "origin": "California",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 27.8,
+    "difficulty": "medium"
   },
   {
     "name": "Brandin Podziemski",
@@ -733,7 +1006,10 @@
     "nba_conference": "Western",
     "origin": "Santa Clara",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 26.7,
+    "difficulty": "medium"
   },
   {
     "name": "Derik Queen",
@@ -741,7 +1017,10 @@
     "nba_conference": "Western",
     "origin": "Maryland",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 25.8,
+    "difficulty": "medium"
   },
   {
     "name": "Santi Aldama",
@@ -749,7 +1028,10 @@
     "nba_conference": "Western",
     "origin": "Spain",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 28.0,
+    "difficulty": "medium"
   },
   {
     "name": "De'Andre Hunter",
@@ -757,7 +1039,10 @@
     "nba_conference": "Eastern",
     "origin": "Virginia",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 26.4,
+    "difficulty": "medium"
   },
   {
     "name": "Noah Clowney",
@@ -765,7 +1050,10 @@
     "nba_conference": "Eastern",
     "origin": "Alabama",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 28.8,
+    "difficulty": "medium"
   },
   {
     "name": "Reed Sheppard",
@@ -773,7 +1061,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 25.0,
+    "difficulty": "medium"
   },
   {
     "name": "Cedric Coward",
@@ -781,7 +1072,10 @@
     "nba_conference": "Western",
     "origin": "Washington State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 26.6,
+    "difficulty": "medium"
   },
   {
     "name": "John Collins",
@@ -789,7 +1083,10 @@
     "nba_conference": "Western",
     "origin": "Wake Forest",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 27.5,
+    "difficulty": "medium"
   },
   {
     "name": "Ayo Dosunmu",
@@ -797,7 +1094,10 @@
     "nba_conference": "Eastern",
     "origin": "Illinois",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 25.9,
+    "difficulty": "medium"
   },
   {
     "name": "Max Christie",
@@ -805,7 +1105,10 @@
     "nba_conference": "Western",
     "origin": "Michigan State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 29.4,
+    "difficulty": "medium"
   },
   {
     "name": "Quentin Grimes",
@@ -813,7 +1116,10 @@
     "nba_conference": "Eastern",
     "origin": "Houston",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 30.6,
+    "difficulty": "medium"
   },
   {
     "name": "OG Anunoby",
@@ -821,7 +1127,10 @@
     "nba_conference": "Eastern",
     "origin": "Indiana",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 32.8,
+    "difficulty": "medium"
   },
   {
     "name": "Collin Sexton",
@@ -829,7 +1138,10 @@
     "nba_conference": "Eastern",
     "origin": "Alabama",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 23.0,
+    "difficulty": "medium"
   },
   {
     "name": "Kyshawn George",
@@ -837,7 +1149,10 @@
     "nba_conference": "Eastern",
     "origin": "Miami",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 31.2,
+    "difficulty": "medium"
   },
   {
     "name": "Julian Champagnie",
@@ -845,7 +1160,10 @@
     "nba_conference": "Western",
     "origin": "St. John's",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 28.7,
+    "difficulty": "medium"
   },
   {
     "name": "Deandre Ayton",
@@ -853,7 +1171,10 @@
     "nba_conference": "Western",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 28.7,
+    "difficulty": "medium"
   },
   {
     "name": "Nic Claxton",
@@ -861,7 +1182,10 @@
     "nba_conference": "Eastern",
     "origin": "Georgia",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 29.6,
+    "difficulty": "medium"
   },
   {
     "name": "Kyle Kuzma",
@@ -869,7 +1193,10 @@
     "nba_conference": "Eastern",
     "origin": "Utah",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 26.2,
+    "difficulty": "medium"
   },
   {
     "name": "Dyson Daniels",
@@ -877,7 +1204,10 @@
     "nba_conference": "Eastern",
     "origin": "NBA G League Ignite",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": "Australia",
+    "mpg": 34.2,
+    "difficulty": "medium"
   },
   {
     "name": "Myles Turner",
@@ -885,7 +1215,10 @@
     "nba_conference": "Eastern",
     "origin": "Texas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 28.3,
+    "difficulty": "medium"
   },
   {
     "name": "Wendell Carter Jr.",
@@ -893,7 +1226,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 30.0,
+    "difficulty": "medium"
   },
   {
     "name": "Sandro Mamukelashvili",
@@ -901,7 +1237,10 @@
     "nba_conference": "Eastern",
     "origin": "Seton Hall",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 22.3,
+    "difficulty": "medium"
   },
   {
     "name": "Duncan Robinson",
@@ -909,7 +1248,10 @@
     "nba_conference": "Eastern",
     "origin": "Michigan",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 28.7,
+    "difficulty": "medium"
   },
   {
     "name": "Jaylen Wells",
@@ -917,7 +1259,10 @@
     "nba_conference": "Western",
     "origin": "Washington State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 27.0,
+    "difficulty": "medium"
   },
   {
     "name": "Brice Sensabaugh",
@@ -925,7 +1270,10 @@
     "nba_conference": "Western",
     "origin": "Ohio State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 21.0,
+    "difficulty": "medium"
   },
   {
     "name": "Klay Thompson",
@@ -933,7 +1281,10 @@
     "nba_conference": "Western",
     "origin": "Washington State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 22.0,
+    "difficulty": "easy"
   },
   {
     "name": "Cam Spencer",
@@ -941,7 +1292,10 @@
     "nba_conference": "Western",
     "origin": "Connecticut",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 23.8,
+    "difficulty": "medium"
   },
   {
     "name": "Kel'el Ware",
@@ -949,7 +1303,10 @@
     "nba_conference": "Eastern",
     "origin": "Indiana",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 23.8,
+    "difficulty": "medium"
   },
   {
     "name": "Brandon Williams",
@@ -957,7 +1314,10 @@
     "nba_conference": "Western",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 22.2,
+    "difficulty": "medium"
   },
   {
     "name": "Devin Vassell",
@@ -965,7 +1325,10 @@
     "nba_conference": "Western",
     "origin": "Florida State",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 31.7,
+    "difficulty": "medium"
   },
   {
     "name": "Mark Williams",
@@ -973,7 +1336,10 @@
     "nba_conference": "Western",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 23.9,
+    "difficulty": "medium"
   },
   {
     "name": "Moses Moody",
@@ -981,7 +1347,10 @@
     "nba_conference": "Western",
     "origin": "Arkansas",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 24.5,
+    "difficulty": "medium"
   },
   {
     "name": "Harrison Barnes",
@@ -989,7 +1358,10 @@
     "nba_conference": "Western",
     "origin": "North Carolina",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 28.0,
+    "difficulty": "medium"
   },
   {
     "name": "Malik Monk",
@@ -997,7 +1369,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 22.4,
+    "difficulty": "medium"
   },
   {
     "name": "Tre Johnson",
@@ -1005,7 +1380,10 @@
     "nba_conference": "Eastern",
     "origin": "Texas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 25.3,
+    "difficulty": "medium"
   },
   {
     "name": "Jock Landale",
@@ -1013,7 +1391,10 @@
     "nba_conference": "Western",
     "origin": "St. Mary's",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 23.1,
+    "difficulty": "medium"
   },
   {
     "name": "Dennis Schröder",
@@ -1021,7 +1402,10 @@
     "nba_conference": "Western",
     "origin": "Germany",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 26.4,
+    "difficulty": "medium"
   },
   {
     "name": "RJ Barrett",
@@ -1029,7 +1413,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 29.6,
+    "difficulty": "medium"
   },
   {
     "name": "Rudy Gobert",
@@ -1037,7 +1424,10 @@
     "nba_conference": "Western",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 31.5,
+    "difficulty": "easy"
   },
   {
     "name": "Donovan Clingan",
@@ -1045,7 +1435,10 @@
     "nba_conference": "Western",
     "origin": "Connecticut",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 27.4,
+    "difficulty": "medium"
   },
   {
     "name": "Grayson Allen",
@@ -1053,7 +1446,10 @@
     "nba_conference": "Western",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 29.6,
+    "difficulty": "medium"
   },
   {
     "name": "Royce O'Neale",
@@ -1061,7 +1457,10 @@
     "nba_conference": "Western",
     "origin": "Baylor",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 29.3,
+    "difficulty": "medium"
   },
   {
     "name": "Tre Jones",
@@ -1069,7 +1468,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 26.8,
+    "difficulty": "medium"
   },
   {
     "name": "Jarrett Allen",
@@ -1077,7 +1479,10 @@
     "nba_conference": "Eastern",
     "origin": "Texas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 27.1,
+    "difficulty": "easy"
   },
   {
     "name": "Darius Garland",
@@ -1085,7 +1490,10 @@
     "nba_conference": "Eastern",
     "origin": "Vanderbilt",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 30.5,
+    "difficulty": "easy"
   },
   {
     "name": "P.J. Washington",
@@ -1093,7 +1501,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 30.9,
+    "difficulty": "medium"
   },
   {
     "name": "Coby White",
@@ -1101,7 +1512,10 @@
     "nba_conference": "Eastern",
     "origin": "North Carolina",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 28.7,
+    "difficulty": "medium"
   },
   {
     "name": "Kevin Huerter",
@@ -1109,7 +1523,10 @@
     "nba_conference": "Eastern",
     "origin": "Maryland",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 23.8,
+    "difficulty": "medium"
   },
   {
     "name": "Jarace Walker",
@@ -1117,7 +1534,10 @@
     "nba_conference": "Eastern",
     "origin": "Houston",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 23.4,
+    "difficulty": "medium"
   },
   {
     "name": "Miles McBride",
@@ -1125,7 +1545,10 @@
     "nba_conference": "Eastern",
     "origin": "West Virginia",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 28.0,
+    "difficulty": "medium"
   },
   {
     "name": "Neemias Queta",
@@ -1133,7 +1556,10 @@
     "nba_conference": "Eastern",
     "origin": "Utah State",
     "type": "College",
-    "college_conference": "Mountain West"
+    "college_conference": "Mountain West",
+    "alternate_answer": null,
+    "mpg": 24.9,
+    "difficulty": "medium"
   },
   {
     "name": "Bub Carrington",
@@ -1141,7 +1567,10 @@
     "nba_conference": "Eastern",
     "origin": "Pittsburgh",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 28.6,
+    "difficulty": "medium"
   },
   {
     "name": "Ausar Thompson",
@@ -1149,7 +1578,10 @@
     "nba_conference": "Eastern",
     "origin": "Overtime Elite",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 25.8,
+    "difficulty": "medium"
   },
   {
     "name": "Caleb Love",
@@ -1157,7 +1589,10 @@
     "nba_conference": "Western",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 22.4,
+    "difficulty": "medium"
   },
   {
     "name": "Bennedict Mathurin",
@@ -1165,7 +1600,10 @@
     "nba_conference": "Eastern",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 32.2,
+    "difficulty": "medium"
   },
   {
     "name": "Ace Bailey",
@@ -1173,7 +1611,10 @@
     "nba_conference": "Western",
     "origin": "Rutgers",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 24.6,
+    "difficulty": "medium"
   },
   {
     "name": "AJ Green",
@@ -1181,7 +1622,10 @@
     "nba_conference": "Eastern",
     "origin": "Northern Iowa",
     "type": "College",
-    "college_conference": "Missouri Valley"
+    "college_conference": "Missouri Valley",
+    "alternate_answer": null,
+    "mpg": 29.5,
+    "difficulty": "medium"
   },
   {
     "name": "Jake LaRavia",
@@ -1189,7 +1633,10 @@
     "nba_conference": "Western",
     "origin": "Wake Forest",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 27.3,
+    "difficulty": "medium"
   },
   {
     "name": "Jordan Clarkson",
@@ -1197,7 +1644,10 @@
     "nba_conference": "Eastern",
     "origin": "Missouri",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 19.5,
+    "difficulty": "hard"
   },
   {
     "name": "Kyle Filipowski",
@@ -1205,7 +1655,10 @@
     "nba_conference": "Western",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 22.2,
+    "difficulty": "medium"
   },
   {
     "name": "Rui Hachimura",
@@ -1213,7 +1666,10 @@
     "nba_conference": "Western",
     "origin": "Gonzaga",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 30.5,
+    "difficulty": "medium"
   },
   {
     "name": "Anthony Davis",
@@ -1221,7 +1677,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 31.3,
+    "difficulty": "easy"
   },
   {
     "name": "Aaron Gordon",
@@ -1229,7 +1688,10 @@
     "nba_conference": "Western",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 27.9,
+    "difficulty": "medium"
   },
   {
     "name": "Isaiah Stewart",
@@ -1237,7 +1699,10 @@
     "nba_conference": "Eastern",
     "origin": "Washington",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 23.6,
+    "difficulty": "medium"
   },
   {
     "name": "Jordan Poole",
@@ -1245,7 +1710,10 @@
     "nba_conference": "Western",
     "origin": "Michigan",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 25.4,
+    "difficulty": "medium"
   },
   {
     "name": "Josh Hart",
@@ -1253,7 +1721,10 @@
     "nba_conference": "Eastern",
     "origin": "Villanova",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 30.5,
+    "difficulty": "medium"
   },
   {
     "name": "Jalen Williams",
@@ -1261,7 +1732,10 @@
     "nba_conference": "Western",
     "origin": "Santa Clara",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 29.6,
+    "difficulty": "easy"
   },
   {
     "name": "Jusuf Nurkić",
@@ -1269,7 +1743,10 @@
     "nba_conference": "Western",
     "origin": "Bosnia and Herzegovina",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 26.5,
+    "difficulty": "medium"
   },
   {
     "name": "Zaccharie Risacher",
@@ -1277,7 +1754,10 @@
     "nba_conference": "Eastern",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 24.6,
+    "difficulty": "medium"
   },
   {
     "name": "Sam Hauser",
@@ -1285,7 +1765,10 @@
     "nba_conference": "Eastern",
     "origin": "Virginia",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 23.5,
+    "difficulty": "medium"
   },
   {
     "name": "Vít Krejčí",
@@ -1293,7 +1776,10 @@
     "nba_conference": "Eastern",
     "origin": "Czech Republic",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 23.0,
+    "difficulty": "medium"
   },
   {
     "name": "Egor Dëmin",
@@ -1301,7 +1787,10 @@
     "nba_conference": "Eastern",
     "origin": "Brigham Young",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 24.6,
+    "difficulty": "medium"
   },
   {
     "name": "Ja Morant",
@@ -1309,7 +1798,10 @@
     "nba_conference": "Western",
     "origin": "Murray State",
     "type": "College",
-    "college_conference": "Missouri Valley"
+    "college_conference": "Missouri Valley",
+    "alternate_answer": null,
+    "mpg": 28.4,
+    "difficulty": "easy"
   },
   {
     "name": "Jay Huff",
@@ -1317,7 +1809,10 @@
     "nba_conference": "Eastern",
     "origin": "Virginia",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 19.5,
+    "difficulty": "hard"
   },
   {
     "name": "Tobias Harris",
@@ -1325,7 +1820,10 @@
     "nba_conference": "Eastern",
     "origin": "Tennessee",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 27.3,
+    "difficulty": "medium"
   },
   {
     "name": "Kevin Porter Jr.",
@@ -1333,7 +1831,10 @@
     "nba_conference": "Eastern",
     "origin": "Southern California",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 33.6,
+    "difficulty": "medium"
   },
   {
     "name": "Paul George",
@@ -1341,7 +1842,10 @@
     "nba_conference": "Eastern",
     "origin": "Fresno State",
     "type": "College",
-    "college_conference": "Mountain West"
+    "college_conference": "Mountain West",
+    "alternate_answer": null,
+    "mpg": 30.2,
+    "difficulty": "easy"
   },
   {
     "name": "Pelle Larsson",
@@ -1349,7 +1853,10 @@
     "nba_conference": "Eastern",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 23.5,
+    "difficulty": "medium"
   },
   {
     "name": "Simone Fontecchio",
@@ -1357,7 +1864,10 @@
     "nba_conference": "Eastern",
     "origin": "Italy",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 16.8,
+    "difficulty": "hard"
   },
   {
     "name": "Maxime Raynaud",
@@ -1365,7 +1875,10 @@
     "nba_conference": "Western",
     "origin": "Stanford",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 22.9,
+    "difficulty": "medium"
   },
   {
     "name": "Jalen Smith",
@@ -1373,7 +1886,10 @@
     "nba_conference": "Eastern",
     "origin": "Maryland",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 19.6,
+    "difficulty": "hard"
   },
   {
     "name": "Jordan Goodwin",
@@ -1381,7 +1897,10 @@
     "nba_conference": "Western",
     "origin": "St. Louis",
     "type": "College",
-    "college_conference": "Atlantic 10"
+    "college_conference": "Atlantic 10",
+    "alternate_answer": null,
+    "mpg": 21.5,
+    "difficulty": "medium"
   },
   {
     "name": "Quinten Post",
@@ -1389,7 +1908,10 @@
     "nba_conference": "Western",
     "origin": "Boston College",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 17.7,
+    "difficulty": "hard"
   },
   {
     "name": "Dylan Harper",
@@ -1397,7 +1919,10 @@
     "nba_conference": "Western",
     "origin": "Rutgers",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 21.2,
+    "difficulty": "medium"
   },
   {
     "name": "Isaiah Joe",
@@ -1405,7 +1930,10 @@
     "nba_conference": "Western",
     "origin": "Arkansas",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 19.9,
+    "difficulty": "hard"
   },
   {
     "name": "Davion Mitchell",
@@ -1413,7 +1941,10 @@
     "nba_conference": "Eastern",
     "origin": "Baylor",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 29.1,
+    "difficulty": "medium"
   },
   {
     "name": "Marvin Bagley III",
@@ -1421,7 +1952,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 19.3,
+    "difficulty": "hard"
   },
   {
     "name": "Tristan da Silva",
@@ -1429,7 +1963,10 @@
     "nba_conference": "Eastern",
     "origin": "Colorado",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 22.9,
+    "difficulty": "medium"
   },
   {
     "name": "Jalen Suggs",
@@ -1437,7 +1974,10 @@
     "nba_conference": "Eastern",
     "origin": "Gonzaga",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 25.3,
+    "difficulty": "medium"
   },
   {
     "name": "Marcus Smart",
@@ -1445,7 +1985,10 @@
     "nba_conference": "Western",
     "origin": "Oklahoma State",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 28.6,
+    "difficulty": "medium"
   },
   {
     "name": "Ronald Holland II",
@@ -1453,7 +1996,10 @@
     "nba_conference": "Eastern",
     "origin": "NBA G League Ignite",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 20.9,
+    "difficulty": "medium"
   },
   {
     "name": "Kris Dunn",
@@ -1461,7 +2007,10 @@
     "nba_conference": "Western",
     "origin": "Providence",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 27.2,
+    "difficulty": "medium"
   },
   {
     "name": "Jamal Shead",
@@ -1469,7 +2018,10 @@
     "nba_conference": "Eastern",
     "origin": "Houston",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 22.4,
+    "difficulty": "medium"
   },
   {
     "name": "Svi Mykhailiuk",
@@ -1477,7 +2029,10 @@
     "nba_conference": "Western",
     "origin": "Kansas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 24.2,
+    "difficulty": "medium"
   },
   {
     "name": "Isaiah Collier",
@@ -1485,7 +2040,10 @@
     "nba_conference": "Western",
     "origin": "Southern California",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 23.3,
+    "difficulty": "medium"
   },
   {
     "name": "Kentavious Caldwell-Pope",
@@ -1493,7 +2051,10 @@
     "nba_conference": "Western",
     "origin": "Georgia",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 21.0,
+    "difficulty": "medium"
   },
   {
     "name": "Moussa Diabaté",
@@ -1501,7 +2062,10 @@
     "nba_conference": "Eastern",
     "origin": "Michigan",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 24.5,
+    "difficulty": "medium"
   },
   {
     "name": "Aaron Wiggins",
@@ -1509,7 +2073,10 @@
     "nba_conference": "Western",
     "origin": "Maryland",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 23.4,
+    "difficulty": "medium"
   },
   {
     "name": "Aaron Nesmith",
@@ -1517,7 +2084,10 @@
     "nba_conference": "Eastern",
     "origin": "Vanderbilt",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 30.4,
+    "difficulty": "medium"
   },
   {
     "name": "Draymond Green",
@@ -1525,7 +2095,10 @@
     "nba_conference": "Western",
     "origin": "Michigan State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 26.6,
+    "difficulty": "easy"
   },
   {
     "name": "Sam Merrill",
@@ -1533,7 +2106,10 @@
     "nba_conference": "Eastern",
     "origin": "Utah State",
     "type": "College",
-    "college_conference": "Mountain West"
+    "college_conference": "Mountain West",
+    "alternate_answer": null,
+    "mpg": 25.8,
+    "difficulty": "medium"
   },
   {
     "name": "Gary Trent Jr.",
@@ -1541,7 +2117,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 24.2,
+    "difficulty": "medium"
   },
   {
     "name": "Bruce Brown",
@@ -1549,7 +2128,10 @@
     "nba_conference": "Western",
     "origin": "Miami",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 24.4,
+    "difficulty": "medium"
   },
   {
     "name": "Day'Ron Sharpe",
@@ -1557,7 +2139,10 @@
     "nba_conference": "Eastern",
     "origin": "North Carolina",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 18.2,
+    "difficulty": "hard"
   },
   {
     "name": "Cason Wallace",
@@ -1565,7 +2150,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 26.4,
+    "difficulty": "medium"
   },
   {
     "name": "Cameron Johnson",
@@ -1573,7 +2161,10 @@
     "nba_conference": "Western",
     "origin": "North Carolina",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 30.6,
+    "difficulty": "medium"
   },
   {
     "name": "Cam Thomas",
@@ -1581,7 +2172,10 @@
     "nba_conference": "Eastern",
     "origin": "Louisiana State",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 24.3,
+    "difficulty": "medium"
   },
   {
     "name": "Gradey Dick",
@@ -1589,7 +2183,10 @@
     "nba_conference": "Eastern",
     "origin": "Kansas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 16.6,
+    "difficulty": "hard"
   },
   {
     "name": "Luguentz Dort",
@@ -1597,7 +2194,10 @@
     "nba_conference": "Western",
     "origin": "Arizona State",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 27.4,
+    "difficulty": "medium"
   },
   {
     "name": "Kelly Oubre Jr.",
@@ -1605,7 +2205,10 @@
     "nba_conference": "Eastern",
     "origin": "Kansas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 32.5,
+    "difficulty": "medium"
   },
   {
     "name": "Javonte Green",
@@ -1613,7 +2216,10 @@
     "nba_conference": "Eastern",
     "origin": "Radford",
     "type": "College",
-    "college_conference": "Big South"
+    "college_conference": "Big South",
+    "alternate_answer": null,
+    "mpg": 19.2,
+    "difficulty": "hard"
   },
   {
     "name": "Luke Kennard",
@@ -1621,7 +2227,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 20.4,
+    "difficulty": "medium"
   },
   {
     "name": "Buddy Hield",
@@ -1629,7 +2238,10 @@
     "nba_conference": "Western",
     "origin": "Oklahoma",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 16.9,
+    "difficulty": "hard"
   },
   {
     "name": "Isaac Okoro",
@@ -1637,7 +2249,10 @@
     "nba_conference": "Eastern",
     "origin": "Auburn",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 25.1,
+    "difficulty": "medium"
   },
   {
     "name": "T.J. McConnell",
@@ -1645,7 +2260,10 @@
     "nba_conference": "Eastern",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 17.2,
+    "difficulty": "hard"
   },
   {
     "name": "Ziaire Williams",
@@ -1653,7 +2271,10 @@
     "nba_conference": "Eastern",
     "origin": "Stanford",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 22.7,
+    "difficulty": "medium"
   },
   {
     "name": "Nikola Jović",
@@ -1661,7 +2282,10 @@
     "nba_conference": "Eastern",
     "origin": "Serbia",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 19.0,
+    "difficulty": "hard"
   },
   {
     "name": "Justin Champagnie",
@@ -1669,7 +2293,10 @@
     "nba_conference": "Eastern",
     "origin": "Pittsburgh",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 18.8,
+    "difficulty": "hard"
   },
   {
     "name": "Luke Kornet",
@@ -1677,7 +2304,10 @@
     "nba_conference": "Western",
     "origin": "Vanderbilt",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 24.2,
+    "difficulty": "medium"
   },
   {
     "name": "Precious Achiuwa",
@@ -1685,7 +2315,10 @@
     "nba_conference": "Western",
     "origin": "Memphis",
     "type": "College",
-    "college_conference": "American"
+    "college_conference": "American",
+    "alternate_answer": null,
+    "mpg": 20.8,
+    "difficulty": "medium"
   },
   {
     "name": "Terance Mann",
@@ -1693,7 +2326,10 @@
     "nba_conference": "Eastern",
     "origin": "Florida State",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 25.3,
+    "difficulty": "medium"
   },
   {
     "name": "Jonas Valančiūnas",
@@ -1701,7 +2337,10 @@
     "nba_conference": "Western",
     "origin": "Lithuania",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 13.5,
+    "difficulty": "hard"
   },
   {
     "name": "Ryan Kalkbrenner",
@@ -1709,7 +2348,10 @@
     "nba_conference": "Eastern",
     "origin": "Creighton",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 24.2,
+    "difficulty": "medium"
   },
   {
     "name": "Khris Middleton",
@@ -1717,7 +2359,10 @@
     "nba_conference": "Eastern",
     "origin": "Texas A&M",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 24.5,
+    "difficulty": "easy"
   },
   {
     "name": "Will Richard",
@@ -1725,7 +2370,10 @@
     "nba_conference": "Western",
     "origin": "Florida",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 19.2,
+    "difficulty": "hard"
   },
   {
     "name": "Kristaps Porziņģis",
@@ -1733,7 +2381,10 @@
     "nba_conference": "Eastern",
     "origin": "Latvia",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 24.3,
+    "difficulty": "easy"
   },
   {
     "name": "Walter Clayton Jr.",
@@ -1741,7 +2392,10 @@
     "nba_conference": "Western",
     "origin": "Florida",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 18.4,
+    "difficulty": "hard"
   },
   {
     "name": "Collin Murray-Boyles",
@@ -1749,7 +2403,10 @@
     "nba_conference": "Eastern",
     "origin": "South Carolina",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 21.5,
+    "difficulty": "medium"
   },
   {
     "name": "Daniss Jenkins",
@@ -1757,7 +2414,10 @@
     "nba_conference": "Eastern",
     "origin": "St. John's",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 16.5,
+    "difficulty": "hard"
   },
   {
     "name": "Jose Alvarado",
@@ -1765,7 +2425,10 @@
     "nba_conference": "Western",
     "origin": "Georgia Tech",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 21.9,
+    "difficulty": "medium"
   },
   {
     "name": "Sion James",
@@ -1773,7 +2436,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 25.0,
+    "difficulty": "medium"
   },
   {
     "name": "Dru Smith",
@@ -1781,7 +2447,10 @@
     "nba_conference": "Eastern",
     "origin": "Missouri",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 17.0,
+    "difficulty": "hard"
   },
   {
     "name": "Luka Garza",
@@ -1789,7 +2458,10 @@
     "nba_conference": "Eastern",
     "origin": "Iowa",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 16.5,
+    "difficulty": "hard"
   },
   {
     "name": "Jrue Holiday",
@@ -1797,7 +2469,10 @@
     "nba_conference": "Western",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 28.8,
+    "difficulty": "easy"
   },
   {
     "name": "Keegan Murray",
@@ -1805,7 +2480,10 @@
     "nba_conference": "Western",
     "origin": "Iowa",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 35.9,
+    "difficulty": "medium"
   },
   {
     "name": "Dominick Barlow",
@@ -1813,7 +2491,10 @@
     "nba_conference": "Eastern",
     "origin": "Overtime Elite",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 23.9,
+    "difficulty": "medium"
   },
   {
     "name": "Tari Eason",
@@ -1821,7 +2502,10 @@
     "nba_conference": "Western",
     "origin": "Louisiana State",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 23.7,
+    "difficulty": "medium"
   },
   {
     "name": "Isaiah Hartenstein",
@@ -1829,7 +2513,10 @@
     "nba_conference": "Western",
     "origin": "Germany",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 26.9,
+    "difficulty": "medium"
   },
   {
     "name": "Patrick Williams",
@@ -1837,7 +2524,10 @@
     "nba_conference": "Eastern",
     "origin": "Florida State",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 18.3,
+    "difficulty": "hard"
   },
   {
     "name": "Tyrese Martin",
@@ -1845,7 +2535,10 @@
     "nba_conference": "Eastern",
     "origin": "Connecticut",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 19.1,
+    "difficulty": "hard"
   },
   {
     "name": "D'Angelo Russell",
@@ -1853,7 +2546,10 @@
     "nba_conference": "Western",
     "origin": "Ohio State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 19.0,
+    "difficulty": "hard"
   },
   {
     "name": "Sidy Cissoko",
@@ -1861,7 +2557,10 @@
     "nba_conference": "Western",
     "origin": "NBA G League Ignite",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": "France",
+    "mpg": 21.6,
+    "difficulty": "medium"
   },
   {
     "name": "Bilal Coulibaly",
@@ -1869,7 +2568,10 @@
     "nba_conference": "Eastern",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 26.6,
+    "difficulty": "medium"
   },
   {
     "name": "Oso Ighodaro",
@@ -1877,7 +2579,10 @@
     "nba_conference": "Western",
     "origin": "Marquette",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 20.0,
+    "difficulty": "medium"
   },
   {
     "name": "Domantas Sabonis",
@@ -1885,7 +2590,10 @@
     "nba_conference": "Western",
     "origin": "Gonzaga",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 29.9,
+    "difficulty": "easy"
   },
   {
     "name": "Kobe Sanders",
@@ -1893,7 +2601,10 @@
     "nba_conference": "Western",
     "origin": "Nevada",
     "type": "College",
-    "college_conference": "Mountain West"
+    "college_conference": "Mountain West",
+    "alternate_answer": null,
+    "mpg": 20.9,
+    "difficulty": "medium"
   },
   {
     "name": "Spencer Jones",
@@ -1901,7 +2612,10 @@
     "nba_conference": "Western",
     "origin": "Stanford",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 23.5,
+    "difficulty": "medium"
   },
   {
     "name": "Ryan Dunn",
@@ -1909,7 +2623,10 @@
     "nba_conference": "Western",
     "origin": "Virginia",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 20.5,
+    "difficulty": "medium"
   },
   {
     "name": "Andre Drummond",
@@ -1917,7 +2634,10 @@
     "nba_conference": "Eastern",
     "origin": "Connecticut",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 20.0,
+    "difficulty": "medium"
   },
   {
     "name": "Caris LeVert",
@@ -1925,7 +2645,10 @@
     "nba_conference": "Eastern",
     "origin": "Michigan",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 19.7,
+    "difficulty": "hard"
   },
   {
     "name": "Jaden Ivey",
@@ -1933,7 +2656,10 @@
     "nba_conference": "Eastern",
     "origin": "Purdue",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 17.0,
+    "difficulty": "hard"
   },
   {
     "name": "Jonathan Kuminga",
@@ -1941,7 +2667,10 @@
     "nba_conference": "Western",
     "origin": "NBA G League Ignite",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": "DRC",
+    "mpg": 23.8,
+    "difficulty": "medium"
   },
   {
     "name": "Tyler Herro",
@@ -1949,7 +2678,10 @@
     "nba_conference": "Eastern",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 31.7,
+    "difficulty": "medium"
   },
   {
     "name": "Josh Okogie",
@@ -1957,7 +2689,10 @@
     "nba_conference": "Western",
     "origin": "Georgia Tech",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 19.9,
+    "difficulty": "hard"
   },
   {
     "name": "Ryan Nembhard",
@@ -1965,7 +2700,10 @@
     "nba_conference": "Western",
     "origin": "Gonzaga",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 19.8,
+    "difficulty": "hard"
   },
   {
     "name": "Brook Lopez",
@@ -1973,7 +2711,10 @@
     "nba_conference": "Western",
     "origin": "Stanford",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 17.0,
+    "difficulty": "hard"
   },
   {
     "name": "De'Anthony Melton",
@@ -1981,7 +2722,10 @@
     "nba_conference": "Western",
     "origin": "Southern California",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 20.9,
+    "difficulty": "medium"
   },
   {
     "name": "Bones Hyland",
@@ -1989,7 +2733,10 @@
     "nba_conference": "Western",
     "origin": "Virginia Commonwealth",
     "type": "College",
-    "college_conference": "Atlantic 10"
+    "college_conference": "Atlantic 10",
+    "alternate_answer": null,
+    "mpg": 13.7,
+    "difficulty": "hard"
   },
   {
     "name": "Goga Bitadze",
@@ -1997,7 +2744,10 @@
     "nba_conference": "Eastern",
     "origin": "Georgia",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 16.4,
+    "difficulty": "hard"
   },
   {
     "name": "Ja'Kobe Walter",
@@ -2005,7 +2755,10 @@
     "nba_conference": "Eastern",
     "origin": "Baylor",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 17.9,
+    "difficulty": "hard"
   },
   {
     "name": "Nique Clifford",
@@ -2013,7 +2766,10 @@
     "nba_conference": "Western",
     "origin": "Colorado State",
     "type": "College",
-    "college_conference": "Mountain West"
+    "college_conference": "Mountain West",
+    "alternate_answer": null,
+    "mpg": 18.9,
+    "difficulty": "hard"
   },
   {
     "name": "Jordan Walsh",
@@ -2021,7 +2777,10 @@
     "nba_conference": "Eastern",
     "origin": "Arkansas",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 19.0,
+    "difficulty": "hard"
   },
   {
     "name": "Trae Young",
@@ -2029,7 +2788,10 @@
     "nba_conference": "Eastern",
     "origin": "Oklahoma",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 28.0,
+    "difficulty": "easy"
   },
   {
     "name": "Danny Wolf",
@@ -2037,7 +2799,10 @@
     "nba_conference": "Eastern",
     "origin": "Michigan",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 19.3,
+    "difficulty": "hard"
   },
   {
     "name": "Corey Kispert",
@@ -2045,7 +2810,10 @@
     "nba_conference": "Eastern",
     "origin": "Gonzaga",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 19.0,
+    "difficulty": "hard"
   },
   {
     "name": "Daniel Gafford",
@@ -2053,7 +2821,10 @@
     "nba_conference": "Western",
     "origin": "Arkansas",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 20.6,
+    "difficulty": "medium"
   },
   {
     "name": "Herbert Jones",
@@ -2061,7 +2832,10 @@
     "nba_conference": "Western",
     "origin": "Alabama",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 28.2,
+    "difficulty": "medium"
   },
   {
     "name": "Jaxson Hayes",
@@ -2069,7 +2843,10 @@
     "nba_conference": "Western",
     "origin": "Texas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 17.5,
+    "difficulty": "hard"
   },
   {
     "name": "Yves Missi",
@@ -2077,7 +2854,10 @@
     "nba_conference": "Western",
     "origin": "Baylor",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 19.1,
+    "difficulty": "hard"
   },
   {
     "name": "Ben Sheppard",
@@ -2085,7 +2865,10 @@
     "nba_conference": "Eastern",
     "origin": "Belmont",
     "type": "College",
-    "college_conference": "Missouri Valley"
+    "college_conference": "Missouri Valley",
+    "alternate_answer": null,
+    "mpg": 22.5,
+    "difficulty": "medium"
   },
   {
     "name": "Nae'Qwan Tomlin",
@@ -2093,7 +2876,10 @@
     "nba_conference": "Eastern",
     "origin": "Memphis",
     "type": "College",
-    "college_conference": "American"
+    "college_conference": "American",
+    "alternate_answer": null,
+    "mpg": 16.3,
+    "difficulty": "hard"
   },
   {
     "name": "Isaiah Jackson",
@@ -2101,7 +2887,10 @@
     "nba_conference": "Eastern",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 17.2,
+    "difficulty": "hard"
   },
   {
     "name": "Bryce McGowens",
@@ -2109,7 +2898,10 @@
     "nba_conference": "Western",
     "origin": "Nebraska",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 19.4,
+    "difficulty": "hard"
   },
   {
     "name": "Keon Ellis",
@@ -2117,7 +2909,10 @@
     "nba_conference": "Western",
     "origin": "Alabama",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 17.4,
+    "difficulty": "hard"
   },
   {
     "name": "Tre Mann",
@@ -2125,7 +2920,10 @@
     "nba_conference": "Eastern",
     "origin": "Florida",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 16.9,
+    "difficulty": "hard"
   },
   {
     "name": "Vince Williams Jr.",
@@ -2133,7 +2931,10 @@
     "nba_conference": "Western",
     "origin": "Virginia Commonwealth",
     "type": "College",
-    "college_conference": "Atlantic 10"
+    "college_conference": "Atlantic 10",
+    "alternate_answer": null,
+    "mpg": 21.6,
+    "difficulty": "medium"
   },
   {
     "name": "Dean Wade",
@@ -2141,7 +2942,10 @@
     "nba_conference": "Eastern",
     "origin": "Kansas State",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 22.8,
+    "difficulty": "medium"
   },
   {
     "name": "Jaden Hardy",
@@ -2149,7 +2953,10 @@
     "nba_conference": "Western",
     "origin": "NBA G League Ignite",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 12.3,
+    "difficulty": "hard"
   },
   {
     "name": "Gary Payton II",
@@ -2157,7 +2964,10 @@
     "nba_conference": "Western",
     "origin": "Oregon State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 12.7,
+    "difficulty": "hard"
   },
   {
     "name": "Cole Anthony",
@@ -2165,7 +2975,10 @@
     "nba_conference": "Eastern",
     "origin": "North Carolina",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 15.1,
+    "difficulty": "hard"
   },
   {
     "name": "Drake Powell",
@@ -2173,7 +2986,10 @@
     "nba_conference": "Eastern",
     "origin": "North Carolina",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 19.3,
+    "difficulty": "hard"
   },
   {
     "name": "Jordan Miller",
@@ -2181,7 +2997,10 @@
     "nba_conference": "Western",
     "origin": "Miami",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 18.6,
+    "difficulty": "hard"
   },
   {
     "name": "Mouhamed Gueye",
@@ -2189,7 +3008,10 @@
     "nba_conference": "Eastern",
     "origin": "Washington State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 16.0,
+    "difficulty": "hard"
   },
   {
     "name": "Kris Murray",
@@ -2197,7 +3019,10 @@
     "nba_conference": "Western",
     "origin": "Iowa",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 25.7,
+    "difficulty": "medium"
   },
   {
     "name": "Tristan Vukcevic",
@@ -2205,7 +3030,10 @@
     "nba_conference": "Eastern",
     "origin": "Italy",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 11.4,
+    "difficulty": "hard"
   },
   {
     "name": "Jakob Poeltl",
@@ -2213,7 +3041,10 @@
     "nba_conference": "Eastern",
     "origin": "Utah",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 25.3,
+    "difficulty": "medium"
   },
   {
     "name": "Craig Porter Jr.",
@@ -2221,7 +3052,10 @@
     "nba_conference": "Eastern",
     "origin": "Wichita State",
     "type": "College",
-    "college_conference": "American"
+    "college_conference": "American",
+    "alternate_answer": null,
+    "mpg": 17.7,
+    "difficulty": "hard"
   },
   {
     "name": "Nicolas Batum",
@@ -2229,7 +3063,10 @@
     "nba_conference": "Western",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 20.0,
+    "difficulty": "medium"
   },
   {
     "name": "Jalen Pickett",
@@ -2237,7 +3074,10 @@
     "nba_conference": "Western",
     "origin": "Penn State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 18.9,
+    "difficulty": "hard"
   },
   {
     "name": "Alex Caruso",
@@ -2245,7 +3085,10 @@
     "nba_conference": "Western",
     "origin": "Texas A&M",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 18.2,
+    "difficulty": "hard"
   },
   {
     "name": "Cam Whitmore",
@@ -2253,7 +3096,10 @@
     "nba_conference": "Eastern",
     "origin": "Villanova",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 16.9,
+    "difficulty": "hard"
   },
   {
     "name": "Will Riley",
@@ -2261,7 +3107,10 @@
     "nba_conference": "Eastern",
     "origin": "Illinois-Urbana-Champaign",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 14.2,
+    "difficulty": "hard"
   },
   {
     "name": "Jared McCain",
@@ -2269,7 +3118,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 16.7,
+    "difficulty": "hard"
   },
   {
     "name": "Micah Peavy",
@@ -2277,7 +3129,10 @@
     "nba_conference": "Western",
     "origin": "Georgetown",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 16.1,
+    "difficulty": "hard"
   },
   {
     "name": "Tyler Kolek",
@@ -2285,7 +3140,10 @@
     "nba_conference": "Eastern",
     "origin": "Marquette",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 13.3,
+    "difficulty": "hard"
   },
   {
     "name": "Tidjane Salaün",
@@ -2293,7 +3151,10 @@
     "nba_conference": "Eastern",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 16.4,
+    "difficulty": "hard"
   },
   {
     "name": "Al Horford",
@@ -2301,7 +3162,10 @@
     "nba_conference": "Western",
     "origin": "Florida",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 19.7,
+    "difficulty": "hard"
   },
   {
     "name": "Mike Conley",
@@ -2309,7 +3173,10 @@
     "nba_conference": "Western",
     "origin": "Ohio State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 18.4,
+    "difficulty": "hard"
   },
   {
     "name": "Steven Adams",
@@ -2317,7 +3184,10 @@
     "nba_conference": "Western",
     "origin": "Pittsburgh",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 22.8,
+    "difficulty": "medium"
   },
   {
     "name": "Landry Shamet",
@@ -2325,7 +3195,10 @@
     "nba_conference": "Eastern",
     "origin": "Wichita State",
     "type": "College",
-    "college_conference": "American"
+    "college_conference": "American",
+    "alternate_answer": null,
+    "mpg": 20.4,
+    "difficulty": "medium"
   },
   {
     "name": "Robert Williams III",
@@ -2333,7 +3206,10 @@
     "nba_conference": "Western",
     "origin": "Texas A&M",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 16.0,
+    "difficulty": "hard"
   },
   {
     "name": "Josh Minott",
@@ -2341,7 +3217,10 @@
     "nba_conference": "Eastern",
     "origin": "Memphis",
     "type": "College",
-    "college_conference": "American"
+    "college_conference": "American",
+    "alternate_answer": null,
+    "mpg": 17.6,
+    "difficulty": "hard"
   },
   {
     "name": "Cody Williams",
@@ -2349,7 +3228,10 @@
     "nba_conference": "Western",
     "origin": "Colorado",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 17.8,
+    "difficulty": "hard"
   },
   {
     "name": "Jase Richardson",
@@ -2357,7 +3239,10 @@
     "nba_conference": "Eastern",
     "origin": "Michigan State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 12.5,
+    "difficulty": "hard"
   },
   {
     "name": "Ochai Agbaji",
@@ -2365,7 +3250,10 @@
     "nba_conference": "Eastern",
     "origin": "Kansas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 16.5,
+    "difficulty": "hard"
   },
   {
     "name": "Paul Reed",
@@ -2373,7 +3261,10 @@
     "nba_conference": "Eastern",
     "origin": "DePaul",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 12.0,
+    "difficulty": "hard"
   },
   {
     "name": "Aaron Holiday",
@@ -2381,7 +3272,10 @@
     "nba_conference": "Western",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 14.0,
+    "difficulty": "hard"
   },
   {
     "name": "Jaylin Williams",
@@ -2389,7 +3283,10 @@
     "nba_conference": "Western",
     "origin": "Arkansas",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 18.1,
+    "difficulty": "hard"
   },
   {
     "name": "Kevin Love",
@@ -2397,7 +3294,10 @@
     "nba_conference": "Western",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 17.3,
+    "difficulty": "hard"
   },
   {
     "name": "Derrick Jones Jr.",
@@ -2405,7 +3305,10 @@
     "nba_conference": "Western",
     "origin": "UNLV",
     "type": "College",
-    "college_conference": "Mountain West"
+    "college_conference": "Mountain West",
+    "alternate_answer": null,
+    "mpg": 24.2,
+    "difficulty": "medium"
   },
   {
     "name": "Jarred Vanderbilt",
@@ -2413,7 +3316,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 19.6,
+    "difficulty": "hard"
   },
   {
     "name": "Kenrich Williams",
@@ -2421,7 +3327,10 @@
     "nba_conference": "Western",
     "origin": "TCU",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 15.3,
+    "difficulty": "hard"
   },
   {
     "name": "Dalton Knecht",
@@ -2429,7 +3338,10 @@
     "nba_conference": "Western",
     "origin": "Tennessee",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 12.5,
+    "difficulty": "hard"
   },
   {
     "name": "Jaylen Clark",
@@ -2437,7 +3349,10 @@
     "nba_conference": "Western",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 13.9,
+    "difficulty": "hard"
   },
   {
     "name": "Karlo Matković",
@@ -2445,7 +3360,10 @@
     "nba_conference": "Western",
     "origin": "Bosnia and Herzegovina",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 12.8,
+    "difficulty": "hard"
   },
   {
     "name": "Asa Newell",
@@ -2453,7 +3371,10 @@
     "nba_conference": "Eastern",
     "origin": "Georgia",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 10.6,
+    "difficulty": "hard"
   },
   {
     "name": "GG Jackson",
@@ -2461,7 +3382,10 @@
     "nba_conference": "Western",
     "origin": "South Carolina",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 15.7,
+    "difficulty": "hard"
   },
   {
     "name": "Tyrese Proctor",
@@ -2469,7 +3393,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 10.5,
+    "difficulty": "hard"
   },
   {
     "name": "Hugo González",
@@ -2477,7 +3404,10 @@
     "nba_conference": "Eastern",
     "origin": "Spain",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 14.9,
+    "difficulty": "hard"
   },
   {
     "name": "Pat Spencer",
@@ -2485,7 +3415,10 @@
     "nba_conference": "Western",
     "origin": "Northwestern",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 13.4,
+    "difficulty": "hard"
   },
   {
     "name": "Branden Carlson",
@@ -2493,7 +3426,10 @@
     "nba_conference": "Western",
     "origin": "Utah",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 11.0,
+    "difficulty": "hard"
   },
   {
     "name": "Quenton Jackson",
@@ -2501,7 +3437,10 @@
     "nba_conference": "Eastern",
     "origin": "Texas A&M",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 15.8,
+    "difficulty": "hard"
   },
   {
     "name": "Justin Edwards",
@@ -2509,7 +3448,10 @@
     "nba_conference": "Eastern",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 14.4,
+    "difficulty": "hard"
   },
   {
     "name": "Drew Eubanks",
@@ -2517,7 +3459,10 @@
     "nba_conference": "Western",
     "origin": "Oregon State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 14.0,
+    "difficulty": "hard"
   },
   {
     "name": "Jabari Walker",
@@ -2525,7 +3470,10 @@
     "nba_conference": "Eastern",
     "origin": "Colorado",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 12.7,
+    "difficulty": "hard"
   },
   {
     "name": "Jalen Wilson",
@@ -2533,7 +3481,10 @@
     "nba_conference": "Eastern",
     "origin": "Kansas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 13.9,
+    "difficulty": "hard"
   },
   {
     "name": "Mitchell Robinson",
@@ -2541,7 +3492,10 @@
     "nba_conference": "Eastern",
     "origin": "Western Kentucky",
     "type": "College",
-    "college_conference": "C-USA"
+    "college_conference": "C-USA",
+    "alternate_answer": null,
+    "mpg": 19.5,
+    "difficulty": "hard"
   },
   {
     "name": "Taylor Hendricks",
@@ -2549,7 +3503,10 @@
     "nba_conference": "Western",
     "origin": "Central Florida",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 15.0,
+    "difficulty": "hard"
   },
   {
     "name": "RayJ Dennis",
@@ -2557,7 +3514,10 @@
     "nba_conference": "Eastern",
     "origin": "Baylor",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 12.9,
+    "difficulty": "hard"
   },
   {
     "name": "Lonzo Ball",
@@ -2565,7 +3525,10 @@
     "nba_conference": "Eastern",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 21.3,
+    "difficulty": "medium"
   },
   {
     "name": "Zeke Nnaji",
@@ -2573,7 +3536,10 @@
     "nba_conference": "Western",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 13.7,
+    "difficulty": "hard"
   },
   {
     "name": "Keaton Wallace",
@@ -2581,7 +3547,10 @@
     "nba_conference": "Eastern",
     "origin": "Texas-San Antonio",
     "type": "College",
-    "college_conference": "American"
+    "college_conference": "American",
+    "alternate_answer": null,
+    "mpg": 12.2,
+    "difficulty": "hard"
   },
   {
     "name": "Tony Bradley",
@@ -2589,7 +3558,10 @@
     "nba_conference": "Eastern",
     "origin": "North Carolina",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 10.9,
+    "difficulty": "hard"
   },
   {
     "name": "Jamaree Bouyea",
@@ -2597,7 +3569,10 @@
     "nba_conference": "Western",
     "origin": "San Francisco",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 14.7,
+    "difficulty": "hard"
   },
   {
     "name": "Johnny Furphy",
@@ -2605,7 +3580,10 @@
     "nba_conference": "Eastern",
     "origin": "Kansas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 17.9,
+    "difficulty": "hard"
   },
   {
     "name": "Jordan Hawkins",
@@ -2613,7 +3591,10 @@
     "nba_conference": "Western",
     "origin": "Connecticut",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 14.1,
+    "difficulty": "hard"
   },
   {
     "name": "Noah Penda",
@@ -2621,7 +3602,10 @@
     "nba_conference": "Eastern",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 14.1,
+    "difficulty": "hard"
   },
   {
     "name": "Zach Edey",
@@ -2629,7 +3613,10 @@
     "nba_conference": "Western",
     "origin": "Purdue",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 25.8,
+    "difficulty": "medium"
   },
   {
     "name": "Thomas Bryant",
@@ -2637,7 +3624,10 @@
     "nba_conference": "Eastern",
     "origin": "Indiana",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 9.1,
+    "difficulty": "hard"
   },
   {
     "name": "Adem Bona",
@@ -2645,7 +3635,10 @@
     "nba_conference": "Eastern",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 16.7,
+    "difficulty": "hard"
   },
   {
     "name": "Nick Smith Jr.",
@@ -2653,7 +3646,10 @@
     "nba_conference": "Western",
     "origin": "Arkansas",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 13.0,
+    "difficulty": "hard"
   },
   {
     "name": "Trayce Jackson-Davis",
@@ -2661,7 +3657,10 @@
     "nba_conference": "Western",
     "origin": "Indiana",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 11.6,
+    "difficulty": "hard"
   },
   {
     "name": "Trendon Watford",
@@ -2669,7 +3668,10 @@
     "nba_conference": "Eastern",
     "origin": "Louisiana State",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 15.7,
+    "difficulty": "hard"
   },
   {
     "name": "Gui Santos",
@@ -2677,7 +3679,10 @@
     "nba_conference": "Western",
     "origin": "Brazil",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 11.8,
+    "difficulty": "hard"
   },
   {
     "name": "Clint Capela",
@@ -2685,7 +3690,10 @@
     "nba_conference": "Western",
     "origin": "Switzerland",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 11.6,
+    "difficulty": "hard"
   },
   {
     "name": "Jett Howard",
@@ -2693,7 +3701,10 @@
     "nba_conference": "Eastern",
     "origin": "Michigan",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 11.0,
+    "difficulty": "hard"
   },
   {
     "name": "Nolan Traore",
@@ -2701,7 +3712,10 @@
     "nba_conference": "Eastern",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 18.6,
+    "difficulty": "hard"
   },
   {
     "name": "Christian Braun",
@@ -2709,7 +3723,10 @@
     "nba_conference": "Western",
     "origin": "Kansas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 28.9,
+    "difficulty": "medium"
   },
   {
     "name": "Tyus Jones",
@@ -2717,7 +3734,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 16.1,
+    "difficulty": "hard"
   },
   {
     "name": "Bogdan Bogdanović",
@@ -2725,7 +3745,10 @@
     "nba_conference": "Western",
     "origin": "Serbia",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 22.5,
+    "difficulty": "medium"
   },
   {
     "name": "Kyle Anderson",
@@ -2733,7 +3756,10 @@
     "nba_conference": "Western",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 19.7,
+    "difficulty": "hard"
   },
   {
     "name": "Baylor Scheierman",
@@ -2741,7 +3767,10 @@
     "nba_conference": "Eastern",
     "origin": "Creighton",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 12.7,
+    "difficulty": "hard"
   },
   {
     "name": "Rob Dillingham",
@@ -2749,7 +3778,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 9.6,
+    "difficulty": "hard"
   },
   {
     "name": "Jamison Battle",
@@ -2757,7 +3789,10 @@
     "nba_conference": "Eastern",
     "origin": "Ohio State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 8.8,
+    "difficulty": "hard"
   },
   {
     "name": "Liam McNeeley",
@@ -2765,7 +3800,10 @@
     "nba_conference": "Eastern",
     "origin": "Connecticut",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 12.4,
+    "difficulty": "hard"
   },
   {
     "name": "Jeremy Sochan",
@@ -2773,7 +3811,10 @@
     "nba_conference": "Western",
     "origin": "Baylor",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 13.1,
+    "difficulty": "hard"
   },
   {
     "name": "Gabe Vincent",
@@ -2781,7 +3822,10 @@
     "nba_conference": "Western",
     "origin": "California-Santa Barbara",
     "type": "College",
-    "college_conference": "Big West"
+    "college_conference": "Big West",
+    "alternate_answer": null,
+    "mpg": 19.6,
+    "difficulty": "hard"
   },
   {
     "name": "Jevon Carter",
@@ -2789,7 +3833,10 @@
     "nba_conference": "Eastern",
     "origin": "West Virginia",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 11.1,
+    "difficulty": "hard"
   },
   {
     "name": "Caleb Martin",
@@ -2797,7 +3844,10 @@
     "nba_conference": "Western",
     "origin": "Nevada",
     "type": "College",
-    "college_conference": "Mountain West"
+    "college_conference": "Mountain West",
+    "alternate_answer": null,
+    "mpg": 12.1,
+    "difficulty": "hard"
   },
   {
     "name": "Cam Christie",
@@ -2805,7 +3855,10 @@
     "nba_conference": "Western",
     "origin": "Minnesota",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 10.3,
+    "difficulty": "hard"
   },
   {
     "name": "Guerschon Yabusele",
@@ -2813,7 +3866,10 @@
     "nba_conference": "Eastern",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 9.2,
+    "difficulty": "hard"
   },
   {
     "name": "Micah Potter",
@@ -2821,7 +3877,10 @@
     "nba_conference": "Eastern",
     "origin": "Wisconsin",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 17.5,
+    "difficulty": "hard"
   },
   {
     "name": "Julian Strawther",
@@ -2829,7 +3888,10 @@
     "nba_conference": "Western",
     "origin": "Gonzaga",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 10.4,
+    "difficulty": "hard"
   },
   {
     "name": "Dwight Powell",
@@ -2837,7 +3899,10 @@
     "nba_conference": "Western",
     "origin": "Stanford",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 14.9,
+    "difficulty": "hard"
   },
   {
     "name": "Jonathan Isaac",
@@ -2845,7 +3910,10 @@
     "nba_conference": "Eastern",
     "origin": "Florida State",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 10.0,
+    "difficulty": "hard"
   },
   {
     "name": "Malaki Branham",
@@ -2853,7 +3921,10 @@
     "nba_conference": "Eastern",
     "origin": "Ohio State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 9.5,
+    "difficulty": "hard"
   },
   {
     "name": "Jeremiah Robinson-Earl",
@@ -2861,7 +3932,10 @@
     "nba_conference": "Western",
     "origin": "Villanova",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 16.4,
+    "difficulty": "hard"
   },
   {
     "name": "Moussa Cisse",
@@ -2869,7 +3943,10 @@
     "nba_conference": "Western",
     "origin": "Memphis",
     "type": "College",
-    "college_conference": "American"
+    "college_conference": "American",
+    "alternate_answer": null,
+    "mpg": 11.6,
+    "difficulty": "hard"
   },
   {
     "name": "Rayan Rupert",
@@ -2877,7 +3954,10 @@
     "nba_conference": "Western",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 11.8,
+    "difficulty": "hard"
   },
   {
     "name": "Terrence Shannon Jr.",
@@ -2885,7 +3965,10 @@
     "nba_conference": "Western",
     "origin": "Illinois",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 12.8,
+    "difficulty": "hard"
   },
   {
     "name": "Josh Green",
@@ -2893,7 +3976,10 @@
     "nba_conference": "Eastern",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 15.9,
+    "difficulty": "hard"
   },
   {
     "name": "Kelly Olynyk",
@@ -2901,7 +3987,10 @@
     "nba_conference": "Western",
     "origin": "Gonzaga",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 9.5,
+    "difficulty": "hard"
   },
   {
     "name": "Zach Collins",
@@ -2909,7 +3998,10 @@
     "nba_conference": "Eastern",
     "origin": "Gonzaga",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 18.4,
+    "difficulty": "hard"
   },
   {
     "name": "Dylan Cardwell",
@@ -2917,7 +4009,10 @@
     "nba_conference": "Western",
     "origin": "Auburn",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 19.6,
+    "difficulty": "hard"
   },
   {
     "name": "Olivier-Maxence Prosper",
@@ -2925,7 +4020,10 @@
     "nba_conference": "Western",
     "origin": "Marquette",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 11.3,
+    "difficulty": "hard"
   },
   {
     "name": "Duop Reath",
@@ -2933,7 +4031,10 @@
     "nba_conference": "Western",
     "origin": "Louisiana State",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 8.1,
+    "difficulty": "hard"
   },
   {
     "name": "Gary Harris",
@@ -2941,7 +4042,10 @@
     "nba_conference": "Eastern",
     "origin": "Michigan State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 14.9,
+    "difficulty": "hard"
   },
   {
     "name": "Kasparas Jakučionis",
@@ -2949,7 +4053,10 @@
     "nba_conference": "Eastern",
     "origin": "Illinois-Urbana-Champaign",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 15.0,
+    "difficulty": "hard"
   },
   {
     "name": "Carter Bryant",
@@ -2957,7 +4064,10 @@
     "nba_conference": "Western",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 8.2,
+    "difficulty": "hard"
   },
   {
     "name": "Ousmane Dieng",
@@ -2965,7 +4075,10 @@
     "nba_conference": "Western",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 11.4,
+    "difficulty": "hard"
   },
   {
     "name": "Jericho Sims",
@@ -2973,7 +4086,10 @@
     "nba_conference": "Eastern",
     "origin": "Texas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 14.0,
+    "difficulty": "hard"
   },
   {
     "name": "Yanic Konan Niederhäuser",
@@ -2981,7 +4097,10 @@
     "nba_conference": "Western",
     "origin": "Penn State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 8.7,
+    "difficulty": "hard"
   },
   {
     "name": "Nick Richards",
@@ -2989,7 +4108,10 @@
     "nba_conference": "Western",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 9.1,
+    "difficulty": "hard"
   },
   {
     "name": "Dalen Terry",
@@ -2997,7 +4119,10 @@
     "nba_conference": "Eastern",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 10.1,
+    "difficulty": "hard"
   },
   {
     "name": "Ethan Thompson",
@@ -3005,7 +4130,10 @@
     "nba_conference": "Eastern",
     "origin": "Oregon State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 16.1,
+    "difficulty": "hard"
   },
   {
     "name": "KJ Simpson",
@@ -3013,7 +4141,10 @@
     "nba_conference": "Eastern",
     "origin": "Colorado",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 15.9,
+    "difficulty": "hard"
   },
   {
     "name": "Julian Phillips",
@@ -3021,7 +4152,10 @@
     "nba_conference": "Eastern",
     "origin": "Tennessee",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 9.7,
+    "difficulty": "hard"
   },
   {
     "name": "Kobe Brown",
@@ -3029,7 +4163,10 @@
     "nba_conference": "Western",
     "origin": "Missouri",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 9.3,
+    "difficulty": "hard"
   },
   {
     "name": "Garrison Mathews",
@@ -3037,7 +4174,10 @@
     "nba_conference": "Eastern",
     "origin": "Lipscomb",
     "type": "College",
-    "college_conference": "ASUN"
+    "college_conference": "ASUN",
+    "alternate_answer": null,
+    "mpg": 13.1,
+    "difficulty": "hard"
   },
   {
     "name": "John Konchar",
@@ -3045,7 +4185,10 @@
     "nba_conference": "Western",
     "origin": "Indiana-Purdue Fort Wayne",
     "type": "College",
-    "college_conference": "Horizon"
+    "college_conference": "Horizon",
+    "alternate_answer": null,
+    "mpg": 13.6,
+    "difficulty": "hard"
   },
   {
     "name": "Marcus Sasser",
@@ -3053,7 +4196,10 @@
     "nba_conference": "Eastern",
     "origin": "Houston",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 9.6,
+    "difficulty": "hard"
   },
   {
     "name": "Ben Saraf",
@@ -3061,7 +4207,10 @@
     "nba_conference": "Eastern",
     "origin": "Israel",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 16.9,
+    "difficulty": "hard"
   },
   {
     "name": "Jae'Sean Tate",
@@ -3069,7 +4218,10 @@
     "nba_conference": "Western",
     "origin": "Ohio State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 8.0,
+    "difficulty": "hard"
   },
   {
     "name": "Mohamed Diawara",
@@ -3077,7 +4229,10 @@
     "nba_conference": "Eastern",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 5.1,
+    "difficulty": "hard"
   },
   {
     "name": "PJ Hall",
@@ -3085,7 +4240,10 @@
     "nba_conference": "Eastern",
     "origin": "Clemson",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 10.3,
+    "difficulty": "hard"
   },
   {
     "name": "Javon Small",
@@ -3093,7 +4251,10 @@
     "nba_conference": "Western",
     "origin": "West Virginia",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 12.3,
+    "difficulty": "hard"
   },
   {
     "name": "Larry Nance Jr.",
@@ -3101,7 +4262,10 @@
     "nba_conference": "Eastern",
     "origin": "Wyoming",
     "type": "College",
-    "college_conference": "Mountain West"
+    "college_conference": "Mountain West",
+    "alternate_answer": null,
+    "mpg": 14.3,
+    "difficulty": "hard"
   },
   {
     "name": "Jamir Watkins",
@@ -3109,7 +4273,10 @@
     "nba_conference": "Eastern",
     "origin": "Florida State",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 14.5,
+    "difficulty": "hard"
   },
   {
     "name": "Pat Connaughton",
@@ -3117,7 +4284,10 @@
     "nba_conference": "Eastern",
     "origin": "Notre Dame",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 7.0,
+    "difficulty": "hard"
   },
   {
     "name": "Rasheer Fleming",
@@ -3125,7 +4295,10 @@
     "nba_conference": "Western",
     "origin": "St. Joseph's (PA)",
     "type": "College",
-    "college_conference": "Atlantic 10"
+    "college_conference": "Atlantic 10",
+    "alternate_answer": null,
+    "mpg": 6.8,
+    "difficulty": "hard"
   },
   {
     "name": "Myron Gardner",
@@ -3133,7 +4306,10 @@
     "nba_conference": "Eastern",
     "origin": "Arkansas-Little Rock",
     "type": "College",
-    "college_conference": "Ohio Valley"
+    "college_conference": "Ohio Valley",
+    "alternate_answer": null,
+    "mpg": 6.8,
+    "difficulty": "hard"
   },
   {
     "name": "Yang Hansen",
@@ -3141,7 +4317,10 @@
     "nba_conference": "Western",
     "origin": "China",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 8.3,
+    "difficulty": "hard"
   },
   {
     "name": "Joan Beringer",
@@ -3149,7 +4328,10 @@
     "nba_conference": "Western",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 6.7,
+    "difficulty": "hard"
   },
   {
     "name": "Keshad Johnson",
@@ -3157,7 +4339,10 @@
     "nba_conference": "Eastern",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 7.6,
+    "difficulty": "hard"
   },
   {
     "name": "Isaiah Livers",
@@ -3165,7 +4350,10 @@
     "nba_conference": "Western",
     "origin": "Michigan",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 10.4,
+    "difficulty": "hard"
   },
   {
     "name": "Chaz Lanier",
@@ -3173,7 +4361,10 @@
     "nba_conference": "Eastern",
     "origin": "Tennessee",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 9.3,
+    "difficulty": "hard"
   },
   {
     "name": "Amir Coffey",
@@ -3181,7 +4372,10 @@
     "nba_conference": "Eastern",
     "origin": "Minnesota",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 8.2,
+    "difficulty": "hard"
   },
   {
     "name": "DaRon Holmes II",
@@ -3189,7 +4383,10 @@
     "nba_conference": "Western",
     "origin": "Dayton",
     "type": "College",
-    "college_conference": "Atlantic 10"
+    "college_conference": "Atlantic 10",
+    "alternate_answer": null,
+    "mpg": 14.1,
+    "difficulty": "hard"
   },
   {
     "name": "Lindy Waters III",
@@ -3197,7 +4394,10 @@
     "nba_conference": "Western",
     "origin": "Oklahoma State",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 7.2,
+    "difficulty": "hard"
   },
   {
     "name": "Chris Youngblood",
@@ -3205,7 +4405,10 @@
     "nba_conference": "Western",
     "origin": "Alabama",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 5.0,
+    "difficulty": "hard"
   },
   {
     "name": "A.J. Lawson",
@@ -3213,7 +4416,10 @@
     "nba_conference": "Eastern",
     "origin": "South Carolina",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 9.6,
+    "difficulty": "hard"
   },
   {
     "name": "Ariel Hukporti",
@@ -3221,7 +4427,10 @@
     "nba_conference": "Eastern",
     "origin": "Germany",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 8.9,
+    "difficulty": "hard"
   },
   {
     "name": "Jamal Cain",
@@ -3229,7 +4438,10 @@
     "nba_conference": "Eastern",
     "origin": "Oakland",
     "type": "College",
-    "college_conference": "Horizon"
+    "college_conference": "Horizon",
+    "alternate_answer": null,
+    "mpg": 7.0,
+    "difficulty": "hard"
   },
   {
     "name": "Chris Paul",
@@ -3237,7 +4449,10 @@
     "nba_conference": "Western",
     "origin": "Wake Forest",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 14.2,
+    "difficulty": "easy"
   },
   {
     "name": "Kevon Looney",
@@ -3245,7 +4460,10 @@
     "nba_conference": "Western",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 13.9,
+    "difficulty": "hard"
   },
   {
     "name": "Leonard Miller",
@@ -3253,7 +4471,10 @@
     "nba_conference": "Western",
     "origin": "NBA G League Ignite",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": "Canada",
+    "mpg": 5.1,
+    "difficulty": "hard"
   },
   {
     "name": "Dorian Finney-Smith",
@@ -3261,7 +4482,10 @@
     "nba_conference": "Western",
     "origin": "Florida",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 15.5,
+    "difficulty": "hard"
   },
   {
     "name": "Hunter Tyson",
@@ -3269,7 +4493,10 @@
     "nba_conference": "Western",
     "origin": "Clemson",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 8.0,
+    "difficulty": "hard"
   },
   {
     "name": "Jordan McLaughlin",
@@ -3277,7 +4504,10 @@
     "nba_conference": "Western",
     "origin": "Southern California",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 6.1,
+    "difficulty": "hard"
   },
   {
     "name": "Maxi Kleber",
@@ -3285,7 +4515,10 @@
     "nba_conference": "Western",
     "origin": "Germany",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 11.5,
+    "difficulty": "hard"
   },
   {
     "name": "Pete Nance",
@@ -3293,7 +4526,10 @@
     "nba_conference": "Eastern",
     "origin": "Northwestern",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 7.4,
+    "difficulty": "hard"
   },
   {
     "name": "Devin Carter",
@@ -3301,7 +4537,10 @@
     "nba_conference": "Western",
     "origin": "Providence",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 8.3,
+    "difficulty": "hard"
   },
   {
     "name": "AJ Johnson",
@@ -3309,7 +4548,10 @@
     "nba_conference": "Eastern",
     "origin": "Illawarra",
     "type": "Other",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 7.1,
+    "difficulty": "hard"
   },
   {
     "name": "JD Davison",
@@ -3317,7 +4559,10 @@
     "nba_conference": "Western",
     "origin": "Alabama",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 7.2,
+    "difficulty": "hard"
   },
   {
     "name": "Taelon Peter",
@@ -3325,7 +4570,10 @@
     "nba_conference": "Eastern",
     "origin": "Liberty",
     "type": "College",
-    "college_conference": "C-USA"
+    "college_conference": "C-USA",
+    "alternate_answer": null,
+    "mpg": 6.3,
+    "difficulty": "hard"
   },
   {
     "name": "Drew Timme",
@@ -3333,7 +4581,10 @@
     "nba_conference": "Western",
     "origin": "Gonzaga",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 8.4,
+    "difficulty": "hard"
   },
   {
     "name": "Christian Koloko",
@@ -3341,7 +4592,10 @@
     "nba_conference": "Eastern",
     "origin": "Arizona",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 14.9,
+    "difficulty": "hard"
   },
   {
     "name": "Johnny Juzang",
@@ -3349,7 +4603,10 @@
     "nba_conference": "Western",
     "origin": "UCLA",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 3.9,
+    "difficulty": "hard"
   },
   {
     "name": "Bronny James",
@@ -3357,7 +4614,10 @@
     "nba_conference": "Western",
     "origin": "Southern California",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 6.9,
+    "difficulty": "hard"
   },
   {
     "name": "Andre Jackson Jr.",
@@ -3365,7 +4625,10 @@
     "nba_conference": "Eastern",
     "origin": "Connecticut",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 6.7,
+    "difficulty": "hard"
   },
   {
     "name": "Nigel Hayes-Davis",
@@ -3373,7 +4636,10 @@
     "nba_conference": "Western",
     "origin": "Wisconsin",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 7.6,
+    "difficulty": "hard"
   },
   {
     "name": "David Jones Garcia",
@@ -3381,7 +4647,10 @@
     "nba_conference": "Western",
     "origin": "Memphis",
     "type": "College",
-    "college_conference": "American"
+    "college_conference": "American",
+    "alternate_answer": null,
+    "mpg": 6.2,
+    "difficulty": "hard"
   },
   {
     "name": "Jeff Green",
@@ -3389,7 +4658,10 @@
     "nba_conference": "Western",
     "origin": "Georgetown",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 4.4,
+    "difficulty": "hard"
   },
   {
     "name": "Anthony Gill",
@@ -3397,7 +4669,10 @@
     "nba_conference": "Eastern",
     "origin": "Virginia",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 4.3,
+    "difficulty": "hard"
   },
   {
     "name": "Xavier Tillman",
@@ -3405,7 +4680,10 @@
     "nba_conference": "Eastern",
     "origin": "Michigan State",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 8.5,
+    "difficulty": "hard"
   },
   {
     "name": "Alijah Martin",
@@ -3413,7 +4691,10 @@
     "nba_conference": "Eastern",
     "origin": "Florida",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 8.8,
+    "difficulty": "hard"
   },
   {
     "name": "Jonathan Mogbo",
@@ -3421,7 +4702,10 @@
     "nba_conference": "Eastern",
     "origin": "San Francisco",
     "type": "College",
-    "college_conference": "WCC"
+    "college_conference": "WCC",
+    "alternate_answer": null,
+    "mpg": 6.8,
+    "difficulty": "hard"
   },
   {
     "name": "Brooks Barnhizer",
@@ -3429,7 +4713,10 @@
     "nba_conference": "Western",
     "origin": "Northwestern",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 7.6,
+    "difficulty": "hard"
   },
   {
     "name": "Kevin McCullar Jr.",
@@ -3437,7 +4724,10 @@
     "nba_conference": "Eastern",
     "origin": "Kansas",
     "type": "College",
-    "college_conference": "Big 12"
+    "college_conference": "Big 12",
+    "alternate_answer": null,
+    "mpg": 7.2,
+    "difficulty": "hard"
   },
   {
     "name": "Luke Travers",
@@ -3445,7 +4735,10 @@
     "nba_conference": "Eastern",
     "origin": "Australia",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 8.6,
+    "difficulty": "hard"
   },
   {
     "name": "Mason Plumlee",
@@ -3453,7 +4746,10 @@
     "nba_conference": "Eastern",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 8.9,
+    "difficulty": "hard"
   },
   {
     "name": "Khaman Maluach",
@@ -3461,7 +4757,10 @@
     "nba_conference": "Western",
     "origin": "Duke",
     "type": "College",
-    "college_conference": "ACC"
+    "college_conference": "ACC",
+    "alternate_answer": null,
+    "mpg": 4.6,
+    "difficulty": "hard"
   },
   {
     "name": "Caleb Houstan",
@@ -3469,7 +4768,10 @@
     "nba_conference": "Eastern",
     "origin": "Michigan",
     "type": "College",
-    "college_conference": "Big Ten"
+    "college_conference": "Big Ten",
+    "alternate_answer": null,
+    "mpg": 4.9,
+    "difficulty": "hard"
   },
   {
     "name": "Thanasis Antetokounmpo",
@@ -3477,7 +4779,10 @@
     "nba_conference": "Eastern",
     "origin": "Greece",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 3.1,
+    "difficulty": "hard"
   },
   {
     "name": "Kam Jones",
@@ -3485,7 +4790,10 @@
     "nba_conference": "Eastern",
     "origin": "Marquette",
     "type": "College",
-    "college_conference": "Big East"
+    "college_conference": "Big East",
+    "alternate_answer": null,
+    "mpg": 7.2,
+    "difficulty": "hard"
   },
   {
     "name": "Adou Thiero",
@@ -3493,7 +4801,10 @@
     "nba_conference": "Western",
     "origin": "Arkansas",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 5.8,
+    "difficulty": "hard"
   },
   {
     "name": "Amari Williams",
@@ -3501,7 +4812,10 @@
     "nba_conference": "Eastern",
     "origin": "Kentucky",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 6.2,
+    "difficulty": "hard"
   },
   {
     "name": "Joe Ingles",
@@ -3509,7 +4823,10 @@
     "nba_conference": "Western",
     "origin": "Australia",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 4.2,
+    "difficulty": "hard"
   },
   {
     "name": "Bismack Biyombo",
@@ -3517,7 +4834,10 @@
     "nba_conference": "Western",
     "origin": "DRC",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 5.9,
+    "difficulty": "hard"
   },
   {
     "name": "Pacôme Dadiet",
@@ -3525,7 +4845,10 @@
     "nba_conference": "Eastern",
     "origin": "France",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 3.2,
+    "difficulty": "hard"
   },
   {
     "name": "Garrett Temple",
@@ -3533,7 +4856,10 @@
     "nba_conference": "Eastern",
     "origin": "Louisiana State",
     "type": "College",
-    "college_conference": "SEC"
+    "college_conference": "SEC",
+    "alternate_answer": null,
+    "mpg": 2.8,
+    "difficulty": "hard"
   },
   {
     "name": "Lachlan Olbrich",
@@ -3541,6 +4867,9 @@
     "nba_conference": "Eastern",
     "origin": "Australia",
     "type": "Country",
-    "college_conference": "Other"
+    "college_conference": "Other",
+    "alternate_answer": null,
+    "mpg": 7.3,
+    "difficulty": "hard"
   }
 ]
