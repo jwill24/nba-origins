@@ -163,6 +163,41 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
         user_lower = user_answer.lower().strip()
         correct_lower = correct_answer.lower().strip()
         
+        # Helper function for fuzzy matching (Levenshtein distance)
+        def similarity_ratio(s1, s2):
+            """Calculate similarity ratio between two strings (0-1)"""
+            # Normalize: remove punctuation and extra spaces
+            import re
+            s1_norm = re.sub(r'[.\-\'\s]+', '', s1.lower())
+            s2_norm = re.sub(r'[.\-\'\s]+', '', s2.lower())
+            
+            if not s1_norm or not s2_norm:
+                return 0
+            
+            # Simple Levenshtein distance
+            if s1_norm == s2_norm:
+                return 1.0
+            
+            # Calculate edit distance
+            len1, len2 = len(s1_norm), len(s2_norm)
+            if len1 > len2:
+                s1_norm, s2_norm = s2_norm, s1_norm
+                len1, len2 = len2, len1
+            
+            distances = range(len1 + 1)
+            for i2, c2 in enumerate(s2_norm):
+                new_distances = [i2 + 1]
+                for i1, c1 in enumerate(s1_norm):
+                    if c1 == c2:
+                        new_distances.append(distances[i1])
+                    else:
+                        new_distances.append(1 + min((distances[i1], distances[i1 + 1], new_distances[-1])))
+                distances = new_distances
+            
+            edit_distance = distances[-1]
+            max_len = max(len(s1_norm), len(s2_norm))
+            return 1 - (edit_distance / max_len)
+        
         # Expand abbreviations before comparison
         if user_lower in SCHOOL_ABBREVIATIONS:
             user_expanded = SCHOOL_ABBREVIATIONS[user_lower]
@@ -178,6 +213,13 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
         if user_expanded == correct_expanded:
             return True
         if user_lower == correct_lower:
+            return True
+        
+        # Fuzzy match for typos (85% similarity threshold)
+        # "gonaga" vs "gonzaga" = 85.7% match ✓
+        # "st vincent st marys" vs "st vincent st mary" = 95% match ✓
+        similarity = similarity_ratio(user_lower, correct_lower)
+        if similarity >= 0.85:
             return True
         
         # Check if abbreviation matches expanded form
