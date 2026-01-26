@@ -108,81 +108,143 @@ SPECIAL_PROGRAMS = {
     'ot elite': 'Overtime Elite'
 }
 
+# Common school abbreviations mapping to their full names
+SCHOOL_ABBREVIATIONS = {
+    'uconn': 'connecticut',
+    'k state': 'kansas state',
+    'k-state': 'kansas state',
+    'vt': 'virginia tech',
+    'ku': 'kansas',
+    'uk': 'kentucky',
+    'unlv': 'nevada las vegas',
+    'unlv': 'nevada-las vegas',
+    'usc': 'southern california',  # Could also be South Carolina, but context will determine
+    'fsu': 'florida state',
+    'osu': 'ohio state',
+    'asu': 'arizona state',
+    'lsu': 'louisiana state',
+    'tcu': 'texas christian',
+    'smu': 'southern methodist',
+    'byu': 'brigham young',
+    'ucf': 'central florida',
+    'vcu': 'virginia commonwealth',
+    'ucla': 'california los angeles',
+    'unc': 'north carolina',
+    'uva': 'virginia',
+    'psu': 'penn state',
+    'msu': 'michigan state',
+    'iu': 'indiana',
+    'ttu': 'texas tech',
+    'ksu': 'kansas state',
+    'wvu': 'west virginia',
+    'uga': 'georgia',
+    'ua': 'arizona',
+    'uf': 'florida',
+    'ut': 'texas',
+    'ou': 'oklahoma'
+}
+
 def check_answer(user_answer, correct_answer, player_type, player_data=None):
     """
     Smart answer checking that handles college name variations
     For G League/Overtime Elite international players, accepts both team and country
     """
-    user_lower = user_answer.lower().strip()
-    correct_lower = correct_answer.lower().strip()
-    
-    # Exact match
-    if user_lower == correct_lower:
-        return True
-    
-    # Check if this is a special program (G League Ignite, Overtime Elite)
-    # For these, we accept EITHER the program name OR the country
-    if player_data:
-        origin_lower = player_data.get('origin', '').lower()
+    try:
+        user_lower = user_answer.lower().strip()
+        correct_lower = correct_answer.lower().strip()
         
-        # Check if the correct answer is a special program
-        if origin_lower in SPECIAL_PROGRAMS or any(prog in origin_lower for prog in ['ignite', 'overtime elite']):
-            # If player has a country (not USA), accept the country as an answer too
-            # This is stored in a hypothetical 'country' field, but we can infer from type
-            # For now, if correct answer is the program, check if user gave a country name
-            # We'd need to pass more player data to do this perfectly
+        # Expand abbreviations before comparison
+        if user_lower in SCHOOL_ABBREVIATIONS:
+            user_expanded = SCHOOL_ABBREVIATIONS[user_lower]
+        else:
+            user_expanded = user_lower
             
-            # Accept the program name variations
-            if user_lower in SPECIAL_PROGRAMS:
-                return True
-    
-    # For colleges, check if both map to the same school via the dictionary
-    if player_type == 'College':
-        # Check if user's answer is in the dictionary
-        if user_lower in COLLEGES_DICT and correct_lower in COLLEGES_DICT:
-            # Get conference for both
-            user_conf = COLLEGES_DICT[user_lower]['conference']
-            correct_conf = COLLEGES_DICT[correct_lower]['conference']
-            
-            # They must be in the same conference
-            if user_conf != correct_conf:
-                return False
-            
-            # Now check if they're variations of the SAME school
-            # Build a list of common keywords that indicate the same school
-            user_words = set(user_lower.replace('-', ' ').split())
-            correct_words = set(correct_lower.replace('-', ' ').split())
-            
-            # Remove common words that don't identify the school
-            stop_words = {'university', 'of', 'the', 'at', 'state', 'college', 'and', 'a', 'an'}
-            user_keywords = user_words - stop_words
-            correct_keywords = correct_words - stop_words
-            
-            # Check if they share significant keywords (same school)
-            # Examples: "kentucky" in both, "duke" in both, "california" in both
-            shared_keywords = user_keywords & correct_keywords
-            
-            # If they share at least one significant keyword, they're the same school
-            # This handles: "Kentucky" == "University of Kentucky" == "UK"
-            # But NOT: "Duke" == "Virginia" (no shared keywords)
-            if shared_keywords:
-                return True
-            
-            # Special case: abbreviations
-            # UK -> Kentucky, UCLA -> California Los Angeles, etc.
-            # Check if one is an abbreviation that appears in our dict for the other school
-            if len(user_lower) <= 4 and user_lower in correct_lower:
-                return True
-            if len(correct_lower) <= 4 and correct_lower in user_lower:
-                return True
-    
-    # For non-colleges (countries, etc.), do fuzzy matching
-    # "United States" should match "USA", "US", etc.
-    if user_lower in correct_lower or correct_lower in user_lower:
-        if len(user_lower) >= 3:  # Avoid matching single letters
+        if correct_lower in SCHOOL_ABBREVIATIONS:
+            correct_expanded = SCHOOL_ABBREVIATIONS[correct_lower]
+        else:
+            correct_expanded = correct_lower
+        
+        # Exact match (after expansion)
+        if user_expanded == correct_expanded:
             return True
-    
-    return False
+        if user_lower == correct_lower:
+            return True
+        
+        # Check if abbreviation matches expanded form
+        # e.g., "uconn" (expanded to "connecticut") should match "university of connecticut"
+        if user_expanded in correct_lower or correct_expanded in user_lower:
+            if len(user_expanded) >= 3:
+                return True
+        
+        # Check if this is a special program (G League Ignite, Overtime Elite)
+        # For these, we accept EITHER the program name OR the country
+        if player_data:
+            origin_lower = player_data.get('origin', '').lower()
+            
+            # Check if the correct answer is a special program
+            if origin_lower in SPECIAL_PROGRAMS or any(prog in origin_lower for prog in ['ignite', 'overtime elite']):
+                # If player has a country (not USA), accept the country as an answer too
+                # This is stored in a hypothetical 'country' field, but we can infer from type
+                # For now, if correct answer is the program, check if user gave a country name
+                # We'd need to pass more player data to do this perfectly
+                
+                # Accept the program name variations
+                if user_lower in SPECIAL_PROGRAMS:
+                    return True
+        
+        # For colleges, check if both map to the same school via the dictionary
+        if player_type == 'College':
+            # Check if user's answer is in the dictionary
+            if user_lower in COLLEGES_DICT and correct_lower in COLLEGES_DICT:
+                # Get conference for both
+                user_conf = COLLEGES_DICT[user_lower]['conference']
+                correct_conf = COLLEGES_DICT[correct_lower]['conference']
+                
+                # They must be in the same conference
+                if user_conf != correct_conf:
+                    return False
+                
+                # Now check if they're variations of the SAME school
+                # Build a list of common keywords that indicate the same school
+                user_words = set(user_expanded.replace('-', ' ').split())
+                correct_words = set(correct_expanded.replace('-', ' ').split())
+                
+                # Remove common words that don't identify the school
+                stop_words = {'university', 'of', 'the', 'at', 'state', 'college', 'and', 'a', 'an'}
+                user_keywords = user_words - stop_words
+                correct_keywords = correct_words - stop_words
+                
+                # Check if they share significant keywords (same school)
+                # Examples: "kentucky" in both, "duke" in both, "california" in both
+                shared_keywords = user_keywords & correct_keywords
+                
+                # If they share at least one significant keyword, they're the same school
+                # This handles: "Kentucky" == "University of Kentucky" == "UK"
+                # But NOT: "Duke" == "Virginia" (no shared keywords)
+                if shared_keywords:
+                    return True
+                
+                # Special case: abbreviations
+                # UK -> Kentucky, UCLA -> California Los Angeles, etc.
+                # Check if one is an abbreviation that appears in our dict for the other school
+                if len(user_lower) <= 4 and user_lower in correct_lower:
+                    return True
+                if len(correct_lower) <= 4 and correct_lower in user_lower:
+                    return True
+        
+        # For non-colleges (countries, etc.), do fuzzy matching
+        # "United States" should match "USA", "US", etc.
+        if user_lower in correct_lower or correct_lower in user_lower:
+            if len(user_lower) >= 3:  # Avoid matching single letters
+                return True
+        
+        return False
+    except Exception as e:
+        print(f"⚠️ Error in check_answer: {e}")
+        print(f"  user_answer: '{user_answer}', correct_answer: '{correct_answer}', type: '{player_type}'")
+        import traceback
+        traceback.print_exc()
+        return False
 
 
 @app.route('/')
@@ -285,10 +347,21 @@ def submit_answer():
     if not current_player:
         return jsonify({'error': 'No active question'}), 400
     
+    # Debug logging
+    print(f"Player: {current_player.get('name', 'UNKNOWN')}, Origin: {current_player.get('origin', 'MISSING')}, Type: {current_player.get('type', 'MISSING')}")
+    
+    # Check if player has required data
+    if not current_player.get('origin'):
+        print(f"⚠️ Warning: Player {current_player.get('name', 'Unknown')} missing origin data")
+        print(f"Current player data: {current_player}")
+        return jsonify({
+            'error': f"Player data incomplete for {current_player.get('name', 'this player')}. Please regenerate player data."
+        }), 500
+    
     session['total'] += 1
     
     # Use smart answer checking
-    correct = check_answer(answer, current_player['origin'], current_player['type'], current_player)
+    correct = check_answer(answer, current_player['origin'], current_player.get('type', 'Other'), current_player)
     
     # Also check alternate answer if it exists (for G League Ignite / Overtime Elite)
     if not correct and current_player.get('alternate_answer'):
@@ -316,20 +389,24 @@ def submit_answer():
             session['conference_stats']['college'][college_conf]['correct'] += 1
     
     # Build answer display (show both if alternate exists)
-    answer_display = current_player['origin']
+    answer_display = current_player.get('origin', 'Unknown')
     if current_player.get('alternate_answer'):
         answer_display += f" or {current_player['alternate_answer']}"
     
-    return jsonify({
+    response_data = {
         'correct': correct,
         'answer': answer_display,
-        'origin_type': current_player['type'],
+        'origin_type': current_player.get('type', 'Other'),
         'college_conference': college_conf,
         'nba_conference': nba_conf,
         'score': session['score'],
         'total': session['total'],
         'conference_stats': session['conference_stats']
-    })
+    }
+    
+    print(f"Returning response: answer='{response_data['answer']}', type='{response_data['origin_type']}'")
+    
+    return jsonify(response_data)
 
 @app.route('/api/stats', methods=['POST'])
 def get_stats():

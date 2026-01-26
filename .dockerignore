@@ -1,0 +1,18 @@
+# flyctl launch added from nba-quiz-game/.gitignore
+nba-quiz-game/**/__pycache__
+nba-quiz-game/**/*.py[cod]
+nba-quiz-game/**/*$py.class
+nba-quiz-game/**/*.so
+nba-quiz-game/**/.Python
+nba-quiz-game/**/venv
+nba-quiz-game/**/env
+nba-quiz-game/**/ENV
+nba-quiz-game/**/.venv
+nba-quiz-game/**/.env
+nba-quiz-game/**/*.log
+nba-quiz-game/**/.DS_Store
+nba-quiz-game/**/.idea
+nba-quiz-game/**/.vscode
+nba-quiz-game/**/*.swp
+nba-quiz-game/**/*.swo
+fly.toml
