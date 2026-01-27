@@ -285,7 +285,13 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
                 else:
                     # At least one is an abbreviation - check for overlap
                     shared_keywords = user_keywords & correct_keywords
-                    if shared_keywords:
+                    
+                    # Special case: "california" alone is not enough (UCLA vs USC)
+                    # Need at least 2 shared keywords OR a unique keyword
+                    if shared_keywords == {'california'}:
+                        # Not enough - UCLA and USC both have "california"
+                        return False
+                    elif shared_keywords:
                         return True
                 
                 # Special case: abbreviations
