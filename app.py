@@ -387,11 +387,12 @@ def get_daily_challenge():
         
         print(f"Available: Easy={len(easy_players)}, Medium={len(medium_players)}, Hard={len(hard_players)}")
         
-        # Smart selection:
-        # Q1: Easy multiple choice
-        # Q2: Easy text input
-        # Q3-4: Medium text input
-        # Q5: Hard text input
+        # Smart selection with MPG ranges:
+        # Q1: Easy multiple choice (household name, any MPG)
+        # Q2: Easy text (household name, any MPG)
+        # Q3: 25+ MPG (starter/star level)
+        # Q4: 20-25 MPG (solid rotation player)
+        # Q5: 10-20 MPG (bench/role player)
         
         daily_players = []
         question_types = []
@@ -414,28 +415,67 @@ def get_daily_challenge():
             daily_players.append(rng.choice(easy_players))
             question_types.append('text')
         
-        # Q3-4: Medium players
-        if medium_players and len(medium_players) >= 2:
-            medium_sample = rng.sample(medium_players, 2)
-            daily_players.extend(medium_sample)
-            question_types.extend(['text', 'text'])
-        elif hard_players:
-            # Fallback to hard if not enough medium
-            fallback = rng.sample(hard_players, min(2, len(hard_players)))
-            daily_players.extend(fallback)
-            question_types.extend(['text', 'text'])
+        # Q3: 25+ MPG player (starter/star level)
+        selected_names = [p['name'] for p in daily_players]
+        high_mpg = [p for p in NBA_PLAYERS if p.get('mpg', 0) >= 25 and p['name'] not in selected_names]
         
-        # Q5: Hard player
-        if hard_players:
-            # Avoid duplicates
-            available_hard = [p for p in hard_players if p not in daily_players]
-            if available_hard:
-                daily_players.append(rng.choice(available_hard))
-            else:
-                daily_players.append(rng.choice(hard_players))
+        if high_mpg:
+            q3 = rng.choice(high_mpg)
+            daily_players.append(q3)
             question_types.append('text')
+            print(f"Q3 (25+ MPG): {q3['name']} - {q3.get('mpg')}mpg ({q3.get('difficulty')})")
+        else:
+            # Fallback to medium pool
+            medium_pool = [p for p in NBA_PLAYERS if p.get('difficulty') in ['easy', 'medium']]
+            available = [p for p in medium_pool if p['name'] not in selected_names]
+            if available:
+                q3 = rng.choice(available)
+                daily_players.append(q3)
+                question_types.append('text')
+                print(f"Q3 (fallback): {q3['name']}")
+        
+        # Q4: 20-25 MPG player (rotation player)
+        selected_names = [p['name'] for p in daily_players]
+        mid_mpg = [p for p in NBA_PLAYERS if 20 <= p.get('mpg', 0) < 25 and p['name'] not in selected_names]
+        
+        if mid_mpg:
+            q4 = rng.choice(mid_mpg)
+            daily_players.append(q4)
+            question_types.append('text')
+            print(f"Q4 (20-25 MPG): {q4['name']} - {q4.get('mpg')}mpg ({q4.get('difficulty')})")
+        else:
+            # Fallback
+            medium_pool = [p for p in NBA_PLAYERS if p.get('difficulty') in ['easy', 'medium']]
+            available = [p for p in medium_pool if p['name'] not in selected_names]
+            if available:
+                q4 = rng.choice(available)
+                daily_players.append(q4)
+                question_types.append('text')
+                print(f"Q4 (fallback): {q4['name']}")
+        
+        # Q5: 10-20 MPG player (bench/role player)
+        selected_names = [p['name'] for p in daily_players]
+        low_mpg = [p for p in NBA_PLAYERS if 10 <= p.get('mpg', 0) < 20 and p['name'] not in selected_names]
+        
+        if low_mpg:
+            q5 = rng.choice(low_mpg)
+            daily_players.append(q5)
+            question_types.append('text')
+            print(f"Q5 (10-20 MPG): {q5['name']} - {q5.get('mpg')}mpg ({q5.get('difficulty')})")
+        else:
+            # Fallback to hard
+            available_hard = [p for p in hard_players if p['name'] not in selected_names]
+            if available_hard:
+                q5 = rng.choice(available_hard)
+                daily_players.append(q5)
+                question_types.append('text')
+                print(f"Q5 (fallback hard): {q5['name']}")
         
         print(f"✅ Selected {len(daily_players)} players")
+        print(f"✅ Question types: {question_types}")
+        print(f"✅ Players in order:")
+        for i, p in enumerate(daily_players, 1):
+            print(f"   Q{i}: {p['name']} ({p.get('difficulty', 'unknown')})")
         
         # Ensure we have exactly 5
         while len(daily_players) < 5:
