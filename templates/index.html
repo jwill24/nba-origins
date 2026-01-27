@@ -478,7 +478,24 @@
                 
                 // Fetch today's challenge
                 const response = await fetch('/api/daily-challenge');
+                
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    console.error('Daily challenge error response:', errorText);
+                    throw new Error(`Server returned ${response.status}: ${errorText}`);
+                }
+                
                 const data = await response.json();
+                
+                console.log('Daily challenge data:', data);
+                
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+                
+                if (!data.players || data.players.length < 5) {
+                    throw new Error(`Not enough players returned: ${data.players?.length || 0}`);
+                }
                 
                 dailyChallengeData = data;
                 isDailyChallenge = true;

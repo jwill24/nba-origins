@@ -354,51 +354,77 @@ def index():
 @app.route('/api/daily-challenge', methods=['GET'])
 def get_daily_challenge():
     """Get today's daily challenge - same 5 players for everyone"""
-    import datetime
-    import random
-    
-    # Use today's date as seed so everyone gets same players
-    today = datetime.date.today()
-    seed = int(today.strftime('%Y%m%d'))
-    
-    # Create a seeded random generator
-    rng = random.Random(seed)
-    
-    # Filter players by difficulty
-    easy_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'easy']
-    medium_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'medium']
-    hard_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'hard']
-    
-    # Select daily players: 1 easy, 2 medium, 2 hard
-    daily_players = []
-    
-    if easy_players:
-        daily_players.append(rng.choice(easy_players))
-    
-    # If not enough medium players, use hard players
-    if medium_players and len(medium_players) >= 2:
-        medium_sample = rng.sample(medium_players, 2)
-        daily_players.extend(medium_sample)
-    elif hard_players and len(hard_players) >= 2:
-        # Fallback: use hard players for medium slots
-        medium_sample = rng.sample(hard_players, min(2, len(hard_players)))
-        daily_players.extend(medium_sample)
-    
-    # Select remaining hard players (avoiding duplicates)
-    remaining_hard = [p for p in hard_players if p not in daily_players]
-    if remaining_hard and len(remaining_hard) >= 2:
-        hard_sample = rng.sample(remaining_hard, 2)
-        daily_players.extend(hard_sample)
-    elif hard_players:
-        # If not enough unique hard players, just use what we have
-        hard_sample = rng.sample(hard_players, min(2, len(hard_players)))
-        daily_players.extend(hard_sample)
-    
-    return jsonify({
-        'date': today.isoformat(),
-        'players': daily_players[:5],  # Ensure we have exactly 5
-        'challenge_number': (today - datetime.date(2025, 1, 1)).days + 1  # Day number since Jan 1, 2025
-    })
+    try:
+        import datetime
+        import random
+        
+        # Use today's date as seed so everyone gets same players
+        today = datetime.date.today()
+        seed = int(today.strftime('%Y%m%d'))
+        
+        print(f"Daily Challenge: Date={today}, Seed={seed}")
+        
+        # Create a seeded random generator
+        rng = random.Random(seed)
+        
+        # Filter players by difficulty
+        easy_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'easy']
+        medium_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'medium']
+        hard_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'hard']
+        
+        print(f"Available players: Easy={len(easy_players)}, Medium={len(medium_players)}, Hard={len(hard_players)}")
+        
+        # Select daily players: 1 easy, 2 medium, 2 hard
+        daily_players = []
+        
+        if easy_players:
+            daily_players.append(rng.choice(easy_players))
+            print(f"Selected easy player: {daily_players[-1]['name']}")
+        
+        # If not enough medium players, use hard players
+        if medium_players and len(medium_players) >= 2:
+            medium_sample = rng.sample(medium_players, 2)
+            daily_players.extend(medium_sample)
+            print(f"Selected medium players: {[p['name'] for p in medium_sample]}")
+        elif hard_players and len(hard_players) >= 2:
+            # Fallback: use hard players for medium slots
+            medium_sample = rng.sample(hard_players, min(2, len(hard_players)))
+            daily_players.extend(medium_sample)
+            print(f"Selected hard players for medium slots: {[p['name'] for p in medium_sample]}")
+        
+        # Select remaining hard players (avoiding duplicates)
+        remaining_hard = [p for p in hard_players if p not in daily_players]
+        if remaining_hard and len(remaining_hard) >= 2:
+            hard_sample = rng.sample(remaining_hard, 2)
+            daily_players.extend(hard_sample)
+            print(f"Selected additional hard players: {[p['name'] for p in hard_sample]}")
+        elif hard_players:
+            # If not enough unique hard players, just use what we have
+            hard_sample = rng.sample(hard_players, min(2, len(hard_players)))
+            daily_players.extend(hard_sample)
+            print(f"Selected hard players (with possible duplicates): {[p['name'] for p in hard_sample]}")
+        
+        print(f"Total daily players selected: {len(daily_players)}")
+        
+        if len(daily_players) < 5:
+            print(f"⚠️ Warning: Only got {len(daily_players)} players, padding with random players")
+            # Pad with any available players to ensure we have 5
+            all_available = [p for p in NBA_PLAYERS if p not in daily_players]
+            if all_available:
+                needed = 5 - len(daily_players)
+                padding = rng.sample(all_available, min(needed, len(all_available)))
+                daily_players.extend(padding)
+        
+        return jsonify({
+            'date': today.isoformat(),
+            'players': daily_players[:5],  # Ensure we have exactly 5
+            'challenge_number': (today - datetime.date(2025, 1, 1)).days + 1  # Day number since Jan 1, 2025
+        })
+    except Exception as e:
+        print(f"❌ Error in get_daily_challenge: {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/api/new-game', methods=['POST'])
 def new_game():
