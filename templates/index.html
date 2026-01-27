@@ -460,12 +460,12 @@
         async function startDailyChallenge() {
             try {
                 // Check if already completed today
-                const completedToday = localStorage.getItem('dailyCompleted');
+                const completedToday = localStorage.getItem('dailyCompleted_v2');  // v2 to reset
                 const today = new Date().toISOString().split('T')[0];
                 
                 if (completedToday === today) {
-                    const previousScore = localStorage.getItem('dailyScore');
-                    const previousResults = localStorage.getItem('dailyResults');
+                    const previousScore = localStorage.getItem('dailyScore_v2');
+                    const previousResults = localStorage.getItem('dailyResults_v2');
                     if (confirm(`You've already completed today's challenge! Score: ${previousScore}/5\n\nWould you like to play again for practice (won't save)?`)) {
                         // Play again without saving
                     } else {
@@ -615,9 +615,9 @@
             
             // Save completion
             const today = new Date().toISOString().split('T')[0];
-            localStorage.setItem('dailyCompleted', today);
-            localStorage.setItem('dailyScore', `${score}/${total}`);
-            localStorage.setItem('dailyResults', JSON.stringify(results));
+            localStorage.setItem('dailyCompleted_v2', today);
+            localStorage.setItem('dailyScore_v2', `${score}/${total}`);
+            localStorage.setItem('dailyResults_v2', JSON.stringify(results));
             
             // Generate shareable text
             const challengeNum = dailyChallengeData.challenge_number;
@@ -716,11 +716,6 @@
                     break;
                 case 'unlimited':
                     questionLimit = null; // No limit at all
-                    // Prompt for display name for stats tracking
-                    practiceDisplayName = prompt('Enter your display name to track your stats (or click Cancel to skip):');
-                    if (!practiceDisplayName) {
-                        practiceDisplayName = 'Anonymous';
-                    }
                     break;
             }
             
@@ -863,6 +858,14 @@
         async function startGame(difficulty) {
             selectedDifficulty = difficulty;
             gameEnded = false;  // Reset game ended flag
+            
+            // For unlimited mode, prompt for display name
+            if (gameMode === 'unlimited') {
+                practiceDisplayName = prompt('Enter your display name to track your stats (or click Cancel to skip):');
+                if (!practiceDisplayName || practiceDisplayName.trim() === '') {
+                    practiceDisplayName = 'Anonymous';
+                }
+            }
             
             try {
                 const response = await fetch('/api/new-game', {
@@ -1167,8 +1170,9 @@
                 }
                 feedbackEl.innerHTML = `❌ Incorrect<div class="answer-reveal">You answered: <strong>${answer}</strong><br>The correct answer is: <strong>${data.answer}</strong> (${data.origin_type})${confInfo}</div>`;
                 
-                // Hide answer input, show next button
+                // Hide answer input AND multiple choice, show next button
                 document.getElementById('answerSection').classList.add('hidden');
+                document.getElementById('multipleChoiceSection').classList.add('hidden');
                 document.getElementById('nextSection').classList.remove('hidden');
                 
                 // Check if Perfect Run should end

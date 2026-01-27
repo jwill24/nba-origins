@@ -508,7 +508,7 @@ def get_daily_challenge():
             'date': today.isoformat(),
             'players': clean_players,
             'question_types': question_types[:5],
-            'challenge_number': (today - datetime.date(2025, 1, 1)).days + 1
+            'challenge_number': (today - datetime.date(2026, 1, 27)).days + 1  # Day #1 = Jan 27, 2026
         }
         
         print(f"✅ Returning {len(clean_players)} players with types: {question_types[:5]}")
