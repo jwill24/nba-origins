@@ -351,6 +351,18 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
 def index():
     return render_template('index.html')
 
+@app.route('/api/check-answer-simple', methods=['POST'])
+def check_answer_simple():
+    """Simple answer checking endpoint for daily challenge"""
+    data = request.json
+    user_answer = data.get('user_answer', '')
+    correct_answer = data.get('correct_answer', '')
+    player_type = data.get('player_type', 'Other')
+    
+    is_correct = check_answer(user_answer, correct_answer, player_type, None)
+    
+    return jsonify({'correct': is_correct})
+
 @app.route('/api/daily-challenge', methods=['GET'])
 def get_daily_challenge():
     """Get today's daily challenge - same 5 players for everyone"""
@@ -368,18 +380,75 @@ def get_daily_challenge():
         # Create a seeded random generator
         rng = random.Random(seed)
         
-        # Simple approach: just pick 5 random players from all available
-        if len(NBA_PLAYERS) < 5:
-            print(f"❌ Not enough players! Only have {len(NBA_PLAYERS)}")
-            return jsonify({'error': 'Not enough players available'}), 500
+        # Filter players by difficulty
+        easy_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'easy']
+        medium_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'medium']
+        hard_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'hard']
         
-        daily_players = rng.sample(NBA_PLAYERS, 5)
+        print(f"Available: Easy={len(easy_players)}, Medium={len(medium_players)}, Hard={len(hard_players)}")
         
-        print(f"✅ Selected players: {[p['name'] for p in daily_players]}")
+        # Smart selection:
+        # Q1: Easy multiple choice
+        # Q2: Easy text input
+        # Q3-4: Medium text input
+        # Q5: Hard text input
+        
+        daily_players = []
+        question_types = []
+        
+        # Q1: Easy player for multiple choice
+        if easy_players and len(easy_players) >= 2:
+            q1 = rng.choice(easy_players)
+            daily_players.append(q1)
+            question_types.append('multiplechoice')
+            
+            # Q2: Different easy player for text input
+            remaining_easy = [p for p in easy_players if p['name'] != q1['name']]
+            if remaining_easy:
+                daily_players.append(rng.choice(remaining_easy))
+                question_types.append('text')
+        elif easy_players:
+            # Not enough easy players, use what we have
+            daily_players.append(rng.choice(easy_players))
+            question_types.append('multiplechoice')
+            daily_players.append(rng.choice(easy_players))
+            question_types.append('text')
+        
+        # Q3-4: Medium players
+        if medium_players and len(medium_players) >= 2:
+            medium_sample = rng.sample(medium_players, 2)
+            daily_players.extend(medium_sample)
+            question_types.extend(['text', 'text'])
+        elif hard_players:
+            # Fallback to hard if not enough medium
+            fallback = rng.sample(hard_players, min(2, len(hard_players)))
+            daily_players.extend(fallback)
+            question_types.extend(['text', 'text'])
+        
+        # Q5: Hard player
+        if hard_players:
+            # Avoid duplicates
+            available_hard = [p for p in hard_players if p not in daily_players]
+            if available_hard:
+                daily_players.append(rng.choice(available_hard))
+            else:
+                daily_players.append(rng.choice(hard_players))
+            question_types.append('text')
+        
+        print(f"✅ Selected {len(daily_players)} players")
+        
+        # Ensure we have exactly 5
+        while len(daily_players) < 5:
+            available = [p for p in NBA_PLAYERS if p not in daily_players]
+            if available:
+                daily_players.append(rng.choice(available))
+                question_types.append('text')
+            else:
+                break
         
         # Make sure players are JSON serializable
         clean_players = []
-        for p in daily_players:
+        for p in daily_players[:5]:
             clean_players.append({
                 'name': p['name'],
                 'team': p.get('team', ''),
@@ -392,10 +461,11 @@ def get_daily_challenge():
         response_data = {
             'date': today.isoformat(),
             'players': clean_players,
+            'question_types': question_types[:5],
             'challenge_number': (today - datetime.date(2025, 1, 1)).days + 1
         }
         
-        print(f"✅ Returning {len(clean_players)} players")
+        print(f"✅ Returning {len(clean_players)} players with types: {question_types[:5]}")
         return jsonify(response_data)
         
     except Exception as e:

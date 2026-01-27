@@ -506,7 +506,7 @@
                 
                 // Start game without difficulty selection
                 document.getElementById('startScreen').classList.add('hidden');
-                await startGameWithPlayers(data.players);
+                await startGameWithPlayers(data.players, data.question_types);
                 
             } catch (error) {
                 console.error('Error loading daily challenge:', error);
@@ -514,7 +514,7 @@
             }
         }
 
-        async function startGameWithPlayers(players) {
+        async function startGameWithPlayers(players, questionTypes) {
             // Create a special session with predetermined players
             sessionId = 'daily-' + Date.now();
             
@@ -523,6 +523,7 @@
                 score: 0,
                 total: 0,
                 players: players,
+                questionTypes: questionTypes || Array(players.length).fill('text'),
                 currentIndex: 0
             };
             
@@ -543,6 +544,7 @@
             }
             
             const player = session.players[session.currentIndex];
+            const questionType = session.questionTypes[session.currentIndex];
             
             // Display player info
             document.getElementById('playerName').textContent = player.name;
@@ -551,11 +553,58 @@
             // Clear previous answer and feedback
             document.getElementById('answerInput').value = '';
             document.getElementById('feedback').style.display = 'none';
-            document.getElementById('answerSection').classList.remove('hidden');
             document.getElementById('nextSection').classList.add('hidden');
             
-            // Focus input
-            document.getElementById('answerInput').focus();
+            // Show appropriate input type
+            if (questionType === 'multiplechoice') {
+                // Show multiple choice
+                document.getElementById('answerSection').classList.add('hidden');
+                document.getElementById('multipleChoiceSection').classList.remove('hidden');
+                
+                // Generate multiple choice options
+                const correctAnswer = player.origin;
+                const wrongOptions = [];
+                
+                // Get wrong answers from other players
+                for (const otherPlayer of session.players) {
+                    if (otherPlayer.name !== player.name && otherPlayer.origin !== correctAnswer) {
+                        if (!wrongOptions.includes(otherPlayer.origin)) {
+                            wrongOptions.push(otherPlayer.origin);
+                        }
+                    }
+                    if (wrongOptions.length >= 3) break;
+                }
+                
+                // Add generic options if needed
+                const genericOptions = ['Duke', 'Kentucky', 'France', 'Spain', 'Australia'];
+                for (const option of genericOptions) {
+                    if (wrongOptions.length >= 3) break;
+                    if (option !== correctAnswer && !wrongOptions.includes(option)) {
+                        wrongOptions.push(option);
+                    }
+                }
+                
+                // Combine and shuffle
+                const allOptions = [correctAnswer, ...wrongOptions.slice(0, 3)];
+                allOptions.sort(() => Math.random() - 0.5);
+                
+                // Populate buttons
+                allOptions.forEach((option, index) => {
+                    const button = document.getElementById(`choice${index}`);
+                    button.textContent = option;
+                    button.disabled = false;
+                    button.style.opacity = '1';
+                });
+            } else {
+                // Show text input
+                document.getElementById('answerSection').classList.remove('hidden');
+                document.getElementById('multipleChoiceSection').classList.add('hidden');
+                
+                // Focus input
+                setTimeout(() => {
+                    document.getElementById('answerInput').focus();
+                }, 100);
+            }
         }
 
         function showDailyResults(results) {
@@ -918,21 +967,30 @@
             const session = game_sessions[sessionId];
             const player = session.players[session.currentIndex];
             
-            // Simple client-side answer checking  
-            const correct_answer = player.origin.toLowerCase().trim();
-            const user_lower = userAnswer.toLowerCase().trim();
-            
-            // Basic matching - could be improved
-            const isCorrect = user_lower === correct_answer || 
-                             (correct_answer.includes(user_lower) && user_lower.length > 3);
-            
-            // Track result
-            dailyResults.push({
-                player: player.name,
-                correct: isCorrect,
-                userAnswer: userAnswer,
-                correctAnswer: player.origin
-            });
+            // Use backend for proper answer checking
+            try {
+                const checkResponse = await fetch('/api/check-answer-simple', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        user_answer: userAnswer,
+                        correct_answer: player.origin,
+                        player_type: player.type
+                    })
+                });
+                
+                const checkData = await checkResponse.json();
+                const isCorrect = checkData.correct;
+                
+                // Track result
+                dailyResults.push({
+                    player: player.name,
+                    correct: isCorrect,
+                    userAnswer: userAnswer,
+                    correctAnswer: player.origin
+                });
             
             // Update session
             session.score += isCorrect ? 1 : 0;
@@ -991,7 +1049,13 @@
                 document.getElementById(`choice${i}`).disabled = true;
             }
             
-            // Submit as regular answer
+            // For daily challenge, handle differently
+            if (isDailyChallenge) {
+                await handleDailyAnswer(selectedAnswer);
+                return;
+            }
+            
+            // For regular games, submit as regular answer
             document.getElementById('answerInput').value = selectedAnswer;
             await submitAnswer();
         }
