@@ -455,6 +455,7 @@
         let dailyChallengeData = null;  // Store daily challenge info
         let dailyResults = [];  // Track results for sharing
         let gameEnded = false;  // Track if game has ended to prevent extra questions
+        let game_sessions = {};  // Store game sessions for daily challenge
 
         async function startDailyChallenge() {
             try {
@@ -517,8 +518,7 @@
             // Create a special session with predetermined players
             sessionId = 'daily-' + Date.now();
             
-            // Manually set up game session
-            game_sessions = game_sessions || {};
+            // Set up game session
             game_sessions[sessionId] = {
                 score: 0,
                 total: 0,
