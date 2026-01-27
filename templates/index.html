@@ -230,12 +230,12 @@
                     🎯 Quick Quiz (10 questions)
                 </button>
                 
-                <button class="btn-primary mode-button" onclick="selectMode('standard25')" style="margin-bottom: 10px;">
-                    📝 Standard (25 questions)
+                <button class="btn-primary mode-button" onclick="selectMode('multiplechoice')" style="margin-bottom: 10px;">
+                    🎲 Multiple Choice (10 questions)
                 </button>
                 
-                <button class="btn-primary mode-button" onclick="selectMode('challenge50')" style="margin-bottom: 10px;">
-                    💪 Challenge (50 questions)
+                <button class="btn-primary mode-button" onclick="selectMode('challenge25')" style="margin-bottom: 10px;">
+                    💪 Challenge (25 questions)
                 </button>
                 
                 <button class="btn-primary mode-button" onclick="selectMode('perfect')" style="margin-bottom: 10px;">
@@ -291,18 +291,18 @@
                     <button class="btn-primary" onclick="showLeaderboardForMode('quick10', 'hard')" style="background: #f87171; padding: 8px 16px;">Hard</button>
                 </div>
 
-                <h3 style="margin-bottom: 10px; color: #333;">📝 Standard (25)</h3>
+                <h3 style="margin-bottom: 10px; color: #333;">🎲 Multiple Choice (10)</h3>
                 <div style="display: flex; gap: 10px; margin-bottom: 15px; justify-content: center;">
-                    <button class="btn-primary" onclick="showLeaderboardForMode('standard25', 'easy')" style="background: #4ade80; padding: 8px 16px;">Easy</button>
-                    <button class="btn-primary" onclick="showLeaderboardForMode('standard25', 'medium')" style="background: #fbbf24; padding: 8px 16px;">Medium</button>
-                    <button class="btn-primary" onclick="showLeaderboardForMode('standard25', 'hard')" style="background: #f87171; padding: 8px 16px;">Hard</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('multiplechoice', 'easy')" style="background: #4ade80; padding: 8px 16px;">Easy</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('multiplechoice', 'medium')" style="background: #fbbf24; padding: 8px 16px;">Medium</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('multiplechoice', 'hard')" style="background: #f87171; padding: 8px 16px;">Hard</button>
                 </div>
 
-                <h3 style="margin-bottom: 10px; color: #333;">💪 Challenge (50)</h3>
+                <h3 style="margin-bottom: 10px; color: #333;">💪 Challenge (25)</h3>
                 <div style="display: flex; gap: 10px; margin-bottom: 15px; justify-content: center;">
-                    <button class="btn-primary" onclick="showLeaderboardForMode('challenge50', 'easy')" style="background: #4ade80; padding: 8px 16px;">Easy</button>
-                    <button class="btn-primary" onclick="showLeaderboardForMode('challenge50', 'medium')" style="background: #fbbf24; padding: 8px 16px;">Medium</button>
-                    <button class="btn-primary" onclick="showLeaderboardForMode('challenge50', 'hard')" style="background: #f87171; padding: 8px 16px;">Hard</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('challenge25', 'easy')" style="background: #4ade80; padding: 8px 16px;">Easy</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('challenge25', 'medium')" style="background: #fbbf24; padding: 8px 16px;">Medium</button>
+                    <button class="btn-primary" onclick="showLeaderboardForMode('challenge25', 'hard')" style="background: #f87171; padding: 8px 16px;">Hard</button>
                 </div>
 
                 <h3 style="margin-bottom: 10px; color: #333;">🔥 Perfect Run</h3>
@@ -423,6 +423,15 @@
             <div id="answerSection">
                 <input type="text" id="answerInput" placeholder="Enter college, country, high school, etc..." autocomplete="off">
                 <button class="btn-primary" onclick="submitAnswer()">Submit Answer</button>
+            </div>
+            
+            <div id="multipleChoiceSection" class="hidden" style="margin-top: 20px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; max-width: 400px; margin: 0 auto;">
+                    <button class="btn-secondary" onclick="submitMultipleChoice(0)" id="choice0" style="padding: 15px; text-align: left; font-size: 14px;"></button>
+                    <button class="btn-secondary" onclick="submitMultipleChoice(1)" id="choice1" style="padding: 15px; text-align: left; font-size: 14px;"></button>
+                    <button class="btn-secondary" onclick="submitMultipleChoice(2)" id="choice2" style="padding: 15px; text-align: left; font-size: 14px;"></button>
+                    <button class="btn-secondary" onclick="submitMultipleChoice(3)" id="choice3" style="padding: 15px; text-align: left; font-size: 14px;"></button>
+                </div>
             </div>
 
             <div id="nextSection" class="hidden">
@@ -630,11 +639,11 @@
                 case 'quick10':
                     questionLimit = 10;
                     break;
-                case 'standard25':
-                    questionLimit = 25;
+                case 'multiplechoice':
+                    questionLimit = 10;
                     break;
-                case 'challenge50':
-                    questionLimit = 50;
+                case 'challenge25':
+                    questionLimit = 25;
                     break;
                 case 'perfect':
                     questionLimit = null; // No limit, but ends on first miss
@@ -796,7 +805,8 @@
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        difficulty: selectedDifficulty
+                        difficulty: selectedDifficulty,
+                        is_multiple_choice: gameMode === 'multiplechoice'
                     })
                 });
                 const data = await response.json();
@@ -852,10 +862,34 @@
                 document.getElementById('playerName').textContent = data.player_name;
                 document.getElementById('playerTeam').textContent = data.team || '';
                 
-                // Focus input after player name is loaded
-                setTimeout(() => {
-                    document.getElementById('answerInput').focus();
-                }, 100);
+                // Handle multiple choice mode
+                if (gameMode === 'multiplechoice' && data.multiple_choice_options) {
+                    // Hide text input, show multiple choice buttons
+                    document.getElementById('answerSection').classList.add('hidden');
+                    document.getElementById('multipleChoiceSection').classList.remove('hidden');
+                    
+                    // Store correct answer for checking
+                    window.currentCorrectAnswer = data.correct_answer;
+                    
+                    // Populate choice buttons
+                    data.multiple_choice_options.forEach((option, index) => {
+                        const button = document.getElementById(`choice${index}`);
+                        button.textContent = option;
+                        button.disabled = false;
+                        button.style.opacity = '1';
+                    });
+                } else {
+                    // Show text input, hide multiple choice
+                    document.getElementById('answerSection').classList.remove('hidden');
+                    document.getElementById('multipleChoiceSection').classList.add('hidden');
+                }
+                
+                // Focus input after player name is loaded (only for text mode)
+                if (gameMode !== 'multiplechoice') {
+                    setTimeout(() => {
+                        document.getElementById('answerInput').focus();
+                    }, 100);
+                }
             } catch (error) {
                 console.error('Error loading question:', error);
                 document.getElementById('playerName').textContent = 'Error loading player';
@@ -929,6 +963,20 @@
             } else {
                 nextQuestion();
             }
+        }
+
+        async function submitMultipleChoice(choiceIndex) {
+            const button = document.getElementById(`choice${choiceIndex}`);
+            const selectedAnswer = button.textContent;
+            
+            // Disable all buttons
+            for (let i = 0; i < 4; i++) {
+                document.getElementById(`choice${i}`).disabled = true;
+            }
+            
+            // Submit as regular answer
+            document.getElementById('answerInput').value = selectedAnswer;
+            await submitAnswer();
         }
 
         async function submitAnswer() {
@@ -1064,8 +1112,8 @@
             
             switch(gameMode) {
                 case 'quick10': modeDisplay = 'Quick Quiz (10)'; break;
-                case 'standard25': modeDisplay = 'Standard (25)'; break;
-                case 'challenge50': modeDisplay = 'Challenge (50)'; break;
+                case 'multiplechoice': modeDisplay = 'Multiple Choice (10)'; break;
+                case 'challenge25': modeDisplay = 'Challenge (25)'; break;
                 case 'perfect': modeDisplay = 'Perfect Run'; break;
                 case 'unlimited': modeDisplay = 'Unlimited'; break;
             }
@@ -1159,8 +1207,8 @@
         function getModeName(mode) {
             switch(mode) {
                 case 'quick10': return 'Quick Quiz (10)';
-                case 'standard25': return 'Standard (25)';
-                case 'challenge50': return 'Challenge (50)';
+                case 'multiplechoice': return 'Multiple Choice (10)';
+                case 'challenge25': return 'Challenge (25)';
                 case 'perfect': return 'Perfect Run';
                 case 'unlimited': return 'Unlimited';
                 default: return mode;

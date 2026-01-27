@@ -375,12 +375,23 @@ def get_daily_challenge():
     if easy_players:
         daily_players.append(rng.choice(easy_players))
     
+    # If not enough medium players, use hard players
     if medium_players and len(medium_players) >= 2:
         medium_sample = rng.sample(medium_players, 2)
         daily_players.extend(medium_sample)
+    elif hard_players and len(hard_players) >= 2:
+        # Fallback: use hard players for medium slots
+        medium_sample = rng.sample(hard_players, min(2, len(hard_players)))
+        daily_players.extend(medium_sample)
     
-    if hard_players and len(hard_players) >= 2:
-        hard_sample = rng.sample(hard_players, 2)
+    # Select remaining hard players (avoiding duplicates)
+    remaining_hard = [p for p in hard_players if p not in daily_players]
+    if remaining_hard and len(remaining_hard) >= 2:
+        hard_sample = rng.sample(remaining_hard, 2)
+        daily_players.extend(hard_sample)
+    elif hard_players:
+        # If not enough unique hard players, just use what we have
+        hard_sample = rng.sample(hard_players, min(2, len(hard_players)))
         daily_players.extend(hard_sample)
     
     return jsonify({
@@ -394,6 +405,7 @@ def new_game():
     try:
         data = request.json or {}
         difficulty = data.get('difficulty', 'hard')
+        is_multiple_choice = data.get('is_multiple_choice', False)
         
         # Check if players have difficulty field
         has_difficulty = any('difficulty' in p for p in NBA_PLAYERS[:5])
@@ -420,6 +432,7 @@ def new_game():
             'total': 0,
             'used_players': [],
             'difficulty': difficulty,
+            'is_multiple_choice': is_multiple_choice,
             'available_players': filtered_players,
             'conference_stats': {
                 'nba': {'Eastern': {'correct': 0, 'total': 0}, 'Western': {'correct': 0, 'total': 0}},
@@ -467,8 +480,43 @@ def next_question():
         'player_name': player['name'],
         'team': player.get('team', ''),
         'nba_conference': player.get('nba_conference', ''),
-        'question_number': session['total'] + 1
+        'question_number': session['total'] + 1,
+        'multiple_choice_options': generate_multiple_choice_options(player, available_players) if session.get('is_multiple_choice') else None,
+        'correct_answer': player['origin'] if session.get('is_multiple_choice') else None
     })
+
+def generate_multiple_choice_options(correct_player, all_players):
+    """Generate 4 multiple choice options with 1 correct and 3 wrong answers"""
+    correct_origin = correct_player['origin']
+    
+    # Get 3 wrong answers from other players
+    wrong_options = []
+    other_players = [p for p in all_players if p['name'] != correct_player['name']]
+    random.shuffle(other_players)
+    
+    for other in other_players:
+        if other['origin'] != correct_origin and other['origin'] not in wrong_options:
+            wrong_options.append(other['origin'])
+        if len(wrong_options) >= 3:
+            break
+    
+    # If not enough unique wrong answers, add generic options
+    if len(wrong_options) < 3:
+        generic_options = [
+            'Duke', 'Kentucky', 'North Carolina', 'Kansas', 'UCLA',
+            'France', 'Serbia', 'Spain', 'Australia', 'Canada',
+            'Michigan State', 'Villanova', 'Connecticut', 'Syracuse', 'Louisville'
+        ]
+        for option in generic_options:
+            if len(wrong_options) >= 3:
+                break
+            if option != correct_origin and option not in wrong_options:
+                wrong_options.append(option)
+    
+    # Combine and shuffle
+    all_options = [correct_origin] + wrong_options[:3]
+    random.shuffle(all_options)
+    return all_options
 
 @app.route('/api/submit-answer', methods=['POST'])
 def submit_answer():
