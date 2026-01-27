@@ -152,7 +152,9 @@ SCHOOL_ABBREVIATIONS = {
     'bc': 'boston college',
     'nd': 'notre dame',
     'gt': 'georgia tech',
-    'wf': 'wake forest'
+    'wf': 'wake forest',
+    'wsu': 'washington state',
+    'ul': 'louisville'
 }
 
 def check_answer(user_answer, correct_answer, player_type, player_data=None):
@@ -216,8 +218,9 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
         if user_lower == correct_lower:
             return True
         
-        # Fuzzy match for typos (85% similarity threshold)
+        # Fuzzy match for typos (80% similarity threshold)
         # "gonaga" vs "gonzaga" = 85.7% match ✓
+        # "tecas" vs "texas" = 80% match ✓
         # "st vincent st marys" vs "st vincent st mary" = 95% match ✓
         # Strip parenthetical content first for fair comparison
         import re
@@ -225,7 +228,7 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
         correct_for_fuzzy = re.sub(r'\([^)]*\)', '', correct_lower).strip()
         
         similarity = similarity_ratio(user_for_fuzzy, correct_for_fuzzy)
-        if similarity >= 0.85:
+        if similarity >= 0.80:
             return True
         
         # Check if abbreviation matches expanded form
@@ -347,6 +350,44 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/api/daily-challenge', methods=['GET'])
+def get_daily_challenge():
+    """Get today's daily challenge - same 5 players for everyone"""
+    import datetime
+    import random
+    
+    # Use today's date as seed so everyone gets same players
+    today = datetime.date.today()
+    seed = int(today.strftime('%Y%m%d'))
+    
+    # Create a seeded random generator
+    rng = random.Random(seed)
+    
+    # Filter players by difficulty
+    easy_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'easy']
+    medium_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'medium']
+    hard_players = [p for p in NBA_PLAYERS if p.get('difficulty') == 'hard']
+    
+    # Select daily players: 1 easy, 2 medium, 2 hard
+    daily_players = []
+    
+    if easy_players:
+        daily_players.append(rng.choice(easy_players))
+    
+    if medium_players and len(medium_players) >= 2:
+        medium_sample = rng.sample(medium_players, 2)
+        daily_players.extend(medium_sample)
+    
+    if hard_players and len(hard_players) >= 2:
+        hard_sample = rng.sample(hard_players, 2)
+        daily_players.extend(hard_sample)
+    
+    return jsonify({
+        'date': today.isoformat(),
+        'players': daily_players[:5],  # Ensure we have exactly 5
+        'challenge_number': (today - datetime.date(2025, 1, 1)).days + 1  # Day number since Jan 1, 2025
+    })
 
 @app.route('/api/new-game', methods=['POST'])
 def new_game():

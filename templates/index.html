@@ -216,6 +216,14 @@
             <p>Can you guess which college, country, high school, or G League team each NBA player came from?</p>
             
             <div style="margin-top: 30px;">
+                <h3 style="margin-bottom: 15px; color: #333;">🌟 Daily Challenge:</h3>
+                
+                <button class="btn-primary mode-button" onclick="startDailyChallenge()" style="margin-bottom: 20px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); font-size: 18px; font-weight: bold;">
+                    📅 Daily 5 - Today's Challenge
+                </button>
+                
+                <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+                
                 <h3 style="margin-bottom: 15px; color: #333;">Choose Your Mode:</h3>
                 
                 <button class="btn-primary mode-button" onclick="selectMode('quick10')" style="margin-bottom: 10px;">
@@ -434,6 +442,150 @@
         let selectedDifficulty = 'hard';  // Default to hard
         let practiceDisplayName = null;  // For tracking practice mode stats
         let autoAdvanceDelay = 2000;  // Default 2 seconds in milliseconds
+        let isDailyChallenge = false;  // Track if this is a daily challenge
+        let dailyChallengeData = null;  // Store daily challenge info
+        let dailyResults = [];  // Track results for sharing
+        let gameEnded = false;  // Track if game has ended to prevent extra questions
+
+        async function startDailyChallenge() {
+            try {
+                // Check if already completed today
+                const completedToday = localStorage.getItem('dailyCompleted');
+                const today = new Date().toISOString().split('T')[0];
+                
+                if (completedToday === today) {
+                    const previousScore = localStorage.getItem('dailyScore');
+                    const previousResults = localStorage.getItem('dailyResults');
+                    if (confirm(`You've already completed today's challenge! Score: ${previousScore}/5\n\nWould you like to play again for practice (won't save)?`)) {
+                        // Play again without saving
+                    } else {
+                        // Show share screen
+                        if (previousResults) {
+                            showDailyResults(JSON.parse(previousResults));
+                        }
+                        return;
+                    }
+                }
+                
+                // Fetch today's challenge
+                const response = await fetch('/api/daily-challenge');
+                const data = await response.json();
+                
+                dailyChallengeData = data;
+                isDailyChallenge = true;
+                dailyResults = [];
+                gameMode = 'daily5';
+                questionLimit = 5;
+                
+                // Start game without difficulty selection
+                document.getElementById('startScreen').classList.add('hidden');
+                await startGameWithPlayers(data.players);
+                
+            } catch (error) {
+                console.error('Error loading daily challenge:', error);
+                alert('Failed to load daily challenge. Please try again.');
+            }
+        }
+
+        async function startGameWithPlayers(players) {
+            // Create a special session with predetermined players
+            sessionId = 'daily-' + Date.now();
+            
+            // Manually set up game session
+            game_sessions = game_sessions || {};
+            game_sessions[sessionId] = {
+                score: 0,
+                total: 0,
+                players: players,
+                currentIndex: 0
+            };
+            
+            // Show game screen
+            document.getElementById('gameScreen').classList.remove('hidden');
+            
+            // Load first question
+            await loadDailyQuestion();
+        }
+
+        async function loadDailyQuestion() {
+            const session = game_sessions[sessionId];
+            
+            if (session.currentIndex >= session.players.length) {
+                // Challenge complete!
+                showDailyResults(dailyResults);
+                return;
+            }
+            
+            const player = session.players[session.currentIndex];
+            
+            // Display player info
+            document.getElementById('playerName').textContent = player.name;
+            document.getElementById('playerTeam').textContent = player.team;
+            
+            // Clear previous answer and feedback
+            document.getElementById('answerInput').value = '';
+            document.getElementById('feedback').style.display = 'none';
+            document.getElementById('answerSection').classList.remove('hidden');
+            document.getElementById('nextSection').classList.add('hidden');
+            
+            // Focus input
+            document.getElementById('answerInput').focus();
+        }
+
+        function showDailyResults(results) {
+            isDailyChallenge = false;
+            
+            const score = results.filter(r => r.correct).length;
+            const total = results.length;
+            
+            // Save completion
+            const today = new Date().toISOString().split('T')[0];
+            localStorage.setItem('dailyCompleted', today);
+            localStorage.setItem('dailyScore', `${score}/${total}`);
+            localStorage.setItem('dailyResults', JSON.stringify(results));
+            
+            // Generate shareable text
+            const challengeNum = dailyChallengeData.challenge_number;
+            const resultEmojis = results.map(r => r.correct ? '✅' : '❌').join(' ');
+            
+            const shareText = `NBA Origin Quiz - Daily 5 #${challengeNum}\n${resultEmojis}\n${score}/5\n\nPlay at: ${window.location.origin}`;
+            
+            // Show results screen
+            const resultHTML = `
+                <div style="text-align: center; padding: 40px 20px;">
+                    <h2 style="margin-bottom: 20px;">📅 Daily 5 Complete!</h2>
+                    <div style="font-size: 48px; margin: 20px 0;">${resultEmojis}</div>
+                    <div style="font-size: 32px; font-weight: bold; color: #667eea; margin: 20px 0;">
+                        ${score}/5
+                    </div>
+                    <div style="margin: 20px 0; font-size: 14px; color: #666;">
+                        Challenge #${challengeNum}
+                    </div>
+                    <button class="btn-primary" onclick="copyShareText(\`${shareText.replace(/`/g, '\\`')}\`)" style="margin: 10px;">
+                        📋 Copy Results
+                    </button>
+                    <button class="btn-secondary" onclick="restartGame()" style="margin: 10px;">
+                        🏠 Back to Menu
+                    </button>
+                    <div id="copyFeedback" style="margin-top: 10px; color: #22c55e; font-weight: bold; display: none;">
+                        ✓ Copied to clipboard!
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('gameScreen').innerHTML = resultHTML;
+        }
+
+        function copyShareText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                document.getElementById('copyFeedback').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('copyFeedback').style.display = 'none';
+                }, 2000);
+            }).catch(err => {
+                alert('Failed to copy. Please copy manually:\n\n' + text);
+            });
+        }
 
         function adjustSpeed(direction) {
             const speeds = [500, 1000, 2000, 3000, 5000];  // 0.5s, 1s, 2s, 3s, 5s
@@ -635,6 +787,7 @@
 
         async function startGame(difficulty) {
             selectedDifficulty = difficulty;
+            gameEnded = false;  // Reset game ended flag
             
             try {
                 const response = await fetch('/api/new-game', {
@@ -666,6 +819,11 @@
         }
 
         async function nextQuestion() {
+            // Prevent fetching next question if game has ended
+            if (gameEnded) {
+                return;
+            }
+            
             document.getElementById('feedback').style.display = 'none';
             document.getElementById('answerSection').classList.remove('hidden');
             document.getElementById('nextSection').classList.add('hidden');
@@ -705,8 +863,72 @@
             }
         }
 
+        async function handleDailyAnswer(userAnswer) {
+            const session = game_sessions[sessionId];
+            const player = session.players[session.currentIndex];
+            
+            // Simple client-side answer checking  
+            const correct_answer = player.origin.toLowerCase().trim();
+            const user_lower = userAnswer.toLowerCase().trim();
+            
+            // Basic matching - could be improved
+            const isCorrect = user_lower === correct_answer || 
+                             (correct_answer.includes(user_lower) && user_lower.length > 3);
+            
+            // Track result
+            dailyResults.push({
+                player: player.name,
+                correct: isCorrect,
+                userAnswer: userAnswer,
+                correctAnswer: player.origin
+            });
+            
+            // Update session
+            session.score += isCorrect ? 1 : 0;
+            session.total += 1;
+            session.currentIndex += 1;
+            
+            // Update display
+            document.getElementById('score').textContent = session.score;
+            document.getElementById('total').textContent = session.total;
+            
+            // Show feedback
+            const feedbackEl = document.getElementById('feedback');
+            feedbackEl.style.display = 'block';
+            
+            if (isCorrect) {
+                feedbackEl.className = 'feedback correct';
+                feedbackEl.innerHTML = `✅ Correct! ${player.origin}`;
+                
+                // Auto-advance or show results
+                setTimeout(() => {
+                    if (session.currentIndex >= session.players.length) {
+                        showDailyResults(dailyResults);
+                    } else {
+                        loadDailyQuestion();
+                    }
+                }, autoAdvanceDelay);
+            } else {
+                feedbackEl.className = 'feedback incorrect';
+                feedbackEl.innerHTML = `❌ Incorrect<div class="answer-reveal">You answered: <strong>${userAnswer}</strong><br>The correct answer is: <strong>${player.origin}</strong> (${player.type})</div>`;
+                
+                // Show next button
+                document.getElementById('answerSection').classList.add('hidden');
+                document.getElementById('nextSection').classList.remove('hidden');
+            }
+        }
+
         function continueToNext() {
-            nextQuestion();
+            if (isDailyChallenge) {
+                const session = game_sessions[sessionId];
+                if (session.currentIndex >= session.players.length) {
+                    showDailyResults(dailyResults);
+                } else {
+                    loadDailyQuestion();
+                }
+            } else {
+                nextQuestion();
+            }
         }
 
         async function submitAnswer() {
@@ -714,6 +936,12 @@
             
             if (!answer) {
                 alert('Please enter an answer!');
+                return;
+            }
+
+            // Handle daily challenge differently (client-side only)
+            if (isDailyChallenge) {
+                await handleDailyAnswer(answer);
                 return;
             }
 
@@ -812,6 +1040,7 @@
                 // Check if Perfect Run should end
                 if (gameMode === 'perfect') {
                     // Show game over immediately for perfect run
+                    gameEnded = true;
                     setTimeout(() => {
                         showGameOver(data.score, data.total);
                     }, 100);
@@ -820,6 +1049,7 @@
                 
                 // Check if limited question mode should end
                 if (questionLimit && data.total >= questionLimit) {
+                    gameEnded = true;
                     setTimeout(() => {
                         showGameOver(data.score, data.total);
                     }, 100);
