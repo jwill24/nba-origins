@@ -991,39 +991,44 @@
                     userAnswer: userAnswer,
                     correctAnswer: player.origin
                 });
-            
-            // Update session
-            session.score += isCorrect ? 1 : 0;
-            session.total += 1;
-            session.currentIndex += 1;
-            
-            // Update display
-            document.getElementById('score').textContent = session.score;
-            document.getElementById('total').textContent = session.total;
-            
-            // Show feedback
-            const feedbackEl = document.getElementById('feedback');
-            feedbackEl.style.display = 'block';
-            
-            if (isCorrect) {
-                feedbackEl.className = 'feedback correct';
-                feedbackEl.innerHTML = `✅ Correct! ${player.origin}`;
                 
-                // Auto-advance or show results
-                setTimeout(() => {
-                    if (session.currentIndex >= session.players.length) {
-                        showDailyResults(dailyResults);
-                    } else {
-                        loadDailyQuestion();
-                    }
-                }, autoAdvanceDelay);
-            } else {
-                feedbackEl.className = 'feedback incorrect';
-                feedbackEl.innerHTML = `❌ Incorrect<div class="answer-reveal">You answered: <strong>${userAnswer}</strong><br>The correct answer is: <strong>${player.origin}</strong> (${player.type})</div>`;
+                // Update session
+                session.score += isCorrect ? 1 : 0;
+                session.total += 1;
+                session.currentIndex += 1;
                 
-                // Show next button
-                document.getElementById('answerSection').classList.add('hidden');
-                document.getElementById('nextSection').classList.remove('hidden');
+                // Update display
+                document.getElementById('score').textContent = session.score;
+                document.getElementById('total').textContent = session.total;
+                
+                // Show feedback
+                const feedbackEl = document.getElementById('feedback');
+                feedbackEl.style.display = 'block';
+                
+                if (isCorrect) {
+                    feedbackEl.className = 'feedback correct';
+                    feedbackEl.innerHTML = `✅ Correct! ${player.origin}`;
+                    
+                    // Auto-advance or show results
+                    setTimeout(() => {
+                        if (session.currentIndex >= session.players.length) {
+                            showDailyResults(dailyResults);
+                        } else {
+                            loadDailyQuestion();
+                        }
+                    }, autoAdvanceDelay);
+                } else {
+                    feedbackEl.className = 'feedback incorrect';
+                    feedbackEl.innerHTML = `❌ Incorrect<div class="answer-reveal">You answered: <strong>${userAnswer}</strong><br>The correct answer is: <strong>${player.origin}</strong> (${player.type})</div>`;
+                    
+                    // Show next button
+                    document.getElementById('answerSection').classList.add('hidden');
+                    document.getElementById('multipleChoiceSection').classList.add('hidden');
+                    document.getElementById('nextSection').classList.remove('hidden');
+                }
+            } catch (error) {
+                console.error('Error checking answer:', error);
+                alert('Error checking answer. Please try again.');
             }
         }
 
