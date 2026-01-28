@@ -154,7 +154,8 @@ SCHOOL_ABBREVIATIONS = {
     'gt': 'georgia tech',
     'wf': 'wake forest',
     'wsu': 'washington state',
-    'ul': 'louisville'
+    'ul': 'louisville',
+    'sdsu': 'san diego state'
 }
 
 def check_answer(user_answer, correct_answer, player_type, player_data=None):
@@ -375,12 +376,22 @@ def get_daily_challenge():
     try:
         import datetime
         import random
+        from zoneinfo import ZoneInfo
         
-        # Use today's date as seed so everyone gets same players
-        today = datetime.date.today()
-        seed = int(today.strftime('%Y%m%d'))
+        # Get current time in ET
+        et_tz = ZoneInfo('America/New_York')
+        now_et = datetime.datetime.now(et_tz)
         
-        print(f"📅 Daily Challenge: Date={today}, Seed={seed}")
+        # If it's before 3am ET, use yesterday's date
+        if now_et.hour < 3:
+            challenge_date = (now_et - datetime.timedelta(days=1)).date()
+        else:
+            challenge_date = now_et.date()
+        
+        # Use challenge date as seed so everyone gets same players
+        seed = int(challenge_date.strftime('%Y%m%d'))
+        
+        print(f"📅 Daily Challenge: Current ET time={now_et.strftime('%Y-%m-%d %H:%M:%S %Z')}, Challenge date={challenge_date}, Seed={seed}")
         print(f"📊 Total players available: {len(NBA_PLAYERS)}")
         
         # Create a seeded random generator
@@ -505,10 +516,10 @@ def get_daily_challenge():
             })
         
         response_data = {
-            'date': today.isoformat(),
+            'date': challenge_date.isoformat(),
             'players': clean_players,
             'question_types': question_types[:5],
-            'challenge_number': (today - datetime.date(2026, 1, 27)).days + 1  # Day #1 = Jan 27, 2026
+            'challenge_number': (challenge_date - datetime.date(2026, 1, 27)).days + 1  # Day #1 = Jan 27, 2026
         }
         
         print(f"✅ Returning {len(clean_players)} players with types: {question_types[:5]}")

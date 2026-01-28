@@ -172,6 +172,32 @@
             display: none;
         }
 
+        .progress-bars {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin: 15px 0;
+        }
+
+        .progress-bar {
+            width: 30px;
+            height: 50px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-bar.active {
+            background: linear-gradient(to top, #667eea 0%, #764ba2 100%);
+            animation: pulse 0.5s ease-in-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
         .start-screen {
             text-align: center;
         }
@@ -391,6 +417,15 @@
                 </div>
             </div>
 
+            <!-- Daily Challenge Progress Bars -->
+            <div id="dailyProgressBars" class="progress-bars" style="display: none;">
+                <div class="progress-bar" id="bar1"></div>
+                <div class="progress-bar" id="bar2"></div>
+                <div class="progress-bar" id="bar3"></div>
+                <div class="progress-bar" id="bar4"></div>
+                <div class="progress-bar" id="bar5"></div>
+            </div>
+
             <!-- Conference Statistics -->
             <div class="conference-stats" id="conferenceStats" style="display: none;">
                 <div style="margin-bottom: 15px;">
@@ -546,6 +581,19 @@
             const player = session.players[session.currentIndex];
             const questionType = session.questionTypes[session.currentIndex];
             
+            // Update progress bars
+            document.getElementById('dailyProgressBars').style.display = 'flex';
+            for (let i = 0; i < 5; i++) {
+                const bar = document.getElementById(`bar${i + 1}`);
+                if (i < session.currentIndex) {
+                    bar.classList.add('active');
+                } else if (i === session.currentIndex) {
+                    bar.classList.add('active');
+                } else {
+                    bar.classList.remove('active');
+                }
+            }
+            
             // Display player info
             document.getElementById('playerName').textContent = player.name;
             document.getElementById('playerTeam').textContent = player.team;
@@ -619,17 +667,27 @@
             localStorage.setItem('dailyScore_v2', `${score}/${total}`);
             localStorage.setItem('dailyResults_v2', JSON.stringify(results));
             
-            // Generate shareable text
+            // Generate bar chart using block characters
+            // Full bar for correct (5 levels), lower bar for incorrect (2 levels)
+            const resultBars = results.map(r => r.correct ? '█' : '▂').join('');
+            
             const challengeNum = dailyChallengeData.challenge_number;
-            const resultEmojis = results.map(r => r.correct ? '✅' : '❌').join(' ');
             
-            const shareText = `NBA Origin Quiz - Daily 5 #${challengeNum}\n${resultEmojis}\n${score}/5\n\nPlay at: ${window.location.origin}`;
+            const shareText = `NBA Origin Quiz - Daily 5 #${challengeNum}\n${resultBars}\n${score}/5\n\nPlay at: ${window.location.origin}`;
             
-            // Show results screen
+            // Show results screen with visual bars
+            const visualBars = results.map(r => {
+                const height = r.correct ? '50px' : '15px';
+                const color = r.correct ? '#667eea' : '#e0e0e0';
+                return `<div style="width: 30px; height: ${height}; background: ${color}; border-radius: 4px;"></div>`;
+            }).join('');
+            
             const resultHTML = `
                 <div style="text-align: center; padding: 40px 20px;">
                     <h2 style="margin-bottom: 20px;">📅 Daily 5 Complete!</h2>
-                    <div style="font-size: 48px; margin: 20px 0;">${resultEmojis}</div>
+                    <div style="display: flex; gap: 8px; justify-content: center; margin: 20px 0;">
+                        ${visualBars}
+                    </div>
                     <div style="font-size: 32px; font-weight: bold; color: #667eea; margin: 20px 0;">
                         ${score}/5
                     </div>
