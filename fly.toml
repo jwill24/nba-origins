@@ -1,4 +1,4 @@
-app = "nba-origin-quiz"
+app = "nba-origins"
 primary_region = "iad"
 
 [build]

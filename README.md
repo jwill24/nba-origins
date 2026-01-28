@@ -1,6 +1,6 @@
-# 🏀 NBA Player Origin Quiz
+# 🏀 NBA Origins
 
-A fun web-based quiz game where you test your knowledge of which college or country NBA players came from. Play it from any device, including your iPhone!
+A fun web-based game where you test your knowledge of which college or country NBA players came from. Play it from any device, including your iPhone!
 
 ## Features
 
