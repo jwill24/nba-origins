@@ -1423,18 +1423,25 @@
         // Allow Enter key to submit
         async function loadPerfectRunPreview() {
             try {
-                const response = await fetch('/api/leaderboard/perfect/hard');
+                const response = await fetch('/api/leaderboard/perfect-hard');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
                 const data = await response.json();
+                
+                console.log('Perfect Run preview data:', data);
                 
                 const listEl = document.getElementById('perfectRunList');
                 
-                if (data.length === 0) {
+                if (!data.leaderboard || data.leaderboard.length === 0) {
                     listEl.innerHTML = '<div style="color: #999; font-style: italic;">No scores yet. Be the first!</div>';
                     return;
                 }
                 
                 // Show top 5
-                const top5 = data.slice(0, 5);
+                const top5 = data.leaderboard.slice(0, 5);
                 const html = top5.map((entry, index) => {
                     const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : `${index + 1}.`;
                     return `
@@ -1448,7 +1455,9 @@
                 listEl.innerHTML = html;
             } catch (error) {
                 console.error('Error loading Perfect Run preview:', error);
-                document.getElementById('perfectRunList').innerHTML = '<div style="color: #999;">Failed to load</div>';
+                const listEl = document.getElementById('perfectRunList');
+                // Show "No scores yet" instead of error to be more friendly
+                listEl.innerHTML = '<div style="color: #999; font-style: italic;">No scores yet. Be the first!</div>';
             }
         }
 
