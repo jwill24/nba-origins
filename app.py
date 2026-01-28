@@ -167,6 +167,10 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
         user_lower = user_answer.lower().strip()
         correct_lower = correct_answer.lower().strip()
         
+        # Normalize spaces for abbreviation matching (remove all spaces)
+        user_normalized_spaces = user_lower.replace(' ', '')
+        correct_normalized_spaces = correct_lower.replace(' ', '')
+        
         # Helper function for fuzzy matching (Levenshtein distance)
         def similarity_ratio(s1, s2):
             """Calculate similarity ratio between two strings (0-1)"""
@@ -202,14 +206,14 @@ def check_answer(user_answer, correct_answer, player_type, player_data=None):
             max_len = max(len(s1_norm), len(s2_norm))
             return 1 - (edit_distance / max_len)
         
-        # Expand abbreviations before comparison
-        if user_lower in SCHOOL_ABBREVIATIONS:
-            user_expanded = SCHOOL_ABBREVIATIONS[user_lower]
+        # Expand abbreviations before comparison (check without spaces)
+        if user_normalized_spaces in SCHOOL_ABBREVIATIONS:
+            user_expanded = SCHOOL_ABBREVIATIONS[user_normalized_spaces]
         else:
             user_expanded = user_lower
             
-        if correct_lower in SCHOOL_ABBREVIATIONS:
-            correct_expanded = SCHOOL_ABBREVIATIONS[correct_lower]
+        if correct_normalized_spaces in SCHOOL_ABBREVIATIONS:
+            correct_expanded = SCHOOL_ABBREVIATIONS[correct_normalized_spaces]
         else:
             correct_expanded = correct_lower
         

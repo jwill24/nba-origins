@@ -305,6 +305,14 @@
                 <button class="btn-secondary mode-button" onclick="viewLeaderboards()">
                     🏆 View Leaderboards
                 </button>
+
+                <!-- Perfect Run Hard Leaderboard Preview -->
+                <div id="perfectRunPreview" style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 10px;">
+                    <h3 style="margin-bottom: 10px; font-size: 16px; color: #333;">🔥 Perfect Run - Hard</h3>
+                    <div id="perfectRunList" style="font-size: 14px; color: #666;">
+                        Loading...
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1287,7 +1295,7 @@
             let message = `Game Over!\n\n${modeDisplay}\nFinal Score: ${score}/${total} (${percentage}%)`;
             
             if (gameMode === 'perfect') {
-                message = `Perfect Run Ended!\n\nYou got ${score} correct before missing one.\n\nFinal Score: ${score}/${total} (${percentage}%)`;
+                message = `Perfect Run Ended!\n\nYou got ${score} in a row!`;
             }
             
             // Prompt for leaderboard entry (except unlimited mode)
@@ -1413,7 +1421,41 @@
         }
 
         // Allow Enter key to submit
+        async function loadPerfectRunPreview() {
+            try {
+                const response = await fetch('/api/leaderboard/perfect/hard');
+                const data = await response.json();
+                
+                const listEl = document.getElementById('perfectRunList');
+                
+                if (data.length === 0) {
+                    listEl.innerHTML = '<div style="color: #999; font-style: italic;">No scores yet. Be the first!</div>';
+                    return;
+                }
+                
+                // Show top 5
+                const top5 = data.slice(0, 5);
+                const html = top5.map((entry, index) => {
+                    const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : `${index + 1}.`;
+                    return `
+                        <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #e0e0e0;">
+                            <span><strong>${medal}</strong> ${entry.display_name}</span>
+                            <span style="color: #667eea; font-weight: bold;">${entry.score}</span>
+                        </div>
+                    `;
+                }).join('');
+                
+                listEl.innerHTML = html;
+            } catch (error) {
+                console.error('Error loading Perfect Run preview:', error);
+                document.getElementById('perfectRunList').innerHTML = '<div style="color: #999;">Failed to load</div>';
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
+            // Load Perfect Run - Hard leaderboard preview
+            loadPerfectRunPreview();
+            
             document.getElementById('answerInput').addEventListener('keypress', function(e) {
                 if (e.key === 'Enter') {
                     submitAnswer();
