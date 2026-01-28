@@ -174,28 +174,52 @@
 
         .progress-bars {
             display: flex;
-            gap: 8px;
+            gap: 6px;
             justify-content: center;
+            align-items: flex-end;
             margin: 15px 0;
+            height: 50px;
         }
 
         .progress-bar {
-            width: 30px;
-            height: 50px;
+            width: 20px;
             background: #e0e0e0;
-            border-radius: 4px;
-            position: relative;
-            overflow: hidden;
+            border-radius: 3px;
+            transition: background 0.3s ease;
+        }
+
+        /* Cell phone signal style - each bar gets taller */
+        #bar1 {
+            height: 15px;
+        }
+
+        #bar2 {
+            height: 25px;
+        }
+
+        #bar3 {
+            height: 35px;
+        }
+
+        #bar4 {
+            height: 45px;
+        }
+
+        #bar5 {
+            height: 50px;
         }
 
         .progress-bar.active {
             background: linear-gradient(to top, #667eea 0%, #764ba2 100%);
-            animation: pulse 0.5s ease-in-out;
+        }
+
+        .progress-bar.active.current {
+            animation: pulse 1s ease-in-out infinite;
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
         }
 
         .start-screen {
@@ -581,17 +605,20 @@
             const player = session.players[session.currentIndex];
             const questionType = session.questionTypes[session.currentIndex];
             
-            // Update progress bars
+            // Update progress bars (cell phone signal style)
             document.getElementById('dailyProgressBars').style.display = 'flex';
             for (let i = 0; i < 5; i++) {
                 const bar = document.getElementById(`bar${i + 1}`);
+                bar.classList.remove('active', 'current');
+                
                 if (i < session.currentIndex) {
+                    // Completed questions - filled
                     bar.classList.add('active');
                 } else if (i === session.currentIndex) {
-                    bar.classList.add('active');
-                } else {
-                    bar.classList.remove('active');
+                    // Current question - filled and pulsing
+                    bar.classList.add('active', 'current');
                 }
+                // Future questions stay gray
             }
             
             // Display player info
@@ -667,27 +694,18 @@
             localStorage.setItem('dailyScore_v2', `${score}/${total}`);
             localStorage.setItem('dailyResults_v2', JSON.stringify(results));
             
-            // Generate bar chart using block characters
-            // Full bar for correct (5 levels), lower bar for incorrect (2 levels)
-            const resultBars = results.map(r => r.correct ? '█' : '▂').join('');
+            // Generate shareable text with checkmarks and X's
+            const resultEmojis = results.map(r => r.correct ? '✅' : '❌').join(' ');
             
             const challengeNum = dailyChallengeData.challenge_number;
             
-            const shareText = `NBA Origins - Daily 5 #${challengeNum}\n${resultBars}\n${score}/5\n\nPlay at: ${window.location.origin}`;
+            const shareText = `NBA Origins - Daily 5 #${challengeNum}\n${resultEmojis}\n${score}/5\n\nPlay at: ${window.location.origin}`;
             
-            // Show results screen with visual bars
-            const visualBars = results.map(r => {
-                const height = r.correct ? '50px' : '15px';
-                const color = r.correct ? '#667eea' : '#e0e0e0';
-                return `<div style="width: 30px; height: ${height}; background: ${color}; border-radius: 4px;"></div>`;
-            }).join('');
-            
+            // Show results screen
             const resultHTML = `
                 <div style="text-align: center; padding: 40px 20px;">
                     <h2 style="margin-bottom: 20px;">📅 Daily 5 Complete!</h2>
-                    <div style="display: flex; gap: 8px; justify-content: center; margin: 20px 0;">
-                        ${visualBars}
-                    </div>
+                    <div style="font-size: 48px; margin: 20px 0;">${resultEmojis}</div>
                     <div style="font-size: 32px; font-weight: bold; color: #667eea; margin: 20px 0;">
                         ${score}/5
                     </div>
