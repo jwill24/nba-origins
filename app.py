@@ -561,6 +561,9 @@ def new_game():
         if not filtered_players:
             return jsonify({'error': f'No players available for {difficulty} difficulty. Please regenerate player data.'}), 400
         
+        # Shuffle the filtered players for better randomness
+        random.shuffle(filtered_players)
+        
         session_id = str(random.randint(100000, 999999))
         game_sessions[session_id] = {
             'score': 0,
@@ -604,10 +607,14 @@ def next_question():
     if not unused_players:
         # Reset if all players used
         session['used_players'] = []
-        unused_players = available_players
+        unused_players = list(available_players)  # Make a copy
+        random.shuffle(unused_players)  # Shuffle when resetting
     
-    # Select random player
-    player = random.choice(unused_players)
+    # Shuffle the unused players list for maximum randomness
+    random.shuffle(unused_players)
+    
+    # Select random player (now from a shuffled list)
+    player = unused_players[0]
     session['used_players'].append(player['name'])
     session['current_player'] = player
     
