@@ -524,11 +524,45 @@
         let gameEnded = false;  // Track if game has ended to prevent extra questions
         let game_sessions = {};  // Store game sessions for daily challenge
 
+        function getChallengeDate() {
+            // Get current time in ET (Eastern Time)
+            // We need to account for DST: ET is UTC-5 in winter (EST) and UTC-4 in summer (EDT)
+            
+            const now = new Date();
+            
+            // Use Intl API to get accurate ET time
+            const etTimeString = now.toLocaleString('en-US', { 
+                timeZone: 'America/New_York',
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                hour12: false
+            });
+            
+            // Parse the ET time string (format: "MM/DD/YYYY, HH:mm:ss")
+            const [datePart, timePart] = etTimeString.split(', ');
+            const [month, day, year] = datePart.split('/');
+            const hour = parseInt(timePart.split(':')[0]);
+            
+            // If it's before 3am ET, use yesterday's date
+            let challengeDate = new Date(year, month - 1, day);
+            if (hour < 3) {
+                challengeDate.setDate(challengeDate.getDate() - 1);
+            }
+            
+            // Return in YYYY-MM-DD format
+            const yyyy = challengeDate.getFullYear();
+            const mm = String(challengeDate.getMonth() + 1).padStart(2, '0');
+            const dd = String(challengeDate.getDate()).padStart(2, '0');
+            return `${yyyy}-${mm}-${dd}`;
+        }
+
         async function startDailyChallenge() {
             try {
-                // Check if already completed today
+                // Check if already completed today (using 3am ET rollover)
                 const completedToday = localStorage.getItem('dailyCompleted_v2');  // v2 to reset
-                const today = new Date().toISOString().split('T')[0];
+                const today = getChallengeDate();
                 
                 if (completedToday === today) {
                     const previousScore = localStorage.getItem('dailyScore_v2');
@@ -696,8 +730,8 @@
             const score = results.filter(r => r.correct).length;
             const total = results.length;
             
-            // Save completion
-            const today = new Date().toISOString().split('T')[0];
+            // Save completion (using 3am ET rollover date)
+            const today = getChallengeDate();
             localStorage.setItem('dailyCompleted_v2', today);
             localStorage.setItem('dailyScore_v2', `${score}/${total}`);
             localStorage.setItem('dailyResults_v2', JSON.stringify(results));
