@@ -886,31 +886,71 @@
                     <div style="color: #666; margin-top: 5px;">Total Questions Answered</div>
                 `;
                 
-                // Best/Worst teams
+                // Best/Worst teams (sorted by percentage, already sorted from backend)
                 const teams = data.teams || [];
-                const bestTeams = teams.slice(0, 5);
-                const worstTeams = teams.slice(-5).reverse();
                 
-                document.getElementById('bestTeams').innerHTML = bestTeams.length > 0 
-                    ? bestTeams.map(t => `${t.team}: ${t.correct}/${t.total} (${t.percentage}%)`).join('<br>')
-                    : 'Not enough data yet';
+                if (teams.length === 0) {
+                    document.getElementById('bestTeams').innerHTML = 'Not enough data yet';
+                    document.getElementById('worstTeams').innerHTML = 'Not enough data yet';
+                } else if (teams.length < 10) {
+                    // If fewer than 10 teams, split in half
+                    const midpoint = Math.ceil(teams.length / 2);
+                    const bestTeams = teams.slice(0, midpoint);
+                    const worstTeams = teams.slice(midpoint).reverse();
                     
-                document.getElementById('worstTeams').innerHTML = worstTeams.length > 0
-                    ? worstTeams.map(t => `${t.team}: ${t.correct}/${t.total} (${t.percentage}%)`).join('<br>')
-                    : 'Not enough data yet';
+                    document.getElementById('bestTeams').innerHTML = bestTeams.map(t => 
+                        `${t.team}: ${t.correct}/${t.total} (${t.percentage}%)`
+                    ).join('<br>');
+                    
+                    document.getElementById('worstTeams').innerHTML = worstTeams.map(t => 
+                        `${t.team}: ${t.correct}/${t.total} (${t.percentage}%)`
+                    ).join('<br>');
+                } else {
+                    // 10+ teams: show top 5 and bottom 5
+                    const bestTeams = teams.slice(0, 5);
+                    const worstTeams = teams.slice(-5).reverse();
+                    
+                    document.getElementById('bestTeams').innerHTML = bestTeams.map(t => 
+                        `${t.team}: ${t.correct}/${t.total} (${t.percentage}%)`
+                    ).join('<br>');
+                    
+                    document.getElementById('worstTeams').innerHTML = worstTeams.map(t => 
+                        `${t.team}: ${t.correct}/${t.total} (${t.percentage}%)`
+                    ).join('<br>');
+                }
                 
-                // Best/Worst conferences
+                // Best/Worst conferences (sorted by percentage, already sorted from backend)
                 const conferences = data.conferences || [];
-                const bestConfs = conferences.slice(0, 5);
-                const worstConfs = conferences.slice(-5).reverse();
                 
-                document.getElementById('bestConferences').innerHTML = bestConfs.length > 0
-                    ? bestConfs.map(c => `${c.conference}: ${c.correct}/${c.total} (${c.percentage}%)`).join('<br>')
-                    : 'Not enough data yet';
+                if (conferences.length === 0) {
+                    document.getElementById('bestConferences').innerHTML = 'Not enough data yet';
+                    document.getElementById('worstConferences').innerHTML = 'Not enough data yet';
+                } else if (conferences.length < 10) {
+                    // If fewer than 10 conferences, split in half
+                    const midpoint = Math.ceil(conferences.length / 2);
+                    const bestConfs = conferences.slice(0, midpoint);
+                    const worstConfs = conferences.slice(midpoint).reverse();
                     
-                document.getElementById('worstConferences').innerHTML = worstConfs.length > 0
-                    ? worstConfs.map(c => `${c.conference}: ${c.correct}/${c.total} (${c.percentage}%)`).join('<br>')
-                    : 'Not enough data yet';
+                    document.getElementById('bestConferences').innerHTML = bestConfs.map(c => 
+                        `${c.conference}: ${c.correct}/${c.total} (${c.percentage}%)`
+                    ).join('<br>');
+                    
+                    document.getElementById('worstConferences').innerHTML = worstConfs.map(c => 
+                        `${c.conference}: ${c.correct}/${c.total} (${c.percentage}%)`
+                    ).join('<br>');
+                } else {
+                    // 10+ conferences: show top 5 and bottom 5
+                    const bestConfs = conferences.slice(0, 5);
+                    const worstConfs = conferences.slice(-5).reverse();
+                    
+                    document.getElementById('bestConferences').innerHTML = bestConfs.map(c => 
+                        `${c.conference}: ${c.correct}/${c.total} (${c.percentage}%)`
+                    ).join('<br>');
+                    
+                    document.getElementById('worstConferences').innerHTML = worstConfs.map(c => 
+                        `${c.conference}: ${c.correct}/${c.total} (${c.percentage}%)`
+                    ).join('<br>');
+                }
                 
                 // Most missed players
                 const missed = data.missed_players || [];

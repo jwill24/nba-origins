@@ -887,13 +887,13 @@ def get_user_stats(display_name):
         ''', (display_name,))
         conference_stats = cursor.fetchall()
         
-        # Most missed players
+        # Most missed players (only show if < 50% correct)
         cursor.execute('''
             SELECT player_name, COUNT(*) as attempts, SUM(correct) as correct
             FROM user_stats
             WHERE display_name = ?
             GROUP BY player_name
-            HAVING attempts >= 2 AND correct < attempts
+            HAVING attempts >= 2 AND CAST(correct AS FLOAT) / attempts <= 0.5
             ORDER BY CAST(correct AS FLOAT) / attempts ASC, attempts DESC
             LIMIT 10
         ''', (display_name,))
